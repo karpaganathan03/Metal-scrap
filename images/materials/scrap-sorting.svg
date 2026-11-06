@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="soBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d15"/>
+      <stop offset="60%" stop-color="#121a26"/>
+      <stop offset="100%" stop-color="#192434"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#soBg)"/>
+
+  <!-- High-Speed Sorting Conveyor Belt -->
+  <g transform="translate(60, 110)">
+    <!-- Conveyor Table Bed -->
+    <polygon points="20,120 380,40 440,65 80,145" fill="#334155" stroke="#cbd5e1" stroke-width="2"/>
+    <!-- Belt Surface -->
+    <polygon points="30,118 375,43 430,66 85,141" fill="#0f172a"/>
+
+    <!-- High-Flux Magnetic Drum Head Pulley -->
+    <ellipse cx="430" cy="80" rx="20" ry="32" fill="#f59e0b" stroke="#fef08a" stroke-width="2"/>
+
+    <!-- Optical Sensor Scanner Arch -->
+    <path d="M 210,80 L 250,70 L 250,20 L 210,30 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <!-- Laser Beam Scanning Grid -->
+    <polygon points="215,30 245,22 280,75 190,95" fill="#38bdf8" opacity="0.25"/>
+
+    <!-- Sorted Streams Ejecting -->
+    <!-- Stream 1 (Non-Ferrous Ejected by Eddy Current Rotor) -->
+    <path d="M 440,70 Q 480,50 510,120" fill="none" stroke="#eab308" stroke-width="4" stroke-dasharray="6 4"/>
+    <text x="470" y="45" fill="#eab308" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="13">NON-FERROUS</text>
+
+    <!-- Stream 2 (Ferrous Held by Magnet to Under-discharge) -->
+    <path d="M 440,90 Q 430,140 410,170" fill="none" stroke="#94a3b8" stroke-width="4" stroke-dasharray="6 4"/>
+    <text x="370" y="200" fill="#94a3b8" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="13">FERROUS</text>
+  </g>
+
+  <!-- Technical Spec Overlay Badge -->
+  <rect x="25" y="25" width="250" height="42" rx="6" fill="#090d14" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1.5"/>
+  <circle cx="45" cy="46" r="6" fill="#38bdf8"/>
+  <text x="62" y="43" fill="#ffffff" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="14" letter-spacing="1">MATERIAL SEGREGATION TECH</text>
+  <text x="62" y="58" fill="#bae6fd" font-family="'Poppins', sans-serif" font-size="11">Eddy-Current Separator &amp; Optical Sorters</text>
+</svg>

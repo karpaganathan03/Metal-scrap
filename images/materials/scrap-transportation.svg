@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="trBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e18"/>
+      <stop offset="60%" stop-color="#111824"/>
+      <stop offset="100%" stop-color="#182334"/>
+    </linearGradient>
+    <linearGradient id="shipSteel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#trBg)"/>
+
+  <!-- Deepwater Berth Water -->
+  <rect x="0" y="270" width="600" height="110" fill="#091422"/>
+  <line x1="0" y1="270" x2="600" y2="270" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Bulk Scrap Cargo Vessel Hull (Right) -->
+  <g transform="translate(180, 110)">
+    <!-- Vessel Hull Profile -->
+    <path d="M 40,90 L 360,90 L 390,160 L 0,160 Z" fill="url(#shipSteel)" stroke="#475569" stroke-width="2"/>
+    <!-- Red Antifouling Bottom -->
+    <polygon points="0,160 390,160 380,185 15,185" fill="#991b1b"/>
+    <!-- Superstructure Bridge Aft -->
+    <polygon points="300,30 360,30 360,90 300,90" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+    <!-- Cargo Hold Filled with Processed HMS Scrap -->
+    <polygon points="60,90 280,90 250,70 90,70" fill="#f59e0b" stroke="#ca8a04" stroke-width="1.5"/>
+    <text x="130" y="85" fill="#000" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="12">HMS 1 CARGO</text>
+  </g>
+
+  <!-- Port Crane with Electro-Hydraulic Orange-Peel Grapple -->
+  <g transform="translate(80, 50)">
+    <!-- Gantry Tower -->
+    <polygon points="20,220 50,70 70,70 100,220" fill="#1e293b" stroke="#f3cf2d" stroke-width="2"/>
+    <!-- Boom Jib Arm -->
+    <polygon points="40,70 240,10 245,25 60,85" fill="#f59e0b" stroke="#ca8a04" stroke-width="2"/>
+    <!-- Hoist Cable -->
+    <line x1="200" y1="20" x2="200" y2="95" stroke="#f8fafc" stroke-width="2"/>
+    <!-- Orange-peel Grapple Tines -->
+    <circle cx="200" cy="100" r="12" fill="#334155" stroke="#f3cf2d" stroke-width="2"/>
+    <path d="M 190,105 Q 180,125 195,135 Q 200,120 195,108" fill="#f59e0b"/>
+    <path d="M 210,105 Q 220,125 205,135 Q 200,120 205,108" fill="#f59e0b"/>
+  </g>
+
+  <!-- Technical Spec Overlay Badge -->
+  <rect x="25" y="25" width="250" height="42" rx="6" fill="#090d14" fill-opacity="0.85" stroke="#f3cf2d" stroke-width="1.5"/>
+  <circle cx="45" cy="46" r="6" fill="#38bdf8"/>
+  <text x="62" y="43" fill="#ffffff" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="14" letter-spacing="1">TRANSPORT &amp; EXPORT LOGISTICS</text>
+  <text x="62" y="58" fill="#bae6fd" font-family="'Poppins', sans-serif" font-size="11">Deepwater Port Terminal | Intermodal Freight</text>
+</svg>

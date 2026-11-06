@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="60%" stop-color="#141c2b"/>
+      <stop offset="100%" stop-color="#1b283d"/>
+    </linearGradient>
+    <linearGradient id="chromeShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="25%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="75%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="pipeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <pattern id="gridPattern3" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#202b3d" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#bgGrad3)"/>
+  <rect width="600" height="380" fill="url(#gridPattern3)" opacity="0.6"/>
+  <circle cx="300" cy="190" r="140" fill="#a78bfa" opacity="0.12" filter="blur(30px)"/>
+
+  <!-- Chemical Storage Vessel / Stainless Pressure Tank (Center) -->
+  <g transform="translate(160, 80)">
+    <!-- Vessel Body -->
+    <rect x="70" y="50" width="140" height="150" rx="10" fill="url(#chromeShine)"/>
+    <!-- Dome Top -->
+    <path d="M 70,50 Q 140,10 210,50 Z" fill="#e2e8f0"/>
+    <!-- Dome Bottom -->
+    <path d="M 70,200 Q 140,230 210,200 Z" fill="#94a3b8"/>
+    <!-- Weld Seam Rings -->
+    <line x1="70" y1="100" x2="210" y2="100" stroke="#64748b" stroke-width="2" stroke-dasharray="6 3"/>
+    <line x1="70" y1="150" x2="210" y2="150" stroke="#64748b" stroke-width="2" stroke-dasharray="6 3"/>
+    <!-- Manway Flange -->
+    <ellipse cx="140" cy="120" rx="25" ry="16" fill="#1e293b" stroke="#f8fafc" stroke-width="4"/>
+    <circle cx="140" cy="120" r="8" fill="#64748b"/>
+    <!-- Spec Label on Tank -->
+    <rect x="90" y="65" width="100" height="20" rx="3" fill="#0f172a" opacity="0.8"/>
+    <text x="96" y="80" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="12" fill="#f3cf2d">AISI 304 / 316L</text>
+  </g>
+
+  <!-- Polished Stainless Pipe Elbow (Left) -->
+  <g transform="translate(70, 160)">
+    <path d="M 30,120 L 30,60 Q 30,10 80,10 L 120,10" fill="none" stroke="url(#chromeShine)" stroke-width="36"/>
+    <ellipse cx="30" cy="120" rx="18" ry="8" fill="#475569" stroke="#f8fafc" stroke-width="3"/>
+    <ellipse cx="120" cy="10" rx="8" ry="18" fill="#475569" stroke="#f8fafc" stroke-width="3"/>
+  </g>
+
+  <!-- Stainless Flange with Bolt Holes (Right) -->
+  <g transform="translate(370, 150)">
+    <circle cx="90" cy="90" r="70" fill="url(#pipeGrad)" stroke="#cbd5e1" stroke-width="4"/>
+    <circle cx="90" cy="90" r="40" fill="#0f172a" stroke="#f8fafc" stroke-width="3"/>
+    <!-- Bolt Holes -->
+    <circle cx="90" cy="35" r="7" fill="#0b0f17"/>
+    <circle cx="90" cy="145" r="7" fill="#0b0f17"/>
+    <circle cx="35" cy="90" r="7" fill="#0b0f17"/>
+    <circle cx="145" cy="90" r="7" fill="#0b0f17"/>
+    <circle cx="50" cy="50" r="7" fill="#0b0f17"/>
+    <circle cx="130" cy="130" r="7" fill="#0b0f17"/>
+    <circle cx="50" cy="130" r="7" fill="#0b0f17"/>
+    <circle cx="130" cy="50" r="7" fill="#0b0f17"/>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(30, 30)">
+    <rect width="210" height="34" rx="4" fill="rgba(167, 139, 250, 0.2)" stroke="#a78bfa" stroke-width="1.5"/>
+    <text x="14" y="22" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="14" fill="#c4b5fd" letter-spacing="1">STAINLESS STEEL SCRAP</text>
+  </g>
+
+  <!-- Specs Overlay Ribbon -->
+  <g transform="translate(390, 30)">
+    <rect width="180" height="34" rx="4" fill="rgba(243, 207, 45, 0.15)" stroke="#f3cf2d" stroke-width="1.5"/>
+    <text x="14" y="22" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="13" fill="#f3cf2d">18/8 &amp; 316 MOLYBDENUM</text>
+  </g>
+</svg>

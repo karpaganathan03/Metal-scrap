@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="disBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070e0f"/>
+      <stop offset="60%" stop-color="#0f1b1c"/>
+      <stop offset="100%" stop-color="#142624"/>
+    </linearGradient>
+    <linearGradient id="ecoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#disBg)"/>
+  <circle cx="300" cy="190" r="140" fill="#10b981" opacity="0.12" filter="blur(40px)"/>
+
+  <!-- Central Zero-Landfill Closed Loop Emblem -->
+  <g transform="translate(190, 80)">
+    <!-- 3 Interlocking Recycling Loop Arrows -->
+    <path d="M 110,20 L 140,50 L 110,80 L 110,60 A 80 80 0 0 0 35,140 L 15,130 A 100 100 0 0 1 110,40 Z" fill="url(#ecoGrad)"/>
+    <path d="M 180,160 L 160,200 L 120,180 L 135,165 A 80 80 0 0 0 70,80 L 80,60 A 100 100 0 0 1 160,150 Z" fill="url(#ecoGrad)"/>
+    <path d="M 40,170 L 30,130 L 70,140 L 55,155 A 80 80 0 0 0 160,170 L 165,190 A 100 100 0 0 1 45,175 Z" fill="url(#ecoGrad)"/>
+
+    <!-- Inner Shield with Leaf -->
+    <circle cx="110" cy="120" r="42" fill="#091414" stroke="#10b981" stroke-width="2"/>
+    <path d="M 110,95 Q 130,120 110,145 Q 90,120 110,95 Z" fill="#34d399"/>
+    <line x1="110" y1="105" x2="110" y2="140" stroke="#065f46" stroke-width="2"/>
+  </g>
+
+  <!-- EPA & ISO 14001 Audit Pill Banners -->
+  <g transform="translate(70, 260)">
+    <rect x="0" y="0" width="220" height="42" rx="21" fill="#0f2922" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="25" cy="21" r="12" fill="#10b981"/>
+    <text x="25" y="26" text-anchor="middle" fill="#000" font-family="'Rajdhani', sans-serif" font-weight="900" font-size="14">✓</text>
+    <text x="48" y="19" fill="#ffffff" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="13">ISO 14001:2015 AUDITED</text>
+    <text x="48" y="32" fill="#6ee7b7" font-family="'Poppins', sans-serif" font-size="10">Zero-Landfill Industrial Protocol</text>
+  </g>
+
+  <g transform="translate(310, 260)">
+    <rect x="0" y="0" width="220" height="42" rx="21" fill="#0f2922" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="25" cy="21" r="12" fill="#10b981"/>
+    <text x="25" y="26" text-anchor="middle" fill="#000" font-family="'Rajdhani', sans-serif" font-weight="900" font-size="14">✓</text>
+    <text x="48" y="19" fill="#ffffff" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="13">EPA LICENSED FACILITY</text>
+    <text x="48" y="32" fill="#6ee7b7" font-family="'Poppins', sans-serif" font-size="10">Full Destruction &amp; Recovery Certs</text>
+  </g>
+
+  <!-- Technical Spec Overlay Badge -->
+  <rect x="25" y="25" width="250" height="42" rx="6" fill="#090d14" fill-opacity="0.85" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="45" cy="46" r="6" fill="#10b981"/>
+  <text x="62" y="43" fill="#ffffff" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="14" letter-spacing="1">RESPONSIBLE DISPOSAL PROTOCOL</text>
+  <text x="62" y="58" fill="#6ee7b7" font-family="'Poppins', sans-serif" font-size="11">Circular Economy | 100% Traceability</text>
+</svg>

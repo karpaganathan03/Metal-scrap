@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="60%" stop-color="#131d2e"/>
+      <stop offset="100%" stop-color="#1b283d"/>
+    </linearGradient>
+    <linearGradient id="beamSteel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="35%" stop-color="#94a3b8"/>
+      <stop offset="70%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <pattern id="stGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#23344d" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#stBg)"/>
+  <rect width="600" height="380" fill="url(#stGrid)" opacity="0.5"/>
+  <circle cx="300" cy="190" r="150" fill="#f59e0b" opacity="0.1" filter="blur(40px)"/>
+
+  <!-- Heavy Structural I-Beam Stack (Isometric) -->
+  <g transform="translate(70, 90)">
+    <!-- Primary Heavy I-Beam -->
+    <!-- Top Flange -->
+    <polygon points="30,50 240,0 280,15 70,65" fill="url(#beamSteel)" stroke="#cbd5e1" stroke-width="1.5"/>
+    <!-- Web Vertical -->
+    <polygon points="50,57 50,140 260,90 260,7" fill="#334155"/>
+    <!-- Bottom Flange -->
+    <polygon points="30,135 240,85 280,100 70,150" fill="url(#beamSteel)" stroke="#94a3b8" stroke-width="1.5"/>
+    <polygon points="30,135 70,150 70,162 30,147" fill="#1e293b"/>
+    <polygon points="70,150 280,100 280,112 70,162" fill="#475569"/>
+
+    <!-- Cross Cut Face Front -->
+    <path d="M 30,50 L 70,65 L 70,75 L 56,75 L 56,135 L 70,135 L 70,150 L 30,135 L 30,122 L 44,122 L 44,62 L 30,62 Z" fill="#475569" stroke="#94a3b8" stroke-width="1.2"/>
+  </g>
+
+  <!-- Heavy Steel Plate Offcuts & Punchings (Right) -->
+  <g transform="translate(350, 110)">
+    <!-- Plate 1 -->
+    <polygon points="20,40 160,10 190,45 50,75" fill="url(#beamSteel)" stroke="#cbd5e1" stroke-width="1.2"/>
+    <polygon points="20,40 50,75 50,95 20,60" fill="#1e293b"/>
+    <polygon points="50,75 190,45 190,65 50,95" fill="#475569"/>
+
+    <!-- Punching holes -->
+    <ellipse cx="80" cy="55" rx="8" ry="4" fill="#0a0e17"/>
+    <ellipse cx="120" cy="46" rx="8" ry="4" fill="#0a0e17"/>
+    <ellipse cx="150" cy="38" rx="8" ry="4" fill="#0a0e17"/>
+
+    <!-- Plate 2 Intersecting -->
+    <polygon points="40,80 180,70 160,120 20,130" fill="url(#beamSteel)" stroke="#94a3b8" stroke-width="1"/>
+    <polygon points="20,130 160,120 160,135 20,145" fill="#334155"/>
+  </g>
+
+  <!-- Technical Spec Overlay Badge -->
+  <rect x="25" y="25" width="225" height="42" rx="6" fill="#090d14" fill-opacity="0.85" stroke="#f3cf2d" stroke-width="1.5"/>
+  <circle cx="45" cy="46" r="6" fill="#f3cf2d"/>
+  <text x="62" y="43" fill="#ffffff" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="14" letter-spacing="1">STEEL SCRAP (HMS 1 &amp; HMS 2)</text>
+  <text x="62" y="58" fill="#fef08a" font-family="'Poppins', sans-serif" font-size="11">Heavy Structural Beams | Plate Offcuts</text>
+</svg>
