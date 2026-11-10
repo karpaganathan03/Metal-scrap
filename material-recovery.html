@@ -22,7 +22,9 @@
       <!-- custom industrial styles -->
       <link rel="stylesheet" href="assets/css/industrial.css">
       <!-- favicon -->
-      <link rel="icon" href="assets/images/fevicon.png" type="image/gif" />
+      <!-- favicon -->
+      <link rel="icon" href="assets/images/Metal Logo.png" type="image/png" />
+      <link rel="shortcut icon" href="assets/images/fevicon.png" type="image/png" />
       <!-- Theme & Direction Persistence Script: Immediate Execution in Head -->
       <script>
          (function() {
@@ -42,12 +44,8 @@
       <div class="sidepanel-overlay"></div>
       <div id="mySidepanel" class="sidepanel-custom">
          <div class="sidepanel-header">
-            <a href="index.html" class="brand-link">
-               <div class="brand-icon"><i class="fa fa-recycle"></i></div>
-               <div class="brand-text-wrap">
-                  <span class="brand-title">FERRO<span>MAX</span></span>
-                  <span class="brand-tagline">Industrial Scrap</span>
-               </div>
+            <a href="index.html" class="brand-link" aria-label="Ferromax Industrial Scrap">
+               <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Scrap" class="brand-logo-img sidepanel-logo-img">
             </a>
             <button class="sidepanel-close" aria-label="Close Navigation"><i class="fa fa-times"></i></button>
          </div>
@@ -91,12 +89,8 @@
          <div class="container-fluid px-lg-5">
             <div class="row d_flex align-items-center">
                <div class="col-lg-3 col-md-4 col-7 logo_section">
-                  <a href="index.html" class="brand-link">
-                     <div class="brand-icon"><i class="fa fa-recycle"></i></div>
-                     <div class="brand-text-wrap">
-                        <span class="brand-title">FERRO<span>MAX</span></span>
-                        <span class="brand-tagline">Metal Scrap &amp; Recycling</span>
-                     </div>
+                  <a href="index.html" class="brand-link" aria-label="Ferromax Industrial Metal Scrap &amp; Recycling">
+                     <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Metal Scrap &amp; Recycling" class="brand-logo-img">
                   </a>
                </div>
                <div class="col-lg-9 col-md-8 col-5 text-right d-flex align-items-center justify-content-end">
@@ -151,186 +145,335 @@
                   <div class="breadcrumb-industrial">
                      <a href="index.html"><i class="fa fa-home"></i> Home</a>
                      <span>/</span>
-                     <span class="text-white">Home 1 – Material Recovery Hub</span>
+                     <span class="text-white">Materials Accepted Directory</span>
                   </div>
+                  <span class="hero-badge-pill mb-3 d-inline-block">
+                     <i class="fa fa-clipboard"></i> B2B Industrial Ingestion &amp; Quality Standards
+                  </span>
                   <h1 class="inner-hero-title">
-                     MATERIAL RECOVERY HUB &amp; <span class="highlight-gold" style="color: #f3cf2d;">PRODUCT CATALOGUE</span>
+                     MATERIALS ACCEPTED: <span>PROCUREMENT SPECIFICATIONS &amp; ACCEPTANCE DIRECTORY</span>
                   </h1>
                   <p class="inner-hero-lead">
-                     Industrial product-catalogue directory covering scrap classifications, ISRI grading codes, chemical evaluations, typical manufacturing origins, and collection logistics across our five core recycling portfolios.
+                     Ferromax provides industrial manufacturing plants, demolition contractors, shipbuilders, and scrap aggregators with transparent acceptance specifications, certified ISRI quality thresholds, tare deduction rules, and prompt yard scale delivery protocols.
                   </p>
                </div>
             </div>
          </div>
       </section>
 
-      <!-- Sticky Catalogue Quick-Jump Navigation Strip -->
+      <!-- Quick Acceptance Standards Metric Bar -->
+      <section class="stats-banner-section py-4">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6 mb-lg-0 mb-3">
+                  <div class="stat-box-card">
+                     <div class="stat-icon"><i class="fa fa-balance-scale"></i></div>
+                     <div class="stat-number">500<span> kg</span></div>
+                     <div class="stat-label">Minimum Scale Ingestion Lot</div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6 mb-lg-0 mb-3">
+                  <div class="stat-box-card">
+                     <div class="stat-icon"><i class="fa fa-microchip"></i></div>
+                     <div class="stat-number">99.5<span>%</span></div>
+                     <div class="stat-label">Certified Elemental Assay Purity</div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6 mb-sm-0 mb-3">
+                  <div class="stat-box-card">
+                     <div class="stat-icon"><i class="fa fa-truck"></i></div>
+                     <div class="stat-number">15 - 50<span> yd³</span></div>
+                     <div class="stat-label">Roll-Off Bin Fleet Dispatch</div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="stat-box-card">
+                     <div class="stat-icon"><i class="fa fa-bolt"></i></div>
+                     <div class="stat-number">Same<span> Day</span></div>
+                     <div class="stat-label">Automated Wire / Scale Payout</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Category Filter Navigation Strip -->
       <div class="catalogue-nav-strip">
          <div class="container">
             <ul class="catalogue-nav-links">
-               <li><a href="#ferrous-section"><i class="fa fa-cube text-primary"></i> Ferrous Scrap</a></li>
-               <li><a href="#nonferrous-section"><i class="fa fa-diamond text-success"></i> Non-Ferrous Scrap</a></li>
-               <li><a href="#stainless-section"><i class="fa fa-shield text-info"></i> Stainless Steel Scrap</a></li>
-               <li><a href="#electrical-section"><i class="fa fa-bolt text-warning"></i> Electrical &amp; Cable Scrap</a></li>
-               <li><a href="#industrial-section"><i class="fa fa-industry text-danger"></i> Industrial Mixed Scrap</a></li>
+               <li><a href="#stream-plant-decom"><i class="fa fa-industry text-primary"></i> Plant Dismantling</a></li>
+               <li><a href="#stream-auto-stamping"><i class="fa fa-car text-warning"></i> Automotive OEM Offcuts</a></li>
+               <li><a href="#stream-marine-salvage"><i class="fa fa-anchor text-info"></i> Shipbreaking &amp; Marine</a></li>
+               <li><a href="#stream-aero-alloys"><i class="fa fa-plane text-success"></i> Aerospace Superalloys</a></li>
+               <li><a href="#stream-grid-power"><i class="fa fa-bolt text-warning"></i> Power Grid &amp; Substations</a></li>
+               <li><a href="#stream-rail-transit"><i class="fa fa-train text-danger"></i> Railroad &amp; Heavy Transit</a></li>
             </ul>
          </div>
       </div>
 
-      <!-- Real-Time Search & Keyword Filter Bar -->
-      <section class="section-py section-darker pb-2 pt-4">
+      <!-- Core Materials Accepted Streams Grid -->
+      <section class="section-py section-dark" id="sec-accepted-streams">
          <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-lg-8">
-                  <div class="rate-search-wrap mb-2">
-                     <i class="fa fa-search"></i>
-                     <input type="text" id="materialSearchInput" placeholder="Filter catalogue by material name, classification (ISRI), or application...">
-                  </div>
-                  <small class="text-muted d-block text-center">
-                     Showing all 5 industrial scrap categories. Filter dynamically above or click any category section.
-                  </small>
+            <div class="row text-center mb-5">
+               <div class="col-lg-10 mx-auto">
+                  <span class="section-badge-tag"><i class="fa fa-check-circle"></i> Commercial Acceptance Streams</span>
+                  <h2 class="section-main-heading">
+                     6 CORE INDUSTRIAL <span>SCRAP COMMODITY STREAMS</span>
+                  </h2>
+                  <p class="section-subtext">
+                     Ferromax operates specialized procurement divisions for high-tonnage industrial generators, OEM manufacturers, utility networks, and heavy infrastructure dismantlers.
+                  </p>
                </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- =====================================================================
-           SECTION 1: FERROUS SCRAP
-           ===================================================================== -->
-      <div id="sec-ferrous"></div>
-      <section class="section-py section-darker pt-4" id="ferrous-section" data-anchor-alias="sec-ferrous">
-         <div class="container">
-            <div class="catalogue-category-header">
-               <div>
-                  <span class="section-badge-tag"><i class="fa fa-cube"></i> High-Tonnage Ferrous Metals</span>
-                  <h2>FERROUS <span>SCRAP CATALOGUE</span></h2>
-                  <p style="color: #94a3b8; font-size: 14px; margin: 0;">Iron, carbon steel, heavy melting steel, shredded frag, plate &amp; structural, and foundry cast iron.</p>
-               </div>
-               <span class="badge badge-primary p-2">Destinations: EAF Mini-Mills &amp; Blast Furnaces</span>
             </div>
 
             <div class="row">
-               <!-- Ferrous Item 1: HMS 1 & 2 -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="ferrous">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Heavy Melting Steel (HMS 1 &amp; 2).jpg" alt="Heavy Melting Steel HMS 1 and 2" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-cube mr-1"></i> ISRI 200 - 206</span>
+               <!-- Stream 1: Heavy Manufacturing Plant Dismantling & Capital Assets -->
+               <div class="col-lg-4 col-md-6 mb-4" id="stream-plant-decom">
+                  <div class="acceptance-stream-card">
+                     <div class="acceptance-card-img-wrap">
+                        <img src="assets/images/Heavy Manufacturing Plant Dismantling &amp; Asset Clearance.jpg" alt="Heavy Manufacturing Plant Dismantling &amp; Asset Clearance" loading="lazy">
+                        <span class="card-img-overlay-badge"><i class="fa fa-industry mr-1"></i> Capital Plant Salvage</span>
                      </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-ferrous">Ferrous Metal</span>
-                           <small class="text-warning font-weight-bold">₹27,200 - ₹29,325 / MT</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Heavy Melting Steel (HMS 1 &amp; 2)</h3>
-                        <p class="catalogue-card-desc">
-                           Cut wrought iron and heavy steel scrap. HMS 1 has a minimum wall thickness of 1/4 inch (6.35 mm); HMS 2 comprises 1/8" to 1/4" thickness including vehicle frames, piping, and cut fabrications.
+                     <div class="acceptance-card-body">
+                        <span class="acceptance-category-badge badge-ferrous">Industrial Decommissioning</span>
+                        <h3 class="acceptance-stream-title">Heavy Manufacturing Plant Dismantling &amp; Asset Clearance</h3>
+                        <p class="acceptance-stream-desc">
+                           Complete turnkey industrial site clearance for retired manufacturing facilities, overhead crane runways, stamping press beds, thermal boilers, and redundant factory structural frameworks.
                         </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">ISRI 200, 201, 202, 204</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Rebar, beams, structural steel</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">30 to 40 Cu. Yd. Roll-Off Bins</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Scale tare, thickness gauge, &le;0.5% dirt</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 5 MT</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
+                        <table class="acceptance-specs-table">
+                           <tr>
+                              <td class="spec-title">Project Scope:</td>
+                              <td class="spec-val">Turnkey Rigging &amp; Slicing</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Target Assets:</td>
+                              <td class="spec-val">Boilers, Machine Beds, Chillers, Cranes</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Minimum Lot:</td>
+                              <td class="spec-val">15 MT Single Batch / Multi-Hundred MT</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Safety Protocol:</td>
+                              <td class="spec-val">Certified Gas-Free &amp; Fluid Drained</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Site Logistics:</td>
+                              <td class="spec-val">Mobile Shears, Heavy Lowbeds &amp; Cranes</td>
+                           </tr>
+                        </table>
+                        <div class="mt-auto">
+                           <a href="contact.html#pickupSection" class="btn-industrial-outline w-100 text-center">Request Plant Survey &rarr;</a>
                         </div>
                      </div>
                   </div>
                </div>
 
-               <!-- Ferrous Item 2: Plate & Structural -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="ferrous">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Plate &amp; Structural Steel (P&amp;S 5ft).jpg" alt="Plate and Structural Steel Scrap" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-cube mr-1"></i> ISRI 231 - 232</span>
+               <!-- Stream 2: Automotive Press-Shop Stamping Skeletons & Production Offcuts -->
+               <div class="col-lg-4 col-md-6 mb-4" id="stream-auto-stamping">
+                  <div class="acceptance-stream-card">
+                     <div class="acceptance-card-img-wrap">
+                        <img src="assets/images/Automotive Stamping Skeletons &amp; Press-Shop Offcuts.jpg" alt="Automotive Stamping Skeletons &amp; Press-Shop Offcuts" loading="lazy">
+                        <span class="card-img-overlay-badge"><i class="fa fa-car mr-1"></i> OEM Closed-Loop</span>
                      </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-ferrous">Ferrous Metal</span>
-                           <small class="text-warning font-weight-bold">₹29,750 - ₹32,300 / MT</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Plate &amp; Structural Steel (P&amp;S 5ft)</h3>
-                        <p class="catalogue-card-desc">
-                           Clean, heavy structural steel column sections, I-beam offcuts, channels, angles, sheared bridge girders, and thick plate croppings free of concrete or excessive rust scale.
+                     <div class="acceptance-card-body">
+                        <span class="acceptance-category-badge badge-heavy">Automotive OEM Stream</span>
+                        <h3 class="acceptance-stream-title">Automotive Stamping Skeletons &amp; Press-Shop Offcuts</h3>
+                        <p class="acceptance-stream-desc">
+                           High-volume closed-loop scrap recycling agreements for automotive press plants, deep-draw body panel clipping skeletons, unpainted stamping clips, and obsolete tooling dies.
                         </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">ISRI 231 (5ft) &amp; ISRI 232 (3ft)</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">High-specification foundry casting</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">Flatbed crane trailers, 40-yd luggers</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Visual cut verification, P &amp; S &le; 0.05%</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 10 MT</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
+                        <table class="acceptance-specs-table">
+                           <tr>
+                              <td class="spec-title">Base Material:</td>
+                              <td class="spec-val">Deep-Draw CR, Galvanized &amp; Dual-Phase</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Draw-Oil Limit:</td>
+                              <td class="spec-val">&lt; 1.5% Tare Draw-Oil Tolerance</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Scrap Geometry:</td>
+                              <td class="spec-val">Interlocking Skeletons, Dense Clips</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Handling System:</td>
+                              <td class="spec-val">Self-Dumping Hoppers &amp; Roll-Off Bins</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Contract Tier:</td>
+                              <td class="spec-val">24/7 Scheduled OEM Swap-Out Service</td>
+                           </tr>
+                        </table>
+                        <div class="mt-auto">
+                           <a href="contact.html#pickupSection" class="btn-industrial-outline w-100 text-center">Setup Press-Shop Service &rarr;</a>
                         </div>
                      </div>
                   </div>
                </div>
 
-               <!-- Ferrous Item 3: Foundry Cast Iron -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="ferrous">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Foundry Cast Iron &amp; Rotors.jpg" alt="Foundry Grade Cast Iron Scrap" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-cube mr-1"></i> ISRI 252 - 257</span>
+               <!-- Stream 3: Shipbreaking Salvage, Marine Hull Plate & Propulsion Alloys -->
+               <div class="col-lg-4 col-md-6 mb-4" id="stream-marine-salvage">
+                  <div class="acceptance-stream-card">
+                     <div class="acceptance-card-img-wrap">
+                        <img src="assets/images/Shipbreaking Salvage, Marine Plate &amp; Propulsion Alloys.jpg" alt="Shipbreaking Salvage, Marine Plate &amp; Propulsion Alloys" loading="lazy">
+                        <span class="card-img-overlay-badge"><i class="fa fa-anchor mr-1"></i> Maritime Fleet Salvage</span>
                      </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-ferrous">Ferrous Metal</span>
-                           <small class="text-warning font-weight-bold">₹26,350 - ₹28,475 / MT</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Foundry Cast Iron &amp; Rotors</h3>
-                        <p class="catalogue-card-desc">
-                           Automotive brake rotors, brake drums, machine counterweights, gear housings, and de-oiled engine blocks stripped of steel inserts and aluminum pistons. Prepared to cupola dimensions.
+                     <div class="acceptance-card-body">
+                        <span class="acceptance-category-badge badge-nonferrous">Marine &amp; Shipbreaking</span>
+                        <h3 class="acceptance-stream-title">Shipbreaking Salvage, Marine Plate &amp; Propulsion Alloys</h3>
+                        <p class="acceptance-stream-desc">
+                           Specialized maritime procurement for decommissioned commercial vessels, offshore drilling platforms, heavy marine hull plate, Ni-Al bronze propellers, and CuNi condenser tubing.
                         </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">ISRI 252 Auto Cast / ISRI 257 Cupola</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Ductile &amp; gray iron engine blocks, pipes</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">20-Yard heavy-gauge scrap boxes</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Oil inspection, magnet check for non-cast</span>
-                           </div>
+                        <table class="acceptance-specs-table">
+                           <tr>
+                              <td class="spec-title">Hull Plate Spec:</td>
+                              <td class="spec-val">Marine Grade A/B/D Steels (&gt;15mm Solid)</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Non-Ferrous Marine:</td>
+                              <td class="spec-val">CuNi 90/10 Condensers, NAB Bronze Props</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Mooring Tackle:</td>
+                              <td class="spec-val">Heavy Forged Studlink Anchor Chains</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Environmental:</td>
+                              <td class="spec-val">IMO Hong Kong Convention &amp; EU Certified</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Discharge Berth:</td>
+                              <td class="spec-val">Direct Deepwater Barge &amp; Heavy Quay Berth</td>
+                           </tr>
+                        </table>
+                        <div class="mt-auto">
+                           <a href="contact.html#pickupSection" class="btn-industrial-outline w-100 text-center">Submit Marine Manifest &rarr;</a>
                         </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 3 MT</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Stream 4: Aerospace Superalloys, Turbine Rotors & Titanium Solids -->
+               <div class="col-lg-4 col-md-6 mb-4" id="stream-aero-alloys">
+                  <div class="acceptance-stream-card">
+                     <div class="acceptance-card-img-wrap">
+                        <img src="assets/images/Aerospace Superalloys, Turbine Rotors &amp; Titanium Solids.jpg" alt="Aerospace Superalloys, Turbine Rotors &amp; Titanium Solids" loading="lazy">
+                        <span class="card-img-overlay-badge"><i class="fa fa-plane mr-1"></i> Aero &amp; High-Temp</span>
+                     </div>
+                     <div class="acceptance-card-body">
+                        <span class="acceptance-category-badge badge-alloy">Aerospace &amp; Exotic Alloys</span>
+                        <h3 class="acceptance-stream-title">Aerospace Superalloys, Turbine Rotors &amp; Titanium Solids</h3>
+                        <p class="acceptance-stream-desc">
+                           High-precision secondary purchasing of aviation engine hot-section blisks, jet combustor components, aerospace titanium airframe offcuts, and surgical-grade cobalt alloys.
+                        </p>
+                        <table class="acceptance-specs-table">
+                           <tr>
+                              <td class="spec-title">Target Superalloys:</td>
+                              <td class="spec-val">Inconel 718/625, Hastelloy X, Waspaloy</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Titanium Grades:</td>
+                              <td class="spec-val">Ti 6Al-4V Solids, Billets &amp; Laser Slugs</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Verification Lab:</td>
+                              <td class="spec-val">Handheld XRF + Spark OES Spectral Purity</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Quality Gate:</td>
+                              <td class="spec-val">Zero Thermal Barrier Coating, Clean Origin</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Security Protocol:</td>
+                              <td class="spec-val">ITAR Demil &amp; Destruction Documentation</td>
+                           </tr>
+                        </table>
+                        <div class="mt-auto">
+                           <a href="contact.html#pickupSection" class="btn-industrial-outline w-100 text-center">Request Alloy Assay Terms &rarr;</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Stream 5: Utility Grid Modernization, Substation Busbars & Transformers -->
+               <div class="col-lg-4 col-md-6 mb-4" id="stream-grid-power">
+                  <div class="acceptance-stream-card">
+                     <div class="acceptance-card-img-wrap">
+                        <img src="assets/images/Utility Grid Modernization, Substation Busbars &amp; Transformers.jpg" alt="Utility Grid Modernization, Substation Busbars &amp; Transformers" loading="lazy">
+                        <span class="card-img-overlay-badge"><i class="fa fa-bolt mr-1"></i> Power Utility Stream</span>
+                     </div>
+                     <div class="acceptance-card-body">
+                        <span class="acceptance-category-badge badge-ferrous">Utility Power Grid</span>
+                        <h3 class="acceptance-stream-title">Utility Grid Modernization, Substation Busbars &amp; Transformers</h3>
+                        <p class="acceptance-stream-desc">
+                           High-tonnage scrap recovery from regional electric utility grid overhauls, high-voltage dry transformers, heavy copper substation busducts, and overhead transmission conductors.
+                        </p>
+                        <table class="acceptance-specs-table">
+                           <tr>
+                              <td class="spec-title">Conductor Lines:</td>
+                              <td class="spec-val">ACSR, All-Alloy Conductor &amp; Cu Wire Spools</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Substation Units:</td>
+                              <td class="spec-val">Core-Laminated Transformer Steel &amp; Coils</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Busbar Systems:</td>
+                              <td class="spec-val">Heavy Tinned/Bare Electrolytic Copper Busbars</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Environmental Sign-off:</td>
+                              <td class="spec-val">Certified PCB-Free Oil Testing Required</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Fleet Handling:</td>
+                              <td class="spec-val">Self-Loading Spool Cranes &amp; Secure Tubs</td>
+                           </tr>
+                        </table>
+                        <div class="mt-auto">
+                           <a href="contact.html#pickupSection" class="btn-industrial-outline w-100 text-center">Schedule Substation Decom &rarr;</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Stream 6: Railroad Rolling Stock, Heavy Transit Track & Wheelsets -->
+               <div class="col-lg-4 col-md-6 mb-4" id="stream-rail-transit">
+                  <div class="acceptance-stream-card">
+                     <div class="acceptance-card-img-wrap">
+                        <img src="assets/images/Railroad Rolling Stock, Forged Wheelsets &amp; Heavy T-Rail.jpg" alt="Railroad Rolling Stock, Forged Wheelsets &amp; Heavy T-Rail" loading="lazy">
+                        <span class="card-img-overlay-badge"><i class="fa fa-train mr-1"></i> Heavy Rail &amp; Transit</span>
+                     </div>
+                     <div class="acceptance-card-body">
+                        <span class="acceptance-category-badge badge-heavy">Railroad &amp; Heavy Transit</span>
+                        <h3 class="acceptance-stream-title">Railroad Rolling Stock, Forged Wheelsets &amp; Heavy T-Rail</h3>
+                        <p class="acceptance-stream-desc">
+                           Direct yard intake for end-of-life rail freight rolling stock, locomotive bogie frames, forged steel wheel-and-axle sets, 115-141 lb continuous welded rail, and manganese frogs.
+                        </p>
+                        <table class="acceptance-specs-table">
+                           <tr>
+                              <td class="spec-title">Track Standards:</td>
+                              <td class="spec-val">Heavy T-Rail (115 lb to 141 lb, Cropped 3ft/5ft)</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Running Gear:</td>
+                              <td class="spec-val">Forged Carbon Steel Wheels, Heat-Treated Axles</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Specialty Trackwork:</td>
+                              <td class="spec-val">Hadfield High-Manganese Switch Crossings</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Rolling Stock:</td>
+                              <td class="spec-val">Boxcars, Flatcars, Gondolas, Tank Car Shells</td>
+                           </tr>
+                           <tr>
+                              <td class="spec-title">Delivery Method:</td>
+                              <td class="spec-val">Direct Rail Siding Ingestion or Heavy Lowboy</td>
+                           </tr>
+                        </table>
+                        <div class="mt-auto">
+                           <a href="contact.html#pickupSection" class="btn-industrial-outline w-100 text-center">View Rail Siding Terms &rarr;</a>
                         </div>
                      </div>
                   </div>
@@ -339,588 +482,177 @@
          </div>
       </section>
 
-      <!-- =====================================================================
-           SECTION 2: NON-FERROUS SCRAP
-           ===================================================================== -->
-      <div id="sec-nonferrous"></div><div id="sec-copper"></div><div id="sec-aluminium"></div><div id="sec-brass"></div>
-      <section class="section-py section-surface pt-4" id="nonferrous-section">
+      <!-- Compliance Matrix: What We Accept vs. What We Prohibit -->
+      <section class="section-py section-surface" id="sec-compliance-matrix">
          <div class="container">
-            <div class="catalogue-category-header">
-               <div>
-                  <span class="section-badge-tag"><i class="fa fa-diamond"></i> High-Purity Non-Ferrous Metals</span>
-                  <h2>NON-FERROUS <span>SCRAP CATALOGUE</span></h2>
-                  <p style="color: #94a3b8; font-size: 14px; margin: 0;">Copper, aluminium, yellow brass, red brass, commercial bronze, soft lead, and zinc alloys.</p>
+            <div class="row text-center mb-5">
+               <div class="col-lg-10 mx-auto">
+                  <span class="section-badge-tag"><i class="fa fa-shield"></i> Regulatory &amp; Environmental Policy</span>
+                  <h2 class="section-main-heading">
+                     SCRAP ACCEPTANCE &amp; <span>COMPLIANCE POLICY</span>
+                  </h2>
+                  <p class="section-subtext">
+                     Strict environmental governance, OSHA guidelines, and EPA regulations dictate material ingestion across our 45-acre deepwater marine facility.
+                  </p>
                </div>
-               <span class="badge badge-success p-2">Destinations: Secondary Smelters &amp; Continuous Casting</span>
             </div>
 
             <div class="row">
-               <!-- Non-Ferrous Item 1: Bare Bright Copper -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="non-ferrous">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Bare Bright Copper (Millberry 99.9%) 2.jpg" alt="Bare Bright Copper Millberry Scrap" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-diamond mr-1"></i> ISRI Barley</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-nonferrous">Non-Ferrous</span>
-                           <small class="text-warning font-weight-bold">₹646 - ₹688 / kg</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Bare Bright Copper (Millberry 99.9%)</h3>
-                        <p class="catalogue-card-desc">
-                           Clean, unalloyed, uncoated, and unvarnished bare copper wire stripped from high-voltage transmission lines and electrical busbars. Minimum #12 AWG gauge thickness without oxidation or tinned ends.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">ISRI Barley (Bare Bright 99.9% Cu)</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Electrolytic copper rod, magnet wire</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">Lockable security bins, palletized drums</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Optical inspection, XRF 99.9% Cu purity</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 250 kg</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
+               <!-- Col 1: What We Accept -->
+               <div class="col-lg-6 mb-4">
+                  <div class="compliance-matrix-card is-accepted">
+                     <h3 class="compliance-header-title">
+                        <i class="fa fa-check-circle"></i> Materials Approved for Scale Ingestion
+                     </h3>
+                     <p style="font-size: 14px; color: #10b981; margin-bottom: 15px;">
+                        The following items are purchased directly upon digital weighbridge certification:
+                     </p>
+                     <ul class="compliance-items-list">
+                        <li>
+                           <i class="fa fa-check text-success"></i>
+                           <div><strong>Heavy Structural Steel &amp; Plate:</strong> I-beams, girders, cut demolition frames, structural channels, and heavy steel plate exceeding 6mm thickness.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-check text-success"></i>
+                           <div><strong>Bare Bright Copper Wire &amp; Busbars:</strong> High-voltage copper transmission conductors, substation busbars, clean copper pipe, and brass plumbing scrap.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-check text-success"></i>
+                           <div><strong>Clean Architectural &amp; Cast Aluminium:</strong> 6063 window extrusions, de-rubbered alloy wheels, manufacturing sheet offcuts, and aluminium transmission casings.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-check text-success"></i>
+                           <div><strong>Austenitic Stainless &amp; Superalloys:</strong> 304 and 316 stainless solids, chemical pipe, flanges, Monel 400, and Inconel 625/718 aerospace alloys.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-check text-success"></i>
+                           <div><strong>Insulated Power Cables &amp; Electric Motors:</strong> Armored transmission cable, machine tool harness, copper building wire, and intact motor stators.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-check text-success"></i>
+                           <div><strong>Drained &amp; Certified Mechanical Scrap:</strong> Heavy industrial engine blocks, gearboxes, and hydraulic rams with verified zero oil residue.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-check text-success"></i>
+                           <div><strong>De-Valved &amp; Opened Commercial Tanks:</strong> Steel drums and tanks with inspection cutouts confirming zero chemical residue or pressure.</div>
+                        </li>
+                     </ul>
                   </div>
                </div>
 
-               <!-- Non-Ferrous Item 2: Aluminium Extrusions 6063 -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="non-ferrous">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Clean Aluminium Extrusions (6063).jpg" alt="Clean Aluminium 6063 Extrusions" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-diamond mr-1"></i> ISRI Tata</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-nonferrous">Non-Ferrous</span>
-                           <small class="text-warning font-weight-bold">₹165 - ₹187 / kg</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Clean Aluminium Extrusions (6063)</h3>
-                        <p class="catalogue-card-desc">
-                           Architectural window frames, curtain wall framing offcuts, door sections, and structural extrusions. Clean mill finish or light anodized, completely free of thermal plastic, zinc diecast, or steel fasteners.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">ISRI Tata (AA 6063 Extrusions)</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Secondary remelt billet, new architectural</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">20 to 40 Cu. Yd. roll-offs, bundled bales</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Handheld magnet, thermal strip inspection</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 500 kg</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- Non-Ferrous Item 3: Brass & Bronze -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="non-ferrous">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Yellow Brass, Red Brass &amp; Bronze.jpg" alt="Yellow Brass and Bronze Scrap" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-diamond mr-1"></i> ISRI Honey / Ebony</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-nonferrous">Non-Ferrous</span>
-                           <small class="text-warning font-weight-bold">₹374 - ₹476 / kg</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Yellow Brass, Red Brass &amp; Bronze</h3>
-                        <p class="catalogue-card-desc">
-                           Clean yellow brass valves, plumbing fixtures, rod offcuts, red brass water meter casings, commercial bronze machinery bushings, and marine bronze propellers stripped of iron stems and rubber gaskets.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">ISRI Honey (Yellow) / ISRI Ebony (Red)</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Plumbing ingots, marine fittings, bushings</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">Steel pallet boxes, 15-yd containers</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">XRF Cu-Zn assay, iron handle magnetic test</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 300 kg</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
+               <!-- Col 2: What We Prohibit -->
+               <div class="col-lg-6 mb-4">
+                  <div class="compliance-matrix-card is-prohibited">
+                     <h3 class="compliance-header-title">
+                        <i class="fa fa-times-circle"></i> Strictly Prohibited &amp; Restricted Items
+                     </h3>
+                     <p style="font-size: 14px; color: #ef4444; margin-bottom: 15px;">
+                        The following hazardous, explosive, or radioactive items are rejected at our facility gates:
+                     </p>
+                     <ul class="compliance-items-list">
+                        <li>
+                           <i class="fa fa-times text-danger"></i>
+                           <div><strong>Sealed or Pressurized Containers:</strong> Un-valved propane cylinders, fire extinguishers, aerosol cans, and closed pressure vessels without a certified inspection hole.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-times text-danger"></i>
+                           <div><strong>Radioactive or Orphan Sources:</strong> Any scrap triggering our gate-mounted Ludlum 375P dual-pillar gamma radiation portal monitors will be immediately isolated.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-times text-danger"></i>
+                           <div><strong>Asbestos-Coated Materials:</strong> Pipe lagging, structural brake bands, acoustic panels, and transite boards contaminated with asbestos fibers.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-times text-danger"></i>
+                           <div><strong>PCB-Contaminated Equipment:</strong> Oil-filled high-voltage electrical transformers, capacitors, fluorescent lighting ballasts, and hydraulic units with PCB fluids.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-times text-danger"></i>
+                           <div><strong>Un-Drained Fuel Tanks &amp; Explosives:</strong> Automotive gasoline tanks, un-punctured fuel cells, munitions, military ordnance, and commercial fireworks.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-times text-danger"></i>
+                           <div><strong>Medical &amp; Biological Waste:</strong> Hypodermic sharps, biological laboratory scrap, pathological containers, and untreated hospital waste.</div>
+                        </li>
+                        <li>
+                           <i class="fa fa-times text-danger"></i>
+                           <div><strong>Municipal Garbage &amp; Dirt:</strong> Non-metallic refuse, timber, concrete chunks, soil, household plastics, and tires mixed into scrap loads.</div>
+                        </li>
+                     </ul>
                   </div>
                </div>
             </div>
          </div>
       </section>
 
-      <!-- =====================================================================
-           SECTION 3: STAINLESS STEEL SCRAP
-           ===================================================================== -->
-      <div id="sec-stainless"></div>
-      <section class="section-py section-dark pt-4" id="stainless-section">
+      <!-- Industrial Seller Preparation & Delivery Protocols -->
+      <section class="section-py section-dark" id="sec-seller-guide">
          <div class="container">
-            <div class="catalogue-category-header">
-               <div>
-                  <span class="section-badge-tag"><i class="fa fa-shield"></i> Corrosion-Resistant Alloys</span>
-                  <h2>STAINLESS STEEL <span>SCRAP CATALOGUE</span></h2>
-                  <p style="color: #94a3b8; font-size: 14px; margin: 0;">Austenitic 304, marine 316, chemical processing tanks, food-grade pipework, and high-nickel alloys.</p>
+            <div class="row text-center mb-5">
+               <div class="col-lg-10 mx-auto">
+                  <span class="section-badge-tag"><i class="fa fa-truck"></i> Yard Ingestion Workflow</span>
+                  <h2 class="section-main-heading">
+                     HOW TO DELIVER SCRAP TO <span>FERROMAX TERMINAL</span>
+                  </h2>
+                  <p class="section-subtext">
+                     Follow our streamlined 4-step B2B delivery workflow for immediate scale turnaround, zero-delay unloading, and same-day electronic payments.
+                  </p>
                </div>
-               <span class="badge badge-info p-2">Destinations: AOD Converter Mills &amp; Specialty Foundries</span>
             </div>
 
             <div class="row">
-               <!-- Stainless Item 1: Grade 304 (18/8) -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="alloy">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Stainless Steel 304.jpg" alt="Stainless Steel 304 Scrap" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-shield mr-1"></i> AISI 304 / 18-8</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-alloy">Stainless Steel</span>
-                           <small class="text-warning font-weight-bold">₹110 - ₹126 / kg</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Stainless Steel 304 (18/8 Austenitic)</h3>
-                        <p class="catalogue-card-desc">
-                           Food processing vessels, commercial kitchen equipment, dairy piping, sheet stampings, and pharmaceutical fixtures. Guaranteed minimum 8.0% nickel and 18.0% chromium, verified non-magnetic.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">AISI 304 / UNS S30400 / 1.4301</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Food, dairy, brewery, cookware</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">20 to 30 Cu. Yd. roll-offs, bundles</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Handheld XRF verification of 8% Ni / 18% Cr</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 500 kg</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
+               <!-- Step 1 -->
+               <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="stat-box-card text-left p-4 h-100">
+                     <div class="stat-icon mb-2"><i class="fa fa-tags"></i></div>
+                     <span class="op-step-num mb-2">01</span>
+                     <h4 class="font-weight-bold mb-2">Grade Segregation</h4>
+                     <p style="font-size: 13.5px; line-height: 1.6;">
+                        Keep high-value non-ferrous metals (copper, brass, aluminium) segregated from general ferrous steel to maximize commercial payout without mixed deductions.
+                     </p>
                   </div>
                </div>
 
-               <!-- Stainless Item 2: Grade 316 Marine -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="alloy">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Stainless Steel 316 (Marine Moly).jpg" alt="Stainless Steel 316 Marine Grade Scrap" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-shield mr-1"></i> AISI 316 / Molybdenum</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-alloy">Stainless Steel</span>
-                           <small class="text-warning font-weight-bold">₹161 - ₹183 / kg</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Stainless Steel 316 (Marine Moly)</h3>
-                        <p class="catalogue-card-desc">
-                           Chemical pipeline offcuts, marine exhaust manifolds, offshore downhole fittings, and acid storage vats containing 2.0% to 3.0% molybdenum and 10.0% to 14.0% nickel for acid corrosion resistance.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">AISI 316 / UNS S31600 / 1.4401</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Offshore marine, petrochemical valves</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">Dedicated stainless hoppers, roll-offs</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">XRF verification of 2.5% Mo &amp; 10% Ni</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 500 kg</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
+               <!-- Step 2 -->
+               <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="stat-box-card text-left p-4 h-100">
+                     <div class="stat-icon mb-2"><i class="fa fa-tint"></i></div>
+                     <span class="op-step-num mb-2">02</span>
+                     <h4 class="font-weight-bold mb-2">Drain Oils &amp; Fluids</h4>
+                     <p style="font-size: 13.5px; line-height: 1.6;">
+                        Drain all engine oils, coolants, and fuels from vehicle assemblies, hydraulic cylinders, and gearboxes. Cut open and vent any commercial vessels.
+                     </p>
                   </div>
                </div>
 
-               <!-- Stainless Item 3: Inconel & High-Nickel Superalloys -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="alloy">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Inconel, Monel &amp; Nickel Superalloys.jpg" alt="Inconel and Nickel Superalloys" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-shield mr-1"></i> Inconel 625/718</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-alloy">Superalloys</span>
-                           <small class="text-warning font-weight-bold">₹1,190 - ₹1,402 / kg</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Inconel, Monel &amp; Nickel Superalloys</h3>
-                        <p class="catalogue-card-desc">
-                           Aerospace turbine discs, combustion chambers, nuclear heat exchangers, downhole tubing, and Hastelloy chemical impellers. Comprises 50% to 65% nickel matrix alloyed with chromium, cobalt, and niobium.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">Inconel 625 / 718, Monel 400</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Jet engines, gas turbines, nuclear plants</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">Lockable vault bins, security transport</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Full elemental assay (OES &amp; Niton XRF)</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 100 kg</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
+               <!-- Step 3 -->
+               <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="stat-box-card text-left p-4 h-100">
+                     <div class="stat-icon mb-2"><i class="fa fa-balance-scale"></i></div>
+                     <span class="op-step-num mb-2">03</span>
+                     <h4 class="font-weight-bold mb-2">Dual Scale Ingestion</h4>
+                     <p style="font-size: 13.5px; line-height: 1.6;">
+                        Enter Gate 4 for automated optical license-plate capture, radiation portal scan, and certified gross weighing on our dual 80-ft digital weighbridges.
+                     </p>
+                  </div>
+               </div>
+
+               <!-- Step 4 -->
+               <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="stat-box-card text-left p-4 h-100">
+                     <div class="stat-icon mb-2"><i class="fa fa-money"></i></div>
+                     <span class="op-step-num mb-2">04</span>
+                     <h4 class="font-weight-bold mb-2">Immediate Settlement</h4>
+                     <p style="font-size: 13.5px; line-height: 1.6;">
+                        Tare out after grapple/crane unloading to receive automated electronic weight tickets. Payouts are transferred same-day via wire, RTGS, or ACH.
+                     </p>
                   </div>
                </div>
             </div>
          </div>
       </section>
-
-      <!-- =====================================================================
-           SECTION 4: ELECTRICAL & CABLE SCRAP
-           ===================================================================== -->
-      <div id="sec-electrical"></div>
-      <section class="section-py section-darker pt-4" id="electrical-section">
-         <div class="container">
-            <div class="catalogue-category-header">
-               <div>
-                  <span class="section-badge-tag"><i class="fa fa-bolt"></i> Power &amp; Conductor Recovery</span>
-                  <h2>ELECTRICAL &amp; <span>CABLE SCRAP CATALOGUE</span></h2>
-                  <p style="color: #94a3b8; font-size: 14px; margin: 0;">High-voltage power cables, building wire, electric motors, transformers, and copper chops.</p>
-               </div>
-               <span class="badge badge-warning text-dark p-2 font-weight-bold">Yields: 45% - 72% Pure Copper</span>
-            </div>
-
-            <div class="row">
-               <!-- Electrical Item 1: High-Voltage Cables -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="cables">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Armored High-Voltage Power Cables.jpg" alt="High Voltage Armored Copper Cables" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-bolt mr-1"></i> ISRI Druid (70% Cu)</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-nonferrous">Electrical Scrap</span>
-                           <small class="text-warning font-weight-bold">₹4,33,500 - ₹4,76,000 / MT</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Armored High-Voltage Power Cables</h3>
-                        <p class="catalogue-card-desc">
-                           Substation transmission lines, heavy industrial feeder drops, underground armored power cables, and multi-conductor utility mains. Granulated into 99.8% clean copper granules by our knife-mill line.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">ISRI Druid (High-Yield Cable)</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Power grids, utility drops, plant switchgear</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">Heavy cable reels, 30-yd roll-off bins</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Sample cross-section burn &amp; gravimetric assay</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 1 MT</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- Electrical Item 2: Building Wire 45% Cu -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="cables">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Multi-Core Building &amp; Machine Wire.jpg" alt="Multi Core Building Wire Scrap" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-bolt mr-1"></i> ISRI Jelly (45% Cu)</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-nonferrous">Electrical Scrap</span>
-                           <small class="text-warning font-weight-bold">₹2,72,000 - ₹3,10,250 / MT</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Multi-Core Building &amp; Machine Wire</h3>
-                        <p class="catalogue-card-desc">
-                           Commercial building wire, PVC-insulated flexible machine cords, control wiring, harness assemblies, and panelboard drops. Cleanly stripped of outer sheathing to recover secondary copper rod feedstocks.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">ISRI Jelly / Soft Wire</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Commercial construction demolition, rewiring</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">20-Yard bins, bulk gaylord boxes</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Stripping trial to calibrate copper recovery</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 500 kg</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- Electrical Item 3: Motors & Transformers -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="cables">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Electric Motors &amp; Transformers.jpg" alt="Electric Motors and Transformers Scrap" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-bolt mr-1"></i> ISRI Elmo / Shelmo</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-nonferrous">Electrical Scrap</span>
-                           <small class="text-warning font-weight-bold">₹55,250 - ₹72,250 / MT</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Electric Motors &amp; Transformers</h3>
-                        <p class="catalogue-card-desc">
-                           Intact industrial three-phase induction drives, AC/DC motor stators, starter motors, and dry-type distribution transformers. Copper windings are extracted via our hydraulic motor shear.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">ISRI Elmo (Electric Motors)</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Pumps, conveyors, industrial HVAC drives</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">20-Yard heavy bins, crane self-loader</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Check for copper vs. aluminum windings, de-oiled</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 2 MT</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- =====================================================================
-           SECTION 5: INDUSTRIAL MIXED & PRODUCTION SCRAP
-           ===================================================================== -->
-      <div id="sec-industrial"></div>
-      <section class="section-py section-surface pt-4" id="industrial-section">
-         <div class="container">
-            <div class="catalogue-category-header">
-               <div>
-                  <span class="section-badge-tag"><i class="fa fa-industry"></i> Manufacturing &amp; Demolition Scrap</span>
-                  <h2>INDUSTRIAL <span>MIXED &amp; PRODUCTION SCRAP</span></h2>
-                  <p style="color: #94a3b8; font-size: 14px; margin: 0;">Factory skeletons, busheling clips, CNC lathe turnings, demolition steel, and plant surplus.</p>
-               </div>
-               <span class="badge badge-danger p-2">Capabilities: Shearing, Shredding &amp; Briquetting</span>
-            </div>
-
-            <div class="row">
-               <!-- Industrial Item 1: Busheling & Stamping Clips -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="ferrous">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/No. 1 Busheling &amp; Stamping Clips.jpg" alt="No 1 Busheling Factory Clips" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-industry mr-1"></i> ISRI 207</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-ferrous">Factory Scrap</span>
-                           <small class="text-warning font-weight-bold">₹31,025 - ₹33,575 / MT</small>
-                        </div>
-                        <h3 class="catalogue-card-title">No. 1 Busheling &amp; Stamping Clips</h3>
-                        <p class="catalogue-card-desc">
-                           Clean, new production low-carbon automotive blank skeletons, stamping clips, and punchings. 100% bare uncoated steel without galvanizing, paint, or solder. Baled into high-density charging cubes.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">ISRI 207 (No. 1 Busheling)</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Automotive flat-rolled steel production</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">Under-press automated conveyor bins, 40-yd</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Low carbon test &lt;0.15% C, zero zinc coating</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 10 MT</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- Industrial Item 2: Machine Shop Turnings & Swarf -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="ferrous">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Clean CNC Turnings &amp; Borings.jpg" alt="CNC Machine Turnings and Swarf" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-industry mr-1"></i> ISRI 220</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-ferrous">Factory Scrap</span>
-                           <small class="text-warning font-weight-bold">₹17,850 - ₹20,400 / MT</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Clean CNC Turnings &amp; Borings</h3>
-                        <p class="catalogue-card-desc">
-                           Clean steel and cast iron machine shop turnings, lathe cuttings, and boring chips generated during precision milling. Handled in sealed, leak-proof hoppers and briquetted for cupola charging.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">ISRI 220 (Clean Machine Turnings)</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Foundry briquette melt charges</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">Sealed chip hoppers with fluid drain valves</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Centrifuge moisture/coolant tare deduction</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 3 MT</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- Industrial Item 3: Factory Demolition & Plant Surplus -->
-               <div class="col-lg-4 col-md-6 mb-4 material-card-item" data-category="demolition">
-                  <div class="catalogue-card">
-                     <div class="catalogue-card-img-wrap">
-                        <img src="assets/images/Factory Demolition &amp; Plant Surplus.jpg" alt="Factory Demolition and Plant Clearance Scrap" class="img-card-thumb" loading="lazy">
-                        <span class="catalogue-badge-overlay"><i class="fa fa-industry mr-1"></i> Heavy Industrial</span>
-                     </div>
-                     <div class="catalogue-card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                           <span class="material-badge-category badge-heavy">Demolition</span>
-                           <small class="text-warning font-weight-bold">₹26,350 - ₹29,750 / MT</small>
-                        </div>
-                        <h3 class="catalogue-card-title">Factory Demolition &amp; Plant Surplus</h3>
-                        <p class="catalogue-card-desc">
-                           Heavy structural steel frames, overhead crane gantries, boiler tube bundles, pre-engineered metal buildings, and refinery piping. Sheared down by our 1,200-ton station into furnace-ready lengths.
-                        </p>
-                        <div class="catalogue-specs-block">
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Scrap Classification:</span>
-                              <span class="catalogue-spec-val">Industrial Demolition Steel / P&amp;S</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Typical Applications:</span>
-                              <span class="catalogue-spec-val">Direct steel mill furnace charging</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Collection Method:</span>
-                              <span class="catalogue-spec-val">On-site torch cutting crews, 40-yd luggers</span>
-                           </div>
-                           <div class="catalogue-spec-row">
-                              <span class="catalogue-spec-label">Material Evaluation:</span>
-                              <span class="catalogue-spec-val">Radiation scan, closed vessel inspection</span>
-                           </div>
-                        </div>
-                        <div class="catalogue-card-footer">
-                           <small class="text-muted">Min Volume: 20 MT</small>
-                           <a href="contact.html#pickupSection" class="btn btn-sm btn-outline-warning">Request Collection &rarr;</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
       <!-- Bottom Catalogue Inquiry CTA Banner -->
-      <section class="section-py text-center position-relative" style="background: linear-gradient(135deg, #171f2d 0%, #0c121d 100%); border-top: 2px solid #f3cf2d;">
+      <section class="section-py text-center position-relative cta-banner-industrial">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-lg-9">
@@ -949,12 +681,8 @@
             <div class="row">
                <!-- Col 1: Brand Introduction & Social Media -->
                <div class="col-lg-3 col-md-6 mb-4">
-                  <a href="index.html" class="brand-link mb-3 d-inline-flex">
-                     <div class="brand-icon"><i class="fa fa-recycle"></i></div>
-                     <div class="brand-text-wrap">
-                        <span class="brand-title">FERRO<span>MAX</span></span>
-                        <span class="brand-tagline">Industrial Scrap &amp; Recycling</span>
-                     </div>
+                  <a href="index.html" class="brand-link mb-3 d-inline-flex" aria-label="Ferromax Industrial Scrap &amp; Recycling">
+                     <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Scrap &amp; Recycling" class="brand-logo-img footer-logo-img">
                   </a>
                   <p style="font-size: 13.5px; color: #94a3b8; line-height: 1.7; margin-bottom: 16px;">
                      Ferromax is an international processor and trader of industrial ferrous and non-ferrous secondary metals. Operating deepwater maritime berths, 1,200-ton hydraulic shears, 4,000 HP mega-shredders, and computerized weighbridges.
