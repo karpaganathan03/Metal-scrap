@@ -760,4 +760,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 4000);
   }
 
+  // 14. Footer Scroll-to-Top Button Handler
+  const scrollTopBtns = document.querySelectorAll('.footer-scroll-top-btn');
+  scrollTopBtns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+
 });

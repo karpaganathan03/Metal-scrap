@@ -3878,6 +3878,8 @@ Signature royal blue gradient with crisp white and gold typography
 
 /* Cards & Content Containers in Light Mode */
 
+[data-theme="light"] .material-card,
+
 [data-theme="light"] .material-card-clean,
 
 [data-theme="light"] .service-card-clean,
@@ -3904,6 +3906,8 @@ Signature royal blue gradient with crisp white and gold typography
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05) !important;
 }
 
+[data-theme="light"] .material-card:hover,
+
 [data-theme="light"] .material-card-clean:hover,
 
 [data-theme="light"] .service-card-clean:hover,
@@ -3917,6 +3921,8 @@ Signature royal blue gradient with crisp white and gold typography
   box-shadow: 0 10px 25px rgba(6, 21, 83, 0.12) !important;
 }
 
+[data-theme="light"] .material-title,
+
 [data-theme="light"] .material-card-title,
 
 [data-theme="light"] .service-title-clean,
@@ -3926,8 +3932,10 @@ Signature royal blue gradient with crisp white and gold typography
 [data-theme="light"] .op-capability-title,
 
 [data-theme="light"] .catalogue-card-title {
-  color: #0f172a !important;
+  color: #061553 !important;
 }
+
+[data-theme="light"] .material-desc,
 
 [data-theme="light"] .material-card-desc,
 
@@ -3941,6 +3949,117 @@ Signature royal blue gradient with crisp white and gold typography
 
 [data-theme="light"] .catalogue-card-desc {
   color: #475569 !important;
+}
+
+/* Material Card (3x3 Grid) Details in Light Mode */
+[data-theme="light"] .material-card .material-title {
+  color: #061553 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .material-card .material-desc {
+  color: #334155 !important;
+  line-height: 1.6 !important;
+}
+
+[data-theme="light"] .material-card-img-wrap {
+  background: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+[data-theme="light"] .material-isri-code {
+  color: #061553 !important;
+  background: rgba(6, 21, 83, 0.08) !important;
+  border: 1px solid rgba(6, 21, 83, 0.18) !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .material-specs-list {
+  border-top: 1px solid #e2e8f0 !important;
+}
+
+[data-theme="light"] .material-specs-list li {
+  color: #64748b !important;
+}
+
+[data-theme="light"] .material-specs-list li span:first-child {
+  color: #475569 !important;
+  font-weight: 500 !important;
+}
+
+[data-theme="light"] .material-specs-list li span:last-child {
+  color: #061553 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .material-card-footer {
+  border-top: 1px solid #e2e8f0 !important;
+}
+
+[data-theme="light"] .material-card-footer .text-muted {
+  color: #64748b !important;
+}
+
+[data-theme="light"] .material-indicative-price {
+  color: #061553 !important;
+  font-weight: 800 !important;
+}
+
+[data-theme="light"] .material-indicative-price small {
+  color: #64748b !important;
+  font-weight: 600 !important;
+}
+
+[data-theme="light"] .badge-ferrous {
+  background: rgba(37, 99, 235, 0.12) !important;
+  color: #1d4ed8 !important;
+  border: 1px solid rgba(37, 99, 235, 0.28) !important;
+}
+
+[data-theme="light"] .badge-nonferrous {
+  background: rgba(16, 185, 129, 0.12) !important;
+  color: #047857 !important;
+  border: 1px solid rgba(16, 185, 129, 0.28) !important;
+}
+
+[data-theme="light"] .badge-alloy {
+  background: rgba(139, 92, 246, 0.12) !important;
+  color: #6d28d9 !important;
+  border: 1px solid rgba(139, 92, 246, 0.28) !important;
+}
+
+[data-theme="light"] .badge-heavy {
+  background: rgba(245, 158, 11, 0.15) !important;
+  color: #b45309 !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
+}
+
+/* Process Timeline Step 7 & General Step List in Light Mode */
+.timeline-step-list {
+  color: var(--brand-steel-light);
+}
+
+.timeline-step-list strong {
+  color: #ffffff;
+}
+
+[data-theme="light"] .timeline-step-list,
+[data-theme="light"] .timeline-step-content .text-light,
+[data-theme="light"] .timeline-step-content ul {
+  color: #334155 !important;
+}
+
+[data-theme="light"] .timeline-step-list strong,
+[data-theme="light"] .timeline-step-content strong {
+  color: #061553 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .timeline-chip {
+  background: #f1f5f9 !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #061553 !important;
+  font-weight: 500;
 }
 
 /* Stats Banner Section in Light Mode */
@@ -5845,4 +5964,729 @@ html, body {
   font-size: 14px;
 }
 
+}
+
+
+/* =====================================================================
+   FERROMAX INDUSTRIAL RECYCLING - COMPREHENSIVE CONTRAST & THEME SUITE
+   Solves all 9 user contrast/invisible text issues across Dark & Light modes
+   ===================================================================== */
+
+/* 1. Footer Scroll-to-Top Button & Copyright Arrow (Condition 6) */
+.footer-scroll-top-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(243, 207, 45, 0.15);
+  border: 1px solid rgba(243, 207, 45, 0.45);
+  color: #f3cf2d !important;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.footer-scroll-top-btn:hover {
+  background: #f3cf2d;
+  color: #090c12 !important;
+  border-color: #f3cf2d;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(243, 207, 45, 0.4);
+}
+
+[data-theme="light"] .footer-scroll-top-btn {
+  background: rgba(6, 21, 83, 0.08);
+  border: 1px solid rgba(6, 21, 83, 0.25);
+  color: #061553 !important;
+}
+
+[data-theme="light"] .footer-scroll-top-btn:hover {
+  background: #061553;
+  color: #ffffff !important;
+  border-color: #061553;
+  box-shadow: 0 4px 12px rgba(6, 21, 83, 0.3);
+}
+
+[dir="rtl"] .footer-scroll-top-btn {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* 2. Contact Page Live Google Map Section (Condition 10) */
+.contact-map-wrapper {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #090c12;
+}
+
+.contact-map-iframe {
+  width: 100%;
+  height: 420px;
+  border: 0;
+  display: block;
+}
+
+.contact-map-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 18px 24px;
+  background: #171f2d;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.contact-map-info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-map-info-item i {
+  color: var(--brand-yellow);
+}
+
+[data-theme="light"] .contact-map-wrapper {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 8px 28px rgba(6, 21, 83, 0.08);
+}
+
+[data-theme="light"] .contact-map-bar {
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  color: #334155;
+}
+
+[data-theme="light"] .contact-map-info-item strong {
+  color: #061553;
+}
+
+[data-theme="light"] .contact-map-info-item i {
+  color: #d97706;
+}
+
+[dir="rtl"] .contact-map-bar {
+  direction: rtl;
+  text-align: right;
+}
+
+/* 3. Inner Page Hero Banner in Light Mode (Screenshot 1) */
+[data-theme="light"] .inner-hero-banner {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f6 100%) !important;
+  border-bottom: 2px solid #cbd5e1 !important;
+}
+
+[data-theme="light"] .inner-hero-banner .breadcrumb-industrial,
+[data-theme="light"] .inner-hero-banner .breadcrumb-industrial span {
+  color: #64748b !important;
+}
+
+[data-theme="light"] .inner-hero-banner .breadcrumb-industrial a {
+  color: #061553 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .inner-hero-banner .breadcrumb-industrial a:hover {
+  color: #1d4ed8 !important;
+  text-decoration: underline !important;
+}
+
+[data-theme="light"] .inner-hero-banner .breadcrumb-industrial span.text-white,
+[data-theme="light"] .inner-hero-banner .breadcrumb-industrial .text-white {
+  color: #061553 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .inner-hero-banner .hero-badge-pill {
+  background: #ffffff !important;
+  color: #061553 !important;
+  border: 1.5px solid #061553 !important;
+  box-shadow: 0 2px 10px rgba(6, 21, 83, 0.08) !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .inner-hero-banner .hero-badge-pill i {
+  color: #d97706 !important;
+}
+
+[data-theme="light"] .inner-hero-banner h1,
+[data-theme="light"] .inner-hero-banner .inner-hero-title {
+  color: #061553 !important;
+  font-weight: 800 !important;
+}
+
+[data-theme="light"] .inner-hero-banner h1 span,
+[data-theme="light"] .inner-hero-banner .inner-hero-title span,
+[data-theme="light"] .inner-hero-banner .highlight-gold {
+  color: #1d4ed8 !important;
+  font-weight: 800 !important;
+}
+
+[data-theme="light"] .inner-hero-banner p,
+[data-theme="light"] .inner-hero-banner .inner-hero-lead,
+[data-theme="light"] .inner-hero-banner .inner-hero-subtitle {
+  color: #1e293b !important;
+  font-weight: 500 !important;
+}
+
+/* 4. Commercial Benefits Strip (Screenshot 2) */
+.commercial-benefits-strip {
+  background: #171f2d;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.commercial-benefits-strip h4 {
+  color: #ffffff !important;
+}
+
+.commercial-benefits-strip p {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="light"] .commercial-benefits-strip {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 6px 20px rgba(6, 21, 83, 0.08) !important;
+}
+
+[data-theme="light"] .commercial-benefits-strip h4 {
+  color: #061553 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .commercial-benefits-strip p {
+  color: #334155 !important;
+}
+
+[data-theme="light"] .commercial-benefits-strip .btn-industrial-secondary {
+  background: #ffffff !important;
+  color: #061553 !important;
+  border: 1.5px solid #061553 !important;
+}
+
+[data-theme="light"] .commercial-benefits-strip .btn-industrial-secondary:hover {
+  background: #061553 !important;
+  color: #ffffff !important;
+}
+
+/* 5. Industries We Serve (Screenshot 3) */
+.industry-box-card {
+  background: #151d2a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.industry-title {
+  color: #ffffff !important;
+}
+
+.industry-desc {
+  color: #94a3b8 !important;
+}
+
+[data-theme="light"] #industries-section,
+[data-theme="light"] .section-darker {
+  background-color: #f8fafc !important;
+}
+
+[data-theme="light"] .industry-box-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 18px rgba(6, 21, 83, 0.06) !important;
+}
+
+[data-theme="light"] .industry-box-card:hover {
+  border-color: #061553 !important;
+  box-shadow: 0 12px 28px rgba(6, 21, 83, 0.14) !important;
+}
+
+[data-theme="light"] .industry-title {
+  color: #061553 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .industry-desc {
+  color: #334155 !important;
+}
+
+[data-theme="light"] .industry-tag-pill {
+  background: #f1f5f9 !important;
+  color: #061553 !important;
+  border: 1px solid #cbd5e1 !important;
+  font-weight: 600 !important;
+}
+
+[data-theme="light"] .industry-icon-circle {
+  background: rgba(6, 21, 83, 0.08) !important;
+  color: #061553 !important;
+  border: 1px solid rgba(6, 21, 83, 0.22) !important;
+}
+
+[data-theme="light"] .industry-box-card:hover .industry-icon-circle {
+  background: #061553 !important;
+  color: #ffffff !important;
+  border-color: #061553 !important;
+}
+
+/* 6. Customer Enquiry CTA Banner (Screenshot 4) */
+.cta-banner-industrial,
+[data-theme="light"] .cta-banner-industrial {
+  background: linear-gradient(135deg, #0a1733 0%, #06102b 100%) !important;
+  border-top: 2px solid #f3cf2d !important;
+  border-bottom: 1px solid #061553 !important;
+  box-shadow: 0 10px 30px rgba(6, 21, 83, 0.25) !important;
+}
+
+.cta-banner-industrial h2,
+.cta-banner-industrial .section-main-heading,
+[data-theme="light"] .cta-banner-industrial h2,
+[data-theme="light"] .cta-banner-industrial .section-main-heading {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+
+.cta-banner-industrial h2 span,
+.cta-banner-industrial .section-main-heading span,
+[data-theme="light"] .cta-banner-industrial h2 span,
+[data-theme="light"] .cta-banner-industrial .section-main-heading span {
+  color: #f3cf2d !important;
+  font-weight: 800 !important;
+}
+
+.cta-banner-industrial p,
+.cta-banner-industrial .section-subtext,
+[data-theme="light"] .cta-banner-industrial p,
+[data-theme="light"] .cta-banner-industrial .section-subtext {
+  color: #e2e8f0 !important;
+}
+
+.cta-banner-industrial .section-badge-tag,
+[data-theme="light"] .cta-banner-industrial .section-badge-tag {
+  background: rgba(243, 207, 45, 0.2) !important;
+  color: #f3cf2d !important;
+  border: 1px solid rgba(243, 207, 45, 0.5) !important;
+}
+
+.cta-banner-industrial .section-badge-tag i,
+[data-theme="light"] .cta-banner-industrial .section-badge-tag i {
+  color: #f3cf2d !important;
+}
+
+/* 7. Main Hero Carousel Badge Pill (Screenshot 5) */
+.banner_main .hero-badge-pill,
+[data-theme="light"] .banner_main .hero-badge-pill,
+.carousel .hero-badge-pill,
+[data-theme="light"] .carousel .hero-badge-pill {
+  background: rgba(243, 207, 45, 0.16) !important;
+  border: 1px solid rgba(243, 207, 45, 0.45) !important;
+  color: #f3cf2d !important;
+  box-shadow: 0 4px 14px rgba(243, 207, 45, 0.25) !important;
+  font-weight: 700 !important;
+}
+
+.banner_main .hero-badge-pill i,
+[data-theme="light"] .banner_main .hero-badge-pill i,
+.carousel .hero-badge-pill i,
+[data-theme="light"] .carousel .hero-badge-pill i {
+  color: #f3cf2d !important;
+}
+
+/* 8. Facility Action Cards on contact.html (Screenshots 6, 7, 8) */
+.facility-action-card {
+  background: #090c12;
+}
+
+.facility-action-card .facility-action-title,
+.facility-action-card h5 {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.facility-action-card .facility-action-desc,
+.facility-action-card p {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="light"] .facility-action-card,
+[data-theme="light"] .facility-action-card.border {
+  background: #ffffff !important;
+  box-shadow: 0 6px 22px rgba(6, 21, 83, 0.08) !important;
+}
+
+[data-theme="light"] .facility-action-card .facility-action-title,
+[data-theme="light"] .facility-action-card h5,
+[data-theme="light"] .facility-action-title {
+  color: #061553 !important;
+  font-weight: 800 !important;
+}
+
+[data-theme="light"] .facility-action-card .facility-action-desc,
+[data-theme="light"] .facility-action-card p,
+[data-theme="light"] .facility-action-desc {
+  color: #334155 !important;
+  font-weight: 500 !important;
+}
+
+/* Yard 1: Amber Accent */
+[data-theme="light"] .facility-action-card.border-warning,
+[data-theme="light"] .facility-action-card.border.border-warning {
+  background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%) !important;
+  border: 2px solid #f59e0b !important;
+}
+
+[data-theme="light"] .facility-action-card.border-warning .text-warning,
+[data-theme="light"] .facility-action-card.border.border-warning .text-warning {
+  color: #d97706 !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-warning {
+  background: #ffffff !important;
+  color: #92400e !important;
+  border: 2px solid #d97706 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-warning:hover {
+  background: #f59e0b !important;
+  color: #ffffff !important;
+  border-color: #f59e0b !important;
+}
+
+/* Yard 2: Cyan Accent */
+[data-theme="light"] .facility-action-card.border-info,
+[data-theme="light"] .facility-action-card.border.border-info {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f9ff 100%) !important;
+  border: 2px solid #0284c7 !important;
+}
+
+[data-theme="light"] .facility-action-card.border-info .text-info,
+[data-theme="light"] .facility-action-card.border.border-info .text-info {
+  color: #0284c7 !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-info {
+  background: #ffffff !important;
+  color: #0369a1 !important;
+  border: 2px solid #0284c7 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-info:hover {
+  background: #0284c7 !important;
+  color: #ffffff !important;
+  border-color: #0284c7 !important;
+}
+
+/* Yard 3: Emerald Accent */
+[data-theme="light"] .facility-action-card.border-success,
+[data-theme="light"] .facility-action-card.border.border-success {
+  background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%) !important;
+  border: 2px solid #16a34a !important;
+}
+
+[data-theme="light"] .facility-action-card.border-success .text-success,
+[data-theme="light"] .facility-action-card.border.border-success .text-success {
+  color: #16a34a !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-success {
+  background: #ffffff !important;
+  color: #15803d !important;
+  border: 2px solid #16a34a !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-success:hover {
+  background: #16a34a !important;
+  color: #ffffff !important;
+  border-color: #16a34a !important;
+}
+
+/* 9. Navbar in Light Mode (Screenshot 9) */
+[data-theme="light"] .header,
+[data-theme="light"] .header.header-scrolled {
+  background: #ffffff !important;
+  box-shadow: 0 4px 18px rgba(6, 21, 83, 0.08) !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+[data-theme="light"] .navbar-nav-custom > li > a,
+[data-theme="light"] .navbar-nav-custom li a {
+  color: #061553 !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+
+[data-theme="light"] .navbar-nav-custom > li > a:hover,
+[data-theme="light"] .navbar-nav-custom li a:hover {
+  color: #1d4ed8 !important;
+  background: rgba(6, 21, 83, 0.05) !important;
+}
+
+[data-theme="light"] .navbar-nav-custom > li > a.active,
+[data-theme="light"] .navbar-nav-custom li a.active {
+  color: #061553 !important;
+  font-weight: 700 !important;
+  background: rgba(6, 21, 83, 0.08) !important;
+}
+
+[data-theme="light"] .navbar-nav-custom > li > a.active::after {
+  background: #061553 !important;
+  box-shadow: 0 0 8px rgba(6, 21, 83, 0.4) !important;
+}
+
+[data-theme="light"] .nav-dropdown-toggle i {
+  color: #061553 !important;
+}
+
+[data-theme="light"] .nav-dropdown-menu {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 10px 25px rgba(6, 21, 83, 0.12) !important;
+}
+
+[data-theme="light"] .nav-dropdown-menu li a {
+  color: #061553 !important;
+  font-weight: 500 !important;
+}
+
+[data-theme="light"] .nav-dropdown-menu li a:hover {
+  color: #1d4ed8 !important;
+  background: #f1f5f9 !important;
+}
+
+[data-theme="light"] .nav-dropdown-menu li a.active {
+  color: #061553 !important;
+  background: #f1f5f9 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .theme-toggle-btn,
+[data-theme="light"] .dir-toggle-btn {
+  background: #e2e8f0 !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #061553 !important;
+}
+
+[data-theme="light"] .theme-toggle-btn:hover,
+[data-theme="light"] .dir-toggle-btn:hover {
+  background: #f3cf2d !important;
+  color: #090c12 !important;
+  border-color: #f3cf2d !important;
+}
+
+[data-theme="light"] .nav-cta-btn {
+  background: #f3cf2d !important;
+  color: #090c12 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 10px rgba(243, 207, 45, 0.35) !important;
+}
+
+/* 10. Equal Grid Heights & Alignment (Condition 13) */
+.material-card,
+.industry-box-card,
+.catalogue-card,
+.op-capability-card,
+.contact-info-card,
+.feature-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.material-card-body,
+.catalogue-card-body,
+.op-capability-body {
+  flex: 1 1 auto;
+}
+
+.material-card-footer,
+.industry-scrap-tags,
+.catalogue-card-footer,
+.op-capability-footer {
+  margin-top: auto !important;
+}
+
+
+/* =====================================================================
+   SOCIAL MEDIA ICONS, TWITTER/X BRANDING, AND ALIGNMENT SUITE
+   ===================================================================== */
+
+/* Twitter/X Vector Icon */
+.x-twitter-svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  display: inline-block;
+  vertical-align: -2px;
+}
+
+/* Contact Page Social Media Links Alignment (Resolves wrapping issue) */
+.contact-social-links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 7px !important;
+  margin-top: 14px !important;
+}
+
+.contact-social-links .social-icon-btn {
+  width: 34px !important;
+  height: 34px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  font-size: 13px !important;
+  background: #141b27;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--brand-steel);
+  transition: all 0.25s ease !important;
+  text-decoration: none !important;
+}
+
+[data-theme="light"] .contact-social-links .social-icon-btn {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+/* Brand Hover Colors for Social Icons across ALL pages & components */
+.footer-social-link.social-fb:hover,
+.social-icon-btn.social-fb:hover,
+a.social-fb:hover {
+  background: #1877f2 !important;
+  border-color: #1877f2 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(24, 119, 242, 0.45) !important;
+  transform: translateY(-3px) !important;
+}
+
+.footer-social-link.social-tw:hover,
+.social-icon-btn.social-tw:hover,
+a.social-tw:hover {
+  background: #000000 !important;
+  border-color: #000000 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.55) !important;
+  transform: translateY(-3px) !important;
+}
+
+.footer-social-link.social-ig:hover,
+.social-icon-btn.social-ig:hover,
+a.social-ig:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+  border-color: #dc2743 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(220, 39, 67, 0.45) !important;
+  transform: translateY(-3px) !important;
+}
+
+.footer-social-link.social-li:hover,
+.social-icon-btn.social-li:hover,
+a.social-li:hover {
+  background: #0a66c2 !important;
+  border-color: #0a66c2 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(10, 102, 194, 0.45) !important;
+  transform: translateY(-3px) !important;
+}
+
+.footer-social-link.social-yt:hover,
+.social-icon-btn.social-yt:hover,
+a.social-yt:hover {
+  background: #ff0000 !important;
+  border-color: #ff0000 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(255, 0, 0, 0.45) !important;
+  transform: translateY(-3px) !important;
+}
+
+.footer-social-link.social-wa:hover,
+.social-icon-btn.social-wa:hover,
+a.social-wa:hover {
+  background: #25d366 !important;
+  border-color: #25d366 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.45) !important;
+  transform: translateY(-3px) !important;
+}
+
+/* =====================================================================
+   UNIVERSAL FOOTER CONTRAST & VISIBILITY (Protects Light & Dark Modes)
+   ===================================================================== */
+footer,
+.footer,
+.footer-main-dark,
+.footer-custom,
+[data-theme="light"] footer,
+[data-theme="light"] .footer,
+[data-theme="light"] .footer-main-dark,
+[data-theme="light"] .footer-custom {
+  background: #0b0f17 !important;
+  color: #94a3b8 !important;
+  border-top: 3px solid #f3cf2d !important;
+  display: block !important;
+}
+
+[data-theme="light"] .footer-col-title,
+[data-theme="light"] footer h4,
+[data-theme="light"] .footer-main-dark h4 {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .footer-links-list li a,
+[data-theme="light"] footer a:not(.btn):not(.footer-social-link):not(.footer-scroll-top-btn):not(.text-warning):not(.text-success) {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="light"] .footer-links-list li a:hover,
+[data-theme="light"] footer a:hover {
+  color: #f3cf2d !important;
+}
+
+[data-theme="light"] footer p,
+[data-theme="light"] .footer-main-dark p,
+[data-theme="light"] .footer-desc {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="light"] footer strong,
+[data-theme="light"] .footer-main-dark strong {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] .footer-social-link {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+[data-theme="light"] .footer-bottom-strip {
+  background: #06090e !important;
+  color: #8a99ad !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+/* RTL Support for Social Links */
+[dir="rtl"] .contact-social-links {
+  justify-content: flex-start;
+  direction: ltr; /* Keeps icon reading order consistent */
+}
+
+[dir="rtl"] .footer-social-bar {
+  direction: ltr;
 }
