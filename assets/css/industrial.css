@@ -1,7 +1,10 @@
 /* =====================================================================
-   INDUSTRIAL METAL SCRAP & RECYCLING - CUSTOM STYLESHEET
-   Brand: Ferromax Industrial Metal Scrap & Recycling
-   ===================================================================== */
+
+INDUSTRIAL METAL SCRAP & RECYCLING - CUSTOM STYLESHEET
+
+Brand: Ferromax Industrial Metal Scrap & Recycling
+
+===================================================================== */
 
 :root {
   --brand-yellow: #f3cf2d;
@@ -29,7 +32,6 @@
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
-
   /* Theme Custom Properties - Dark Mode Default */
   --theme-bg-body: #0b0f17;
   --theme-bg-surface: #141b27;
@@ -59,6 +61,7 @@
 }
 
 /* Base resets & typography */
+
 body {
   background-color: #0b0f17;
   color: #c5d0de;
@@ -73,8 +76,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =====================================================================
-   TOP BAR (Operating Hours & Hotlines)
-   ===================================================================== */
+
+TOP BAR (Operating Hours & Hotlines)
+
+===================================================================== */
+
 .topbar-strip { display: none !important; }
 .topbar-strip a {
   color: var(--brand-steel-light);
@@ -111,8 +117,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =====================================================================
-   HEADER & NAVIGATION
-   ===================================================================== */
+
+HEADER & NAVIGATION
+
+===================================================================== */
+
 .header {
   height: 84px;
   position: fixed;
@@ -130,7 +139,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header.has-topbar { top: 0 !important; }
-
 .header.header-scrolled {
   top: 0 !important;
   height: 82px;
@@ -141,6 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Brand Logo */
+
 .brand-link {
   display: inline-flex;
   align-items: center;
@@ -194,10 +203,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991px) {
-  .brand-logo-img {
-    height: 44px;
-    max-height: 44px;
-  }
+.brand-logo-img {
+  height: 44px;
+  max-height: 44px;
+}
+
 }
 
 .brand-icon {
@@ -250,6 +260,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Desktop Navigation Menu */
+
 .navbar-nav-custom {
   display: flex;
   align-items: center;
@@ -265,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-nav-custom > li > a {
-  color: #e2e8f0 !important;
+  color: #e2e8f0;
   font-family: var(--font-heading);
   font-size: 14px;
   font-weight: 600;
@@ -344,6 +355,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Sidepanel overlay & mobile nav */
+
 .sidepanel-overlay {
   position: fixed;
   top: 0;
@@ -460,6 +472,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidepanel-links a:hover,
+
 .sidepanel-links a.active {
   background: rgba(243, 207, 45, 0.15);
   color: var(--brand-yellow);
@@ -495,8 +508,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =====================================================================
-   HERO / BANNER ENHANCEMENTS - FLAWLESS FLEXBOX ALIGNMENT
-   ===================================================================== */
+
+HERO / BANNER ENHANCEMENTS - FLAWLESS FLEXBOX ALIGNMENT
+
+===================================================================== */
+
 .banner_main {
   position: relative;
   background-color: #0a0d14;
@@ -526,7 +542,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #myCarousel .carousel-item.active,
+
 #myCarousel .carousel-item-next,
+
 #myCarousel .carousel-item-prev {
   display: flex !important;
   align-items: center;
@@ -570,7 +588,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(rgba(243, 207, 45, 0.03) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(243, 207, 45, 0.03) 1px, transparent 1px);
+  linear-gradient(90deg, rgba(243, 207, 45, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
   pointer-events: none;
   z-index: 2;
@@ -613,8 +631,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes pulseSubtle {
-  0%, 100% { box-shadow: 0 0 0 rgba(243, 207, 45, 0); }
-  50% { box-shadow: 0 0 16px rgba(243, 207, 45, 0.25); }
+0%, 100% { box-shadow: 0 0 0 rgba(243, 207, 45, 0); }
+50% { box-shadow: 0 0 16px rgba(243, 207, 45, 0.25); }
 }
 
 .hero-title-main {
@@ -652,6 +670,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-actions .btn-industrial-primary,
+
 .hero-actions .btn-industrial-secondary {
   margin: 0 !important;
 }
@@ -734,7 +753,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Hero Carousel Controls - Centered & Symmetric */
+
 #myCarousel .carousel-control-prev,
+
 #myCarousel .carousel-control-next {
   position: absolute;
   top: 50% !important;
@@ -759,8 +780,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #myCarousel .carousel-control-prev:hover,
+
 #myCarousel .carousel-control-next:hover,
+
 #myCarousel .carousel-control-prev:focus,
+
 #myCarousel .carousel-control-next:focus {
   background: var(--brand-yellow) !important;
   color: #0b101a !important;
@@ -781,6 +805,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Carousel Indicators - Refined Pill Indicators */
+
 #myCarousel .carousel-indicators {
   position: absolute;
   bottom: 24px !important;
@@ -814,6 +839,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* RTL Controls Support */
+
 [dir="rtl"] #myCarousel .carousel-control-prev {
   left: auto !important;
   right: 24px !important;
@@ -827,88 +853,112 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [dir="rtl"] #myCarousel .carousel-control-prev:hover,
+
 [dir="rtl"] #myCarousel .carousel-control-prev:focus,
+
 [dir="rtl"] #myCarousel .carousel-control-next:hover,
+
 [dir="rtl"] #myCarousel .carousel-control-next:focus {
   transform: translateY(-50%) scaleX(-1) scale(1.08) !important;
 }
 
 /* Responsive Hero Adjustments */
+
 @media (max-width: 991px) {
-  #myCarousel .carousel-item {
-    min-height: 640px;
-    padding-top: 120px;
-    padding-bottom: 75px;
-  }
-  .hero-title-main {
-    font-size: 42px;
-  }
+#myCarousel .carousel-item {
+  min-height: 640px;
+  padding-top: 120px;
+  padding-bottom: 75px;
+}
+
+.hero-title-main {
+  font-size: 42px;
+}
+
 }
 
 @media (max-width: 768px) {
-  #myCarousel .carousel-item {
-    min-height: 580px;
-    padding-top: 105px;
-    padding-bottom: 65px;
-  }
-  .hero-title-main {
-    font-size: 34px;
-  }
-  #myCarousel .carousel-control-prev,
-  #myCarousel .carousel-control-next {
-    width: 40px !important;
-    height: 40px !important;
-    font-size: 18px !important;
-  }
-  #myCarousel .carousel-control-prev {
-    left: 8px !important;
-  }
-  #myCarousel .carousel-control-next {
-    right: 8px !important;
-  }
-  [dir="rtl"] #myCarousel .carousel-control-prev {
-    right: 8px !important;
-    left: auto !important;
-  }
-  [dir="rtl"] #myCarousel .carousel-control-next {
-    left: 8px !important;
-    right: auto !important;
-  }
+#myCarousel .carousel-item {
+  min-height: 580px;
+  padding-top: 105px;
+  padding-bottom: 65px;
+}
+
+.hero-title-main {
+  font-size: 34px;
+}
+
+#myCarousel .carousel-control-prev,
+
+#myCarousel .carousel-control-next {
+  width: 40px !important;
+  height: 40px !important;
+  font-size: 18px !important;
+}
+
+#myCarousel .carousel-control-prev {
+  left: 8px !important;
+}
+
+#myCarousel .carousel-control-next {
+  right: 8px !important;
+}
+
+[dir="rtl"] #myCarousel .carousel-control-prev {
+  right: 8px !important;
+  left: auto !important;
+}
+
+[dir="rtl"] #myCarousel .carousel-control-next {
+  left: 8px !important;
+  right: auto !important;
+}
+
 }
 
 @media (max-width: 576px) {
-  #myCarousel .carousel-item {
-    min-height: 520px;
-    padding-top: 95px;
-    padding-bottom: 55px;
-  }
-  .hero-title-main {
-    font-size: 27px;
-    line-height: 1.2;
-  }
-  .hero-description {
-    font-size: 15px;
-    margin-bottom: 24px;
-  }
-  .hero-badge-pill {
-    font-size: 11.5px;
-    padding: 5px 12px;
-    margin-bottom: 16px;
-  }
-  .hero-features-strip {
-    gap: 12px;
-  }
-  .hero-feature-item {
-    font-size: 12px;
-  }
-  #myCarousel .carousel-indicators {
-    bottom: 16px !important;
-  }
+#myCarousel .carousel-item {
+  min-height: 520px;
+  padding-top: 95px;
+  padding-bottom: 55px;
+}
+
+.hero-title-main {
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.hero-badge-pill {
+  font-size: 11.5px;
+  padding: 5px 12px;
+  margin-bottom: 16px;
+}
+
+.hero-features-strip {
+  gap: 12px;
+}
+
+.hero-feature-item {
+  font-size: 12px;
+}
+
+#myCarousel .carousel-indicators {
+  bottom: 16px !important;
+}
+
 }
 
 /* =====================================================================
-   INDICATIVE BENCHMARK RATE TICKER (No fake streaming tickers)
-   ===================================================================== */
+
+INDICATIVE BENCHMARK RATE TICKER (No fake streaming tickers)
+
+===================================================================== */
+
 .rate-ticker-section {
   background: #090c12;
   border-top: 1px solid rgba(243, 207, 45, 0.2);
@@ -989,8 +1039,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =====================================================================
-   METRICS & PROOF-OF-SCALE BAR
-   ===================================================================== */
+
+METRICS & PROOF-OF-SCALE BAR
+
+===================================================================== */
+
 .stats-banner-section {
   background: linear-gradient(180deg, #0d121b 0%, #131926 100%);
   border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -1057,10 +1110,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.5px;
 }
 
-
 /* =====================================================================
-   SECTION HEADINGS & COMMONS
-   ===================================================================== */
+
+SECTION HEADINGS & COMMONS
+
+===================================================================== */
+
 .section-py {
   padding: 85px 0;
   position: relative;
@@ -1117,8 +1172,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =====================================================================
-   INNER PAGE HERO BANNER
-   ===================================================================== */
+
+INNER PAGE HERO BANNER
+
+===================================================================== */
+
 .inner-hero-banner {
   padding: 120px 0 50px 0;
   position: relative;
@@ -1164,6 +1222,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .inner-hero-lead,
+
 .inner-hero-subtitle {
   font-size: 17px;
   color: var(--brand-steel-light);
@@ -1172,8 +1231,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =====================================================================
-   MATERIAL CARDS & HUB DIRECTORY
-   ===================================================================== */
+
+MATERIAL CARDS & HUB DIRECTORY
+
+===================================================================== */
+
 .material-filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -1196,6 +1258,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .filter-btn-chip:hover,
+
 .filter-btn-chip.active {
   background: var(--brand-yellow);
   color: #090c12;
@@ -1332,8 +1395,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =====================================================================
-   RATE CARD TABLES & RATE ESTIMATOR
-   ===================================================================== */
+
+RATE CARD TABLES & RATE ESTIMATOR
+
+===================================================================== */
+
 .rate-card-box {
   background: #141b26;
   border: 1px solid rgba(255,255,255,0.09);
@@ -1451,6 +1517,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Calculator Widget */
+
 .scrap-calculator-card {
   background: linear-gradient(135deg, #161e2b 0%, #1c2738 100%);
   border: 1px solid rgba(243, 207, 45, 0.35);
@@ -1498,8 +1565,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =====================================================================
-   RECYCLING OPERATIONS & MACHINERY
-   ===================================================================== */
+
+RECYCLING OPERATIONS & MACHINERY
+
+===================================================================== */
+
 .operation-card {
   background: #141b27;
   border: 1px solid rgba(255,255,255,0.08);
@@ -1576,8 +1646,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =====================================================================
-   PROCESS TIMELINE & WORKFLOW
-   ===================================================================== */
+
+PROCESS TIMELINE & WORKFLOW
+
+===================================================================== */
+
 .process-step-box {
   background: #141b26;
   border: 1px solid rgba(255,255,255,0.08);
@@ -1630,8 +1703,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =====================================================================
-   CONTACT & PICKUP ENQUIRY FORM
-   ===================================================================== */
+
+CONTACT & PICKUP ENQUIRY FORM
+
+===================================================================== */
+
 .contact-form-card {
   background: #151d2a;
   border: 1px solid rgba(255,255,255,0.1);
@@ -1715,9 +1791,94 @@ select.form-control-industrial option {
   margin: 0;
 }
 
+.contact-accent-link {
+  color: var(--brand-yellow);
+  transition: var(--transition);
+}
+
+.contact-accent-link:hover {
+  color: #ffffff;
+  text-decoration: underline !important;
+}
+
 /* =====================================================================
-   FAQ ACCORDION
-   ===================================================================== */
+
+FACILITY ACTION CARDS (CONTACT PAGE YARD SELECTOR CALLOUTS)
+
+===================================================================== */
+
+.facility-action-card {
+  background: #090c12;
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.facility-action-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
+.facility-action-card .facility-action-title,
+
+.facility-action-card h5 {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.facility-action-card .facility-action-desc,
+
+.facility-action-card p {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 320px;
+}
+
+.facility-action-card.border-warning {
+  border: 1px solid rgba(243, 207, 45, 0.4) !important;
+}
+
+.facility-action-card.border-info {
+  border: 1px solid rgba(56, 189, 248, 0.4) !important;
+}
+
+.facility-action-card.border-success {
+  border: 1px solid rgba(34, 197, 94, 0.4) !important;
+}
+
+.modal-industrial-content {
+  max-width: 580px;
+  width: 90%;
+  background: #0f141f;
+  border: 2px solid var(--brand-yellow);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);
+  border-radius: var(--radius-md);
+  padding: 30px;
+}
+
+.modal-ref-badge {
+  background: #090c12;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+}
+
+/* =====================================================================
+
+FAQ ACCORDION
+
+===================================================================== */
+
 .faq-accordion-item {
   background: #141b26;
   border: 1px solid rgba(255,255,255,0.08);
@@ -1763,8 +1924,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   FOOTER ENHANCEMENTS
-   ===================================================================== */
+
+FOOTER ENHANCEMENTS
+
+===================================================================== */
+
 .footer-main-dark {
   background: #080b10;
   border-top: 2px solid var(--brand-yellow);
@@ -1836,56 +2000,73 @@ select.form-control-industrial option {
 }
 
 /* Responsive adjustments */
+
 @media (max-width: 991px) {
-  .navbar-nav-custom {
-    display: none;
-  }
-  .openbtn-custom {
-    display: inline-flex;
-  }
-  .header.has-topbar {
-    top: 0;
-  }
-  .topbar-strip {
-    display: none;
-  }
-  .inner-hero-banner {
-    padding: 130px 0 50px 0;
-  }
-  .inner-hero-title {
-    font-size: 32px;
-  }
-  .hero-title-main {
-    font-size: 36px;
-  }
+.navbar-nav-custom {
+  display: none;
+}
+
+.openbtn-custom {
+  display: inline-flex;
+}
+
+.header.has-topbar {
+  top: 0;
+}
+
+.topbar-strip {
+  display: none;
+}
+
+.inner-hero-banner {
+  padding: 130px 0 50px 0;
+}
+
+.inner-hero-title {
+  font-size: 32px;
+}
+
+.hero-title-main {
+  font-size: 36px;
+}
+
 }
 
 @media (max-width: 576px) {
-  .hero-title-main {
-    font-size: 28px;
-  }
-  .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .btn-industrial-primary,
-  .btn-industrial-secondary {
-    justify-content: center;
-    width: 100%;
-  }
-  .stats-banner-section {
-    padding: 30px 0;
-  }
-  .stat-box-card {
-    margin-bottom: 15px;
-  }
+.hero-title-main {
+  font-size: 28px;
+}
+
+.hero-actions {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.btn-industrial-primary,
+
+.btn-industrial-secondary {
+  justify-content: center;
+  width: 100%;
+}
+
+.stats-banner-section {
+  padding: 30px 0;
+}
+
+.stat-box-card {
+  margin-bottom: 15px;
+}
+
 }
 
 /* =====================================================================
-   ADDITIONAL HOME PAGE INDUSTRIAL STYLES
-   ===================================================================== */
+
+ADDITIONAL HOME PAGE INDUSTRIAL STYLES
+
+===================================================================== */
 
 /* Image-based Material Card Styles */
+
 .material-card-img-wrap {
   width: 100%;
   height: 200px;
@@ -1909,6 +2090,7 @@ select.form-control-industrial option {
 }
 
 .material-card-img-wrap .card-img-overlay-badge,
+
 .op-capability-img-wrap .card-img-overlay-badge {
   position: absolute;
   bottom: 10px;
@@ -1926,6 +2108,7 @@ select.form-control-industrial option {
 }
 
 /* Industries We Serve Grid */
+
 .industry-box-card {
   background: #151d2a;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1994,6 +2177,7 @@ select.form-control-industrial option {
 }
 
 /* Recycling Approach 4-Step Visual */
+
 .approach-step-card {
   background: #141b27;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -2020,6 +2204,7 @@ select.form-control-industrial option {
 }
 
 /* Why Choose Us feature list */
+
 .why-feature-card {
   background: #131a26;
   border: 1px solid rgba(255, 255, 255, 0.07);
@@ -2060,8 +2245,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   PRE-FOOTER CTA BANNER & COMMERCIAL STRIPS (DEFAULT DARK MODE)
-   ===================================================================== */
+
+PRE-FOOTER CTA BANNER & COMMERCIAL STRIPS (DEFAULT DARK MODE)
+
+===================================================================== */
+
 .cta-banner-industrial {
   background: linear-gradient(135deg, #171f2d 0%, #0c121d 100%);
   border-top: 2px solid var(--brand-yellow);
@@ -2083,8 +2271,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   CATALOGUE-STYLE MATERIAL HUB STYLES
-   ===================================================================== */
+
+CATALOGUE-STYLE MATERIAL HUB STYLES
+
+===================================================================== */
+
 .catalogue-nav-strip {
   background: #0d121c;
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -2123,6 +2314,7 @@ select.form-control-industrial option {
 }
 
 .catalogue-nav-links a:hover,
+
 .catalogue-nav-links a.active {
   background: var(--brand-yellow);
   color: #090c12;
@@ -2268,8 +2460,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   8-STEP RECYCLING PROCESS TIMELINE STYLES
-   ===================================================================== */
+
+8-STEP RECYCLING PROCESS TIMELINE STYLES
+
+===================================================================== */
+
 .process-timeline-wrap {
   position: relative;
   padding: 20px 0;
@@ -2383,8 +2578,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   8 RECYCLING OPERATIONS CAPABILITY CARDS
-   ===================================================================== */
+
+8 RECYCLING OPERATIONS CAPABILITY CARDS
+
+===================================================================== */
+
 .op-capability-card {
   background: #141b27;
   border: 1px solid rgba(255,255,255,0.08);
@@ -2481,8 +2679,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   MATERIALS ACCEPTED DIRECTORY STYLES
-   ===================================================================== */
+
+MATERIALS ACCEPTED DIRECTORY STYLES
+
+===================================================================== */
+
 .acceptance-stream-card {
   background: #141b27;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -2583,6 +2784,7 @@ select.form-control-industrial option {
 }
 
 /* Compliance Matrix: Accepted vs Prohibited */
+
 .compliance-matrix-card {
   border-radius: var(--radius-md);
   padding: 30px 28px;
@@ -2641,6 +2843,7 @@ select.form-control-industrial option {
 }
 
 /* Light Mode Overrides for Acceptance Directory */
+
 [data-theme="light"] .acceptance-stream-card {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
@@ -2692,8 +2895,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   THEME TOGGLE BUTTON & ICONS (DARK & LIGHT MODE)
-   ===================================================================== */
+
+THEME TOGGLE BUTTON & ICONS (DARK & LIGHT MODE)
+
+===================================================================== */
+
 .theme-toggle-btn {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(243, 207, 45, 0.4);
@@ -2741,6 +2947,7 @@ select.form-control-industrial option {
 }
 
 /* Icon visibility per theme */
+
 [data-theme="dark"] .theme-icon-sun {
   display: inline-block;
   color: var(--brand-yellow);
@@ -2760,8 +2967,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   FORM VALIDATION & CLIENT-SIDE FEEDBACK
-   ===================================================================== */
+
+FORM VALIDATION & CLIENT-SIDE FEEDBACK
+
+===================================================================== */
+
 .form-control-industrial.is-invalid {
   border-color: #ef4444 !important;
   background-color: rgba(239, 68, 68, 0.06) !important;
@@ -2826,8 +3036,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   SOCIAL MEDIA LINKS
-   ===================================================================== */
+
+SOCIAL MEDIA LINKS
+
+===================================================================== */
+
 .contact-social-links {
   display: flex;
   gap: 10px;
@@ -2858,28 +3071,42 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   COMPREHENSIVE LIGHT MODE STYLES ([data-theme="light"])
-   Maintains existing typography, structure, alignment and contrasts
-   ===================================================================== */
+
+COMPREHENSIVE LIGHT MODE STYLES ([data-theme="light"])
+
+Maintains existing typography, structure, alignment and contrasts
+
+===================================================================== */
+
 [data-theme="light"] body {
   background-color: #f1f5f9 !important;
   color: #334155 !important;
 }
 
 [data-theme="light"] h1,
+
 [data-theme="light"] h2,
+
 [data-theme="light"] h3,
+
 [data-theme="light"] h4,
+
 [data-theme="light"] h5,
+
 [data-theme="light"] h6 {
   color: #0f172a !important;
 }
 
 /* Keep hero banners with dark background images readable on index page */
+
 [data-theme="light"] .banner_main,
+
 [data-theme="light"] .banner_main h1,
+
 [data-theme="light"] .banner_main .hero-title-main,
+
 [data-theme="light"] .slider_section h1,
+
 [data-theme="light"] .slider_section p {
   color: #ffffff !important;
 }
@@ -2908,9 +3135,13 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   INNER HERO BANNER IN LIGHT MODE
-   High contrast, signature blue typography with crisp readability
-   ===================================================================== */
+
+INNER HERO BANNER IN LIGHT MODE
+
+High contrast, signature blue typography with crisp readability
+
+===================================================================== */
+
 [data-theme="light"] .inner-hero-banner {
   background: linear-gradient(180deg, #ffffff 0%, #edf2f7 100%) !important;
   border-bottom: 2px solid rgba(6, 21, 83, 0.12) !important;
@@ -2921,17 +3152,21 @@ select.form-control-industrial option {
 }
 
 [data-theme="light"] .inner-hero-banner h1,
+
 [data-theme="light"] .inner-hero-banner .inner-hero-title {
   color: #061553 !important;
 }
 
 [data-theme="light"] .inner-hero-banner .inner-hero-title span,
+
 [data-theme="light"] .inner-hero-banner h1 span,
+
 [data-theme="light"] .inner-hero-banner .highlight-gold {
   color: #1e40af !important;
 }
 
 [data-theme="light"] .inner-hero-banner .inner-hero-lead,
+
 [data-theme="light"] .inner-hero-banner .inner-hero-subtitle {
   color: #1e293b !important;
   font-weight: 500;
@@ -2967,14 +3202,18 @@ select.form-control-industrial option {
 }
 
 [data-theme="light"] .breadcrumb-industrial span.text-white,
+
 [data-theme="light"] .breadcrumb-industrial .text-white {
   color: #061553 !important;
   font-weight: 700 !important;
 }
 
 /* =====================================================================
-   CATALOGUE FILTER STRIP IN LIGHT MODE
-   ===================================================================== */
+
+CATALOGUE FILTER STRIP IN LIGHT MODE
+
+===================================================================== */
+
 [data-theme="light"] .catalogue-nav-strip {
   background: #ffffff !important;
   border-top: 1px solid #e2e8f0 !important;
@@ -2990,6 +3229,7 @@ select.form-control-industrial option {
 }
 
 [data-theme="light"] .catalogue-nav-links a:hover,
+
 [data-theme="light"] .catalogue-nav-links a.active {
   background: #061553 !important;
   color: #ffffff !important;
@@ -2998,41 +3238,55 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   SPECIFICATION TABLES & VALUES IN LIGHT MODE
-   ===================================================================== */
+
+SPECIFICATION TABLES & VALUES IN LIGHT MODE
+
+===================================================================== */
+
 [data-theme="light"] .catalogue-spec-title,
+
 [data-theme="light"] .op-spec-title,
+
 [data-theme="light"] .spec-title {
   color: #64748b !important;
 }
 
 [data-theme="light"] .catalogue-spec-val,
+
 [data-theme="light"] .op-spec-val,
+
 [data-theme="light"] .spec-val {
   color: #061553 !important;
   font-weight: 700 !important;
 }
 
 [data-theme="light"] .catalogue-spec-table tr,
+
 [data-theme="light"] .op-specs-table tr,
+
 [data-theme="light"] .acceptance-specs-table tr {
   border-bottom-color: #f1f5f9 !important;
 }
 
 [data-theme="light"] .material-indicative-price,
+
 [data-theme="light"] .catalogue-price-tag {
   color: #061553 !important;
   font-weight: 800 !important;
 }
 
 [data-theme="light"] .material-indicative-price small,
+
 [data-theme="light"] .catalogue-price-tag small {
   color: #64748b !important;
 }
 
 /* =====================================================================
-   FACILITY & EQUIPMENT CARDS IN LIGHT MODE
-   ===================================================================== */
+
+FACILITY & EQUIPMENT CARDS IN LIGHT MODE
+
+===================================================================== */
+
 [data-theme="light"] .equipment-card {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
@@ -3048,6 +3302,7 @@ select.form-control-industrial option {
 }
 
 [data-theme="light"] .equipment-card ul,
+
 [data-theme="light"] .equipment-card li {
   color: #475569 !important;
 }
@@ -3057,8 +3312,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   WHY CHOOSE US / FEATURES SECTION IN LIGHT MODE
-   ===================================================================== */
+
+WHY CHOOSE US / FEATURES SECTION IN LIGHT MODE
+
+===================================================================== */
+
 [data-theme="light"] .why-feature-card {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
@@ -3083,8 +3341,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   TICKER STRIP IN LIGHT MODE
-   ===================================================================== */
+
+TICKER STRIP IN LIGHT MODE
+
+===================================================================== */
+
 [data-theme="light"] .rate-ticker-section {
   background: #ffffff !important;
   border-top: 1px solid #e2e8f0 !important;
@@ -3108,86 +3369,139 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   UNIVERSAL LIGHT-MODE CONTRAST GUARDS
-   Protects cards, accordions, tables & widgets from invisible white/light text
-   ===================================================================== */
+
+UNIVERSAL LIGHT-MODE CONTRAST GUARDS
+
+Protects cards, accordions, tables & widgets from invisible white/light text
+
+===================================================================== */
+
 [data-theme="light"] .stat-box-card h4,
+
 [data-theme="light"] .stat-box-card h3,
+
 [data-theme="light"] .stat-box-card h5,
+
 [data-theme="light"] .rate-card-box h3,
+
 [data-theme="light"] .rate-card-box h4,
+
 [data-theme="light"] .rate-card-box h5,
+
 [data-theme="light"] .contact-form-card h3,
+
 [data-theme="light"] .contact-info-card h4,
+
 [data-theme="light"] .contact-info-card h5,
+
 [data-theme="light"] .why-feature-card h4,
+
 [data-theme="light"] .why-feature-card h5,
+
 [data-theme="light"] .industry-title,
+
 [data-theme="light"] .material-title {
   color: #061553 !important;
 }
 
 [data-theme="light"] .stat-box-card p,
+
 [data-theme="light"] .rate-card-box p,
+
 [data-theme="light"] .contact-info-card p,
+
 [data-theme="light"] .why-feature-card p,
+
 [data-theme="light"] .industry-desc,
+
 [data-theme="light"] .material-desc {
   color: #334155 !important;
 }
 
 /* Ensure strong tags inside cards/tables are high-contrast brand blue */
+
 [data-theme="light"] .stat-box-card strong,
+
 [data-theme="light"] .rate-card-box strong,
+
 [data-theme="light"] .industrial-table strong,
+
 [data-theme="light"] .contact-info-card strong {
   color: #061553 !important;
 }
 
 /* General text-white override outside dark containers (footer, hero sliders) */
+
 [data-theme="light"] .stat-box-card .text-white,
+
 [data-theme="light"] .rate-card-box .text-white,
+
 [data-theme="light"] .industrial-table .text-white,
+
 [data-theme="light"] .contact-form-card .text-white,
+
 [data-theme="light"] .contact-info-card .text-white,
+
 [data-theme="light"] .equipment-card .text-white,
+
 [data-theme="light"] .acceptance-stream-card .text-white,
+
 [data-theme="light"] .material-card-clean .text-white,
+
 [data-theme="light"] .op-capability-card .text-white,
+
 [data-theme="light"] .timeline-step-content .text-white,
+
 [data-theme="light"] .catalogue-card .text-white {
   color: #061553 !important;
 }
 
 /* Override inline light colors in cards and content sections */
+
 [data-theme="light"] .stat-box-card [style*="color: #cbd5e1"],
+
 [data-theme="light"] .rate-card-box [style*="color: #cbd5e1"],
+
 [data-theme="light"] .contact-form-card [style*="color: #cbd5e1"],
+
 [data-theme="light"] .equipment-card [style*="color: #cbd5e1"],
+
 [data-theme="light"] .section-py [style*="color: #cbd5e1"],
+
 [data-theme="light"] .section-dark [style*="color: #cbd5e1"],
+
 [data-theme="light"] .section-surface [style*="color: #cbd5e1"] {
   color: #334155 !important;
 }
 
 [data-theme="light"] .stat-box-card [style*="color: #fff"],
+
 [data-theme="light"] .rate-card-box [style*="color: #fff"],
+
 [data-theme="light"] .equipment-card [style*="color: #fff"],
+
 [data-theme="light"] .section-py [style*="color: #fff"],
+
 [data-theme="light"] .stat-box-card [style*="color: #ffffff"],
+
 [data-theme="light"] .rate-card-box [style*="color: #ffffff"],
+
 [data-theme="light"] .equipment-card [style*="color: #ffffff"],
+
 [data-theme="light"] .section-py [style*="color: #ffffff"] {
   color: #061553 !important;
 }
 
 [data-theme="light"] .stat-box-card [style*="color: #f3cf2d"],
+
 [data-theme="light"] .equipment-card [style*="color: #f3cf2d"],
+
 [data-theme="light"] .rate-card-box [style*="color: #f3cf2d"] {
   color: #061553 !important;
 }
 
 /* Contact info icons and cards */
+
 [data-theme="light"] .contact-info-icon {
   background: rgba(6, 21, 83, 0.08) !important;
   color: #061553 !important;
@@ -3199,6 +3513,7 @@ select.form-control-industrial option {
 }
 
 [data-theme="light"] .contact-info-text p,
+
 [data-theme="light"] .contact-info-text a {
   color: #334155 !important;
 }
@@ -3208,9 +3523,13 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   INDUSTRIES WE SERVE CARDS IN LIGHT MODE (IMAGE 2 FIX)
-   Crisp white cards, blue headings, slate text, high contrast tags
-   ===================================================================== */
+
+INDUSTRIES WE SERVE CARDS IN LIGHT MODE (IMAGE 2 FIX)
+
+Crisp white cards, blue headings, slate text, high contrast tags
+
+===================================================================== */
+
 [data-theme="light"] .industry-box-card {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
@@ -3253,8 +3572,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   APPROACH & OPERATION / TESTIMONIAL CARDS IN LIGHT MODE
-   ===================================================================== */
+
+APPROACH & OPERATION / TESTIMONIAL CARDS IN LIGHT MODE
+
+===================================================================== */
+
 [data-theme="light"] .approach-step-card {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
@@ -3308,9 +3630,13 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   COMMERCIAL BENEFITS STRIP IN LIGHT MODE (IMAGE 1 FIX)
-   ===================================================================== */
+
+COMMERCIAL BENEFITS STRIP IN LIGHT MODE (IMAGE 1 FIX)
+
+===================================================================== */
+
 [data-theme="light"] .commercial-benefits-strip,
+
 [data-theme="light"] .card.commercial-benefits-strip {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
@@ -3327,9 +3653,13 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   PRE-FOOTER CTA BANNER IN LIGHT MODE (IMAGE 3 FIX)
-   Signature royal blue gradient with crisp white and gold typography
-   ===================================================================== */
+
+PRE-FOOTER CTA BANNER IN LIGHT MODE (IMAGE 3 FIX)
+
+Signature royal blue gradient with crisp white and gold typography
+
+===================================================================== */
+
 [data-theme="light"] .cta-banner-industrial {
   background: linear-gradient(135deg, #061553 0%, #0b1e6d 100%) !important;
   border-top: 2px solid #f3cf2d !important;
@@ -3338,24 +3668,30 @@ select.form-control-industrial option {
 }
 
 .cta-banner-industrial .section-main-heading,
+
 [data-theme="light"] .cta-banner-industrial .section-main-heading,
+
 [data-theme="light"] .cta-banner-industrial h2 {
   color: #ffffff !important;
   font-weight: 800 !important;
 }
 
 .cta-banner-industrial .section-main-heading span,
+
 [data-theme="light"] .cta-banner-industrial .section-main-heading span,
+
 [data-theme="light"] .cta-banner-industrial h2 span {
   color: #f3cf2d !important;
 }
 
 .cta-banner-industrial .section-subtext,
+
 [data-theme="light"] .cta-banner-industrial .section-subtext {
   color: #e2e8f0 !important;
 }
 
 .cta-banner-industrial .section-badge-tag,
+
 [data-theme="light"] .cta-banner-industrial .section-badge-tag {
   background: rgba(243, 207, 45, 0.18) !important;
   color: #f3cf2d !important;
@@ -3363,11 +3699,13 @@ select.form-control-industrial option {
 }
 
 .cta-banner-industrial .section-badge-tag i,
+
 [data-theme="light"] .cta-banner-industrial .section-badge-tag i {
   color: #f3cf2d !important;
 }
 
 /* Topbar Strip in Light Mode */
+
 [data-theme="light"] .topbar-strip {
   background: #e2e8f0;
   border-bottom: 1px solid #cbd5e1;
@@ -3389,6 +3727,7 @@ select.form-control-industrial option {
 }
 
 /* Main Header in Light Mode */
+
 [data-theme="light"] .header {
   background: rgba(255, 255, 255, 0.97) !important;
   border-bottom: 1px solid #e2e8f0;
@@ -3410,19 +3749,37 @@ select.form-control-industrial option {
 }
 
 [data-theme="light"] .navbar-nav-custom > li > a {
-  color: #1e293b;
+  color: #061553 !important;
+  font-weight: 600 !important;
 }
 
-[data-theme="light"] .navbar-nav-custom > li > a:hover,
+[data-theme="light"] .navbar-nav-custom > li > a:hover {
+  color: #1e40af !important;
+  background: rgba(6, 21, 83, 0.06) !important;
+}
+
 [data-theme="light"] .navbar-nav-custom > li > a.active {
   color: #061553 !important;
-  font-weight: 700;
+  font-weight: 700 !important;
+  background: rgba(6, 21, 83, 0.08) !important;
+}
+
+[data-theme="light"] .navbar-nav-custom > li > a i,
+
+[data-theme="light"] .nav-dropdown-toggle i {
+  color: #061553 !important;
 }
 
 [data-theme="light"] .openbtn-custom {
   background: #e2e8f0;
   border-color: #cbd5e1;
   color: #0f172a;
+}
+
+[data-theme="light"] .openbtn-custom:hover {
+  background: var(--brand-yellow);
+  color: #090c12;
+  border-color: var(--brand-yellow);
 }
 
 [data-theme="light"] .theme-toggle-btn {
@@ -3438,6 +3795,7 @@ select.form-control-industrial option {
 }
 
 /* Sidepanel Navigation Drawer in Light Mode */
+
 [data-theme="light"] .sidepanel-custom {
   background: #ffffff;
   color: #1e293b;
@@ -3456,11 +3814,17 @@ select.form-control-industrial option {
 }
 
 [data-theme="light"] .sidepanel-links a {
-  color: #334155;
-  border-bottom: 1px solid #f1f5f9;
+  color: #061553 !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+[data-theme="light"] .sidepanel-links a i {
+  color: #061553 !important;
 }
 
 [data-theme="light"] .sidepanel-links a:hover,
+
 [data-theme="light"] .sidepanel-links a.active {
   background: #f1f5f9;
   color: #061553 !important;
@@ -3481,6 +3845,7 @@ select.form-control-industrial option {
 }
 
 /* Sections Backgrounds & Headings in Light Mode */
+
 [data-theme="light"] .section-darker {
   background-color: #f8fafc !important;
 }
@@ -3512,16 +3877,27 @@ select.form-control-industrial option {
 }
 
 /* Cards & Content Containers in Light Mode */
+
 [data-theme="light"] .material-card-clean,
+
 [data-theme="light"] .service-card-clean,
+
 [data-theme="light"] .stat-box-card,
+
 [data-theme="light"] .process-step-box,
+
 [data-theme="light"] .rate-card-box,
+
 [data-theme="light"] .scrap-calculator-card,
+
 [data-theme="light"] .contact-form-card,
+
 [data-theme="light"] .contact-info-card,
+
 [data-theme="light"] .op-capability-card,
+
 [data-theme="light"] .timeline-step-content,
+
 [data-theme="light"] .catalogue-card {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
@@ -3529,32 +3905,46 @@ select.form-control-industrial option {
 }
 
 [data-theme="light"] .material-card-clean:hover,
+
 [data-theme="light"] .service-card-clean:hover,
+
 [data-theme="light"] .process-step-box:hover,
+
 [data-theme="light"] .catalogue-card:hover,
+
 [data-theme="light"] .op-capability-card:hover {
   border-color: #061553 !important;
   box-shadow: 0 10px 25px rgba(6, 21, 83, 0.12) !important;
 }
 
 [data-theme="light"] .material-card-title,
+
 [data-theme="light"] .service-title-clean,
+
 [data-theme="light"] .timeline-step-title,
+
 [data-theme="light"] .op-capability-title,
+
 [data-theme="light"] .catalogue-card-title {
   color: #0f172a !important;
 }
 
 [data-theme="light"] .material-card-desc,
+
 [data-theme="light"] .service-desc-clean,
+
 [data-theme="light"] .timeline-step-desc,
+
 [data-theme="light"] .op-capability-desc,
+
 [data-theme="light"] .op-capability-body p,
+
 [data-theme="light"] .catalogue-card-desc {
   color: #475569 !important;
 }
 
 /* Stats Banner Section in Light Mode */
+
 [data-theme="light"] .stats-banner-section {
   background: #f1f5f9 !important;
   border-bottom: 1px solid #cbd5e1 !important;
@@ -3567,13 +3957,17 @@ select.form-control-industrial option {
 }
 
 /* Stat Box Cards in Light Mode - High Contrast Blue Typography & Icons */
+
 [data-theme="light"] .stat-box-card .stat-icon,
+
 [data-theme="light"] .stat-box-card .stat-icon i,
+
 [data-theme="light"] .stat-box-card .stat-icon i.fa {
   color: #061553 !important;
 }
 
 [data-theme="light"] .stat-box-card:hover .stat-icon,
+
 [data-theme="light"] .stat-box-card:hover .stat-icon i.fa {
   color: #1e40af !important;
 }
@@ -3595,7 +3989,9 @@ select.form-control-industrial option {
 }
 
 [data-theme="light"] .stat-box-card h3,
+
 [data-theme="light"] .stat-box-card h4,
+
 [data-theme="light"] .stat-box-card h5 {
   color: #061553 !important;
   font-weight: 700 !important;
@@ -3671,6 +4067,7 @@ select.form-control-industrial option {
 }
 
 /* Callouts & Notices in Light Mode */
+
 [data-theme="light"] .rate-notice-callout {
   background: #eff6ff !important;
   border-left: 4px solid #1e40af !important;
@@ -3686,6 +4083,7 @@ select.form-control-industrial option {
 }
 
 /* Tables in Light Mode */
+
 [data-theme="light"] .industrial-table th {
   background: #f8fafc !important;
   color: #0f172a !important;
@@ -3714,6 +4112,7 @@ select.form-control-industrial option {
 }
 
 /* Rate Card Search & Controls in Light Mode */
+
 [data-theme="light"] .rate-search-wrap {
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
@@ -3815,14 +4214,177 @@ select.form-control-industrial option {
   color: #065f46;
 }
 
+/* =====================================================================
+
+CONTACT PAGE & YARD ACTION CARDS IN LIGHT MODE
+
+High contrast, signature royal blue & vibrant category accents
+
+===================================================================== */
+
+[data-theme="light"] .contact-accent-link {
+  color: #061553 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .contact-accent-link:hover {
+  color: #1e40af !important;
+  text-decoration: underline !important;
+}
+
+[data-theme="light"] .contact-info-card [style*="color: #f3cf2d"],
+
+[data-theme="light"] .contact-info-card a[style*="color: #f3cf2d"],
+
+[data-theme="light"] .contact-info-card .text-warning {
+  color: #b45309 !important;
+  font-weight: 700 !important;
+}
+
+/* Facility Action Cards in Light Mode (Contact Page Yard Locator) */
+
+[data-theme="light"] .facility-action-card {
+  box-shadow: 0 4px 18px rgba(6, 21, 83, 0.08) !important;
+}
+
+[data-theme="light"] .facility-action-card .facility-action-title,
+
+[data-theme="light"] .facility-action-card h5,
+
+[data-theme="light"] .facility-action-card .text-white {
+  color: #061553 !important;
+  font-weight: 800 !important;
+}
+
+[data-theme="light"] .facility-action-card .facility-action-desc,
+
+[data-theme="light"] .facility-action-card p {
+  color: #334155 !important;
+  font-weight: 500 !important;
+}
+
+/* Yard 1: Public Scale & Commercial Receiving (Warm Amber/Gold Accent) */
+
+[data-theme="light"] .facility-action-card.border-warning {
+  background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%) !important;
+  border: 2px solid #f59e0b !important;
+}
+
+[data-theme="light"] .facility-action-card.border-warning i.fa-truck,
+
+[data-theme="light"] .facility-action-card.border-warning .text-warning {
+  color: #d97706 !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-warning {
+  color: #92400e !important;
+  background: #ffffff !important;
+  border: 2px solid #d97706 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.15) !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-warning:hover {
+  background: #f59e0b !important;
+  color: #061553 !important;
+  border-color: #f59e0b !important;
+}
+
+/* Yard 2: Mobile Spectrometry Dispatch (Cyan/Sky Blue Accent) */
+
+[data-theme="light"] .facility-action-card.border-info {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f9ff 100%) !important;
+  border: 2px solid #0284c7 !important;
+}
+
+[data-theme="light"] .facility-action-card.border-info i.fa-flask,
+
+[data-theme="light"] .facility-action-card.border-info .text-info {
+  color: #0284c7 !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-info {
+  color: #0369a1 !important;
+  background: #ffffff !important;
+  border: 2px solid #0284c7 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.15) !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-info:hover {
+  background: #0284c7 !important;
+  color: #ffffff !important;
+  border-color: #0284c7 !important;
+}
+
+/* Yard 3: Container Drop-Off Service (Emerald Green Accent) */
+
+[data-theme="light"] .facility-action-card.border-success {
+  background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%) !important;
+  border: 2px solid #16a34a !important;
+}
+
+[data-theme="light"] .facility-action-card.border-success i.fa-truck,
+
+[data-theme="light"] .facility-action-card.border-success .text-success {
+  color: #16a34a !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-success {
+  color: #15803d !important;
+  background: #ffffff !important;
+  border: 2px solid #16a34a !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.15) !important;
+}
+
+[data-theme="light"] .facility-action-card .btn-outline-success:hover {
+  background: #16a34a !important;
+  color: #ffffff !important;
+  border-color: #16a34a !important;
+}
+
+[data-theme="light"] .facility-action-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(6, 21, 83, 0.15) !important;
+}
+
+/* Safety net for any lingering inline background inside rate-card-box in light mode */
+
+[data-theme="light"] .rate-card-box [style*="background: #090c12"],
+
+[data-theme="light"] .rate-card-box [style*="background:#090c12"],
+
+[data-theme="light"] .rate-card-box [style*="background: rgb(9, 12, 18)"] {
+  background: #f8fafc !important;
+}
+
+/* Yard left panel specifications contrast in light mode */
+
+[data-theme="light"] .yard-location-panel .text-muted {
+  color: #475569 !important;
+}
+
+[data-theme="light"] .yard-location-panel .col-md-6 {
+  color: #334155 !important;
+  font-weight: 500;
+}
+
+/* Modal in Light Mode */
+
 [data-theme="light"] .modal-industrial-content {
   background: #ffffff !important;
   color: #1e293b !important;
-  border: 1px solid #cbd5e1 !important;
+  border: 2px solid #061553 !important;
+  box-shadow: 0 20px 50px rgba(6, 21, 83, 0.25) !important;
 }
 
-[data-theme="light"] .modal-industrial-content h4 {
-  color: #0f172a !important;
+[data-theme="light"] .modal-industrial-content h3,
+
+[data-theme="light"] .modal-industrial-content h4,
+
+[data-theme="light"] .modal-industrial-content h5 {
+  color: #061553 !important;
 }
 
 [data-theme="light"] .modal-industrial-content p {
@@ -3830,9 +4392,15 @@ select.form-control-industrial option {
 }
 
 [data-theme="light"] .modal-ref-badge {
-  background: #fef08a !important;
-  color: #854d0e !important;
-  border: 1px solid #eab308 !important;
+  background: #f1f5f9 !important;
+  color: #061553 !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+[data-theme="light"] .modal-ref-badge strong,
+
+[data-theme="light"] .modal-ref-badge .text-white {
+  color: #061553 !important;
 }
 
 [data-theme="light"] .footer-main-dark {
@@ -3849,8 +4417,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   11. RTL / LTR TOGGLE BUTTON & STYLES
-   ===================================================================== */
+
+11. RTL / LTR TOGGLE BUTTON & STYLES
+
+===================================================================== */
+
 .dir-toggle-btn {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(243, 207, 45, 0.4);
@@ -3922,8 +4493,11 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   11. RTL LAYOUT SYSTEM (USING CSS LOGICAL PROPERTIES)
-   ===================================================================== */
+
+11. RTL LAYOUT SYSTEM (USING CSS LOGICAL PROPERTIES)
+
+===================================================================== */
+
 [dir="rtl"] {
   direction: rtl;
   text-align: right;
@@ -3935,41 +4509,65 @@ select.form-control-industrial option {
 }
 
 /* Base text alignment */
+
 [dir="rtl"] body,
+
 [dir="rtl"] p,
+
 [dir="rtl"] h1,
+
 [dir="rtl"] h2,
+
 [dir="rtl"] h3,
+
 [dir="rtl"] h4,
+
 [dir="rtl"] h5,
+
 [dir="rtl"] h6,
+
 [dir="rtl"] .section-main-heading,
+
 [dir="rtl"] .section-subtext,
+
 [dir="rtl"] .inner-hero-lead,
+
 [dir="rtl"] .inner-hero-subtitle,
+
 [dir="rtl"] .catalogue-card-desc,
+
 [dir="rtl"] .process-step-desc,
+
 [dir="rtl"] .timeline-step-desc,
+
 [dir="rtl"] .op-capability-body p,
+
 [dir="rtl"] .service-desc-clean,
+
 [dir="rtl"] .material-card-desc {
   text-align: start !important;
 }
 
 /* Bootstrap 4 text utilities in RTL */
+
 [dir="rtl"] .text-left,
+
 [dir="rtl"] .text-md-left,
+
 [dir="rtl"] .text-lg-left {
   text-align: right !important;
 }
 
 [dir="rtl"] .text-right,
+
 [dir="rtl"] .text-md-right,
+
 [dir="rtl"] .text-lg-right {
   text-align: left !important;
 }
 
 /* Spacing flips in RTL */
+
 [dir="rtl"] .mr-1 { margin-left: 0.25rem !important; margin-right: 0 !important; }
 [dir="rtl"] .mr-2 { margin-left: 0.5rem !important; margin-right: 0 !important; }
 [dir="rtl"] .mr-3 { margin-left: 1rem !important; margin-right: 0 !important; }
@@ -3978,8 +4576,7 @@ select.form-control-industrial option {
 [dir="rtl"] .ml-2 { margin-right: 0.5rem !important; margin-left: 0 !important; }
 [dir="rtl"] .ml-3 { margin-right: 1rem !important; margin-left: 0 !important; }
 [dir="rtl"] .ml-4 { margin-right: 1.5rem !important; margin-left: 0 !important; }
-
-/* Topbar Strip in RTL */
+  /* Topbar Strip in RTL */
 [dir="rtl"] .topbar-badge {
   margin-inline-end: 12px;
   margin-inline-start: 0;
@@ -3996,6 +4593,7 @@ select.form-control-industrial option {
 }
 
 /* Header & Brand in RTL */
+
 [dir="rtl"] .brand-icon {
   margin-inline-end: 12px;
   margin-inline-start: 0;
@@ -4011,6 +4609,7 @@ select.form-control-industrial option {
 }
 
 /* Active navigation indicator in RTL */
+
 .navbar-nav-custom > li > a.active {
   position: relative;
 }
@@ -4032,6 +4631,7 @@ select.form-control-industrial option {
 }
 
 /* Sidepanel Drawer in RTL */
+
 [dir="rtl"] .sidepanel-custom {
   left: -340px !important;
   right: auto !important;
@@ -4051,6 +4651,7 @@ select.form-control-industrial option {
 }
 
 /* Timeline Layout in RTL */
+
 [dir="rtl"] .timeline-step-badge {
   margin-inline-end: 28px;
   margin-inline-start: 0;
@@ -4071,6 +4672,7 @@ select.form-control-industrial option {
 }
 
 /* Notices & Callouts in RTL */
+
 [dir="rtl"] .rate-notice-callout {
   border-left: none !important;
   border-inline-start: 4px solid var(--brand-yellow) !important;
@@ -4082,6 +4684,7 @@ select.form-control-industrial option {
 }
 
 /* Forms & Selects in RTL */
+
 [dir="rtl"] .form-label-custom {
   text-align: start;
 }
@@ -4107,15 +4710,21 @@ select.form-control-industrial option {
 }
 
 /* Tables in RTL */
+
 [dir="rtl"] .industrial-table th,
+
 [dir="rtl"] .industrial-table td {
   text-align: start;
 }
 
 /* Directional Icons Flipping in RTL */
+
 [dir="rtl"] .fa-angle-right,
+
 [dir="rtl"] .fa-arrow-right,
+
 [dir="rtl"] .fa-chevron-right,
+
 [dir="rtl"] .footer-links-list li a i {
   transform: scaleX(-1);
   display: inline-block;
@@ -4124,6 +4733,7 @@ select.form-control-industrial option {
 }
 
 /* Rate Card Search Wrap in RTL */
+
 [dir="rtl"] .rate-search-wrap i {
   right: 18px !important;
   left: auto !important;
@@ -4136,6 +4746,7 @@ select.form-control-industrial option {
 }
 
 /* Modal and FAQ in RTL */
+
 [dir="rtl"] .faq-header {
   text-align: start;
 }
@@ -4145,31 +4756,40 @@ select.form-control-industrial option {
 }
 
 /* =====================================================================
-   12. STICKY NAVIGATION ENHANCEMENTS
-   ===================================================================== */
+
+12. STICKY NAVIGATION ENHANCEMENTS
+
+===================================================================== */
+
 html {
   scroll-behavior: smooth;
 }
 
 /* Section scroll-margin to prevent sticky header occlusion */
+
 section[id],
+
 div[id^="sec-"],
+
 div[id^="step-"],
+
 #pickupSection {
   scroll-margin-top: 110px;
 }
 
 .header {
-  height: 88px;
+  height: 84px;
   position: fixed;
   width: 100%;
-  top: 36px;
+  top: 0 !important;
   z-index: 9999;
   background: rgba(11, 15, 23, 0.94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  align-items: center;
 }
 
 .header.header-scrolled {
@@ -4187,9 +4807,13 @@ div[id^="step-"],
 }
 
 /* =====================================================================
-   13. INNOVATIVE STEEL-THEMED SCROLLBAR (BRUSHED METALLIC AESTHETIC)
-   ===================================================================== */
+
+13. INNOVATIVE STEEL-THEMED SCROLLBAR (BRUSHED METALLIC AESTHETIC)
+
+===================================================================== */
+
 /* Standard Firefox */
+
 html {
   scrollbar-width: thin;
   scrollbar-color: #7b8b9f #070a0f;
@@ -4200,12 +4824,14 @@ html {
 }
 
 /* WebKit / Chromium (Chrome, Edge, Opera, Safari) */
+
 ::-webkit-scrollbar {
   width: 9px;
   height: 9px;
 }
 
 /* Scrollbar Track: Recessed Heavy-Gauge Steel Channel */
+
 ::-webkit-scrollbar-track {
   background: linear-gradient(180deg, #070a0f 0%, #121824 50%, #070a0f 100%);
   border-inline-start: 1px solid rgba(255, 255, 255, 0.05);
@@ -4219,16 +4845,17 @@ html {
 }
 
 /* Scrollbar Thumb: Solid Steel Billet / Brushed Alloy Bar */
+
 ::-webkit-scrollbar-thumb {
   background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.08) 0px,
-      rgba(255, 255, 255, 0.08) 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(90deg, #3d4a5d 0%, #7b8b9f 25%, #cbd5e1 50%, #7b8b9f 75%, #3d4a5d 100%);
+  repeating-linear-gradient(
+  0deg,
+  rgba(255, 255, 255, 0.08) 0px,
+  rgba(255, 255, 255, 0.08) 2px,
+  transparent 2px,
+  transparent 4px
+  ),
+  linear-gradient(90deg, #3d4a5d 0%, #7b8b9f 25%, #cbd5e1 50%, #7b8b9f 75%, #3d4a5d 100%);
   border-radius: 5px;
   border: 2px solid #0b0f17;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.4);
@@ -4236,21 +4863,23 @@ html {
 }
 
 /* Scrollbar Thumb Hover: Industrial Blue Arc Sheen */
+
 ::-webkit-scrollbar-thumb:hover {
   background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.14) 0px,
-      rgba(255, 255, 255, 0.14) 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(90deg, #061553 0%, #1e40af 30%, #60a5fa 50%, #1e40af 70%, #061553 100%);
+  repeating-linear-gradient(
+  0deg,
+  rgba(255, 255, 255, 0.14) 0px,
+  rgba(255, 255, 255, 0.14) 2px,
+  transparent 2px,
+  transparent 4px
+  ),
+  linear-gradient(90deg, #061553 0%, #1e40af 30%, #60a5fa 50%, #1e40af 70%, #061553 100%);
   border-color: #1e3a8a;
   box-shadow: 0 0 12px rgba(59, 130, 246, 0.65), inset 0 0 3px rgba(255, 255, 255, 0.7);
 }
 
 /* Scrollbar Thumb Active / Dragging: Pure Metallic Titanium Arc Flash */
+
 ::-webkit-scrollbar-thumb:active {
   background: linear-gradient(90deg, #061553 0%, #2563eb 35%, #ffffff 50%, #2563eb 65%, #061553 100%);
   border-color: #1d4ed8;
@@ -4258,44 +4887,47 @@ html {
 }
 
 /* Light Mode Steel Scrollbar */
+
 [data-theme="light"] ::-webkit-scrollbar-thumb {
   background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.04) 0px,
-      rgba(0, 0, 0, 0.04) 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(90deg, #64748b 0%, #94a3b8 30%, #e2e8f0 50%, #94a3b8 70%, #64748b 100%);
+  repeating-linear-gradient(
+  0deg,
+  rgba(0, 0, 0, 0.04) 0px,
+  rgba(0, 0, 0, 0.04) 2px,
+  transparent 2px,
+  transparent 4px
+  ),
+  linear-gradient(90deg, #64748b 0%, #94a3b8 30%, #e2e8f0 50%, #94a3b8 70%, #64748b 100%);
   border: 2px solid #e2e8f0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 [data-theme="light"] ::-webkit-scrollbar-thumb:hover {
   background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.15) 0px,
-      rgba(255, 255, 255, 0.15) 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(90deg, #061553 0%, #1e40af 30%, #3b82f6 50%, #1e40af 70%, #061553 100%);
+  repeating-linear-gradient(
+  0deg,
+  rgba(255, 255, 255, 0.15) 0px,
+  rgba(255, 255, 255, 0.15) 2px,
+  transparent 2px,
+  transparent 4px
+  ),
+  linear-gradient(90deg, #061553 0%, #1e40af 30%, #3b82f6 50%, #1e40af 70%, #061553 100%);
   border-color: #93c5fd;
   box-shadow: 0 0 10px rgba(30, 64, 175, 0.45);
 }
 
-
-
-
 /* ==========================================================================
-   REQUIREMENTS 14, 15 & 16: IMAGES, CTA BUTTONS, FOOTER & SOCIAL MEDIA
-   ========================================================================== */
+
+REQUIREMENTS 14, 15 & 16: IMAGES, CTA BUTTONS, FOOTER & SOCIAL MEDIA
+
+========================================================================== */
 
 /* --------------------------------------------------------------------------
-   14. HERO BACKGROUNDS & SECTION IMAGES
-   -------------------------------------------------------------------------- */
+
+14. HERO BACKGROUNDS & SECTION IMAGES
+
+-------------------------------------------------------------------------- */
+
 .industrial-hero {
   position: relative;
   background-size: cover !important;
@@ -4312,10 +4944,10 @@ html {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    135deg,
-    rgba(8, 12, 20, 0.94) 0%,
-    rgba(14, 20, 32, 0.90) 50%,
-    rgba(8, 12, 20, 0.95) 100%
+  135deg,
+  rgba(8, 12, 20, 0.94) 0%,
+  rgba(14, 20, 32, 0.90) 50%,
+  rgba(8, 12, 20, 0.95) 100%
   );
   z-index: 1;
 }
@@ -4326,6 +4958,7 @@ html {
 }
 
 /* Image Aspect Ratio & Anti-Distortion Rules */
+
 .img-fluid-industrial {
   width: 100%;
   height: auto;
@@ -4349,6 +4982,7 @@ html {
 }
 
 .material-card:hover .img-card-thumb,
+
 .product-item:hover .img-card-thumb {
   transform: scale(1.025);
   filter: brightness(1.05);
@@ -4363,6 +4997,7 @@ html {
 }
 
 /* Operational Capabilities Images (Home 2 / Recycling Operations) */
+
 .op-capability-img-wrap {
   border-radius: var(--radius-sm);
   overflow: hidden;
@@ -4389,8 +5024,11 @@ html {
 }
 
 /* --------------------------------------------------------------------------
-   15. CTA BUTTONS & INTERACTIVE ELEMENTS
-   -------------------------------------------------------------------------- */
+
+15. CTA BUTTONS & INTERACTIVE ELEMENTS
+
+-------------------------------------------------------------------------- */
+
 .btn-industrial-primary {
   min-height: 48px;
   padding: 13px 28px;
@@ -4472,6 +5110,7 @@ html {
 }
 
 /* Light Mode CTA Button Overrides */
+
 [data-theme="light"] .btn-industrial-secondary {
   background: #ffffff;
   color: #0f172a !important;
@@ -4487,8 +5126,11 @@ html {
 }
 
 /* --------------------------------------------------------------------------
-   16. FOOTER & SOCIAL MEDIA INTEGRATION
-   -------------------------------------------------------------------------- */
+
+16. FOOTER & SOCIAL MEDIA INTEGRATION
+
+-------------------------------------------------------------------------- */
+
 .footer-main-dark {
   background: #070a10;
   color: #94a3b8;
@@ -4551,6 +5193,7 @@ html {
 }
 
 /* Social Media Bar & Icons */
+
 .footer-social-bar {
   display: flex;
   flex-wrap: wrap;
@@ -4615,6 +5258,7 @@ html {
 }
 
 /* Copyright Strip */
+
 .footer-bottom-strip {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 22px;
@@ -4641,6 +5285,7 @@ html {
 }
 
 /* Light Mode Overrides for Footer */
+
 [data-theme="light"] .footer-main-dark {
   background: #0f172a;
   color: #94a3b8;
@@ -4661,8 +5306,8 @@ html {
   color: var(--brand-yellow);
 }
 
-
 /* Standardized Industrial Outline Button */
+
 .btn-industrial-outline {
   min-height: 38px;
   padding: 8px 18px;
@@ -4709,14 +5354,18 @@ html {
   box-shadow: 0 4px 14px rgba(6, 21, 83, 0.35);
 }
 
-
 /* ==========================================================================
-   REQUIREMENT 17 & 18: RESPONSIVE DESIGN & HOME 1/HOME 2 DROPDOWN NAVIGATION
-   ========================================================================== */
+
+REQUIREMENT 17 & 18: RESPONSIVE DESIGN & HOME 1/HOME 2 DROPDOWN NAVIGATION
+
+========================================================================== */
 
 /* --------------------------------------------------------------------------
-   NAVBAR DROPDOWN (HOME 1 & HOME 2 DROPDOWN NAVIGATION)
-   -------------------------------------------------------------------------- */
+
+NAVBAR DROPDOWN (HOME 1 & HOME 2 DROPDOWN NAVIGATION)
+
+-------------------------------------------------------------------------- */
+
 .nav-item-dropdown {
   position: relative;
   display: inline-block;
@@ -4761,6 +5410,7 @@ html {
 }
 
 .nav-item-dropdown:hover .nav-dropdown-menu,
+
 .nav-item-dropdown:focus-within .nav-dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -4811,6 +5461,7 @@ html {
 }
 
 /* Light Mode Navbar Dropdown */
+
 [data-theme="light"] .nav-dropdown-menu {
   background: #ffffff;
   border-color: #cbd5e1;
@@ -4827,11 +5478,20 @@ html {
   color: #061553 !important;
 }
 
+[data-theme="light"] .nav-dropdown-menu li a.active {
+  background: rgba(6, 21, 83, 0.08) !important;
+  color: #061553 !important;
+  font-weight: 700 !important;
+}
+
 /* --------------------------------------------------------------------------
-   17. COMPREHENSIVE RESPONSIVE DESIGN (360px, 390px, 768px, 1024px, 1440px)
-   -------------------------------------------------------------------------- */
+
+17. COMPREHENSIVE RESPONSIVE DESIGN (360px, 390px, 768px, 1024px, 1440px)
+
+-------------------------------------------------------------------------- */
 
 /* Global Anti-Horizontal-Overflow Guard */
+
 html, body {
   max-width: 100%;
   overflow-x: hidden !important;
@@ -4839,6 +5499,7 @@ html, body {
 }
 
 /* Responsive Table Wrapper */
+
 .table-responsive {
   display: block;
   width: 100%;
@@ -4847,181 +5508,341 @@ html, body {
 }
 
 /* Screen widths: 1200px - 1440px (Desktop & Large Laptops) */
+
 @media (min-width: 1200px) and (max-width: 1440px) {
-  .navbar-nav-custom > li > a {
-    padding-inline: 10px;
-    font-size: 14px;
-  }
+.navbar-nav-custom > li > a {
+  padding-inline: 10px;
+  font-size: 14px;
+}
+
 }
 
 /* Screen widths: 992px - 1199px (Small Laptops & Landscape Tablets) */
+
 @media (min-width: 992px) and (max-width: 1199px) {
-  .navbar-nav-custom > li {
-    margin-inline-start: 4px;
-    margin-left: 4px;
-  }
-  .navbar-nav-custom > li > a {
-    padding-inline: 7px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-size: 13px;
-  }
-  .nav-cta-btn {
-    padding: 7px 11px !important;
-    font-size: 12px !important;
-    margin-inline-start: 6px !important;
-  }
-  .theme-toggle-btn, .dir-toggle-btn {
-    padding: 5px 8px !important;
-    font-size: 13px !important;
-  }
+.navbar-nav-custom > li {
+  margin-inline-start: 4px;
+  margin-left: 4px;
+}
+
+.navbar-nav-custom > li > a {
+  padding-inline: 7px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 13px;
+}
+
+.nav-cta-btn {
+  padding: 7px 11px !important;
+  font-size: 12px !important;
+  margin-inline-start: 6px !important;
+}
+
+.theme-toggle-btn, .dir-toggle-btn {
+  padding: 5px 8px !important;
+  font-size: 13px !important;
+}
+
 }
 
 /* Screen widths: <= 991px (Tablets & Mobile Drawer Activation) */
+
 @media (max-width: 991px) {
-  .navbar-nav-custom {
-    display: none !important;
-  }
-  .openbtn-custom {
-    display: inline-flex !important;
-  }
-  .header {
-    height: 72px;
-  }
-  .header-scrolled {
-    height: 68px;
-  }
-  .inner-hero-banner {
-    padding: 110px 0 45px 0;
-  }
-  .inner-hero-title {
-    font-size: 30px;
-  }
-  .section-main-heading {
-    font-size: 28px;
-  }
-  .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
-    margin-bottom: 24px;
-  }
-  .op-capability-card {
-    padding: 20px;
-  }
+.navbar-nav-custom {
+  display: none !important;
+}
+
+/* Mobile & Tablet Header: Unified 68px flex centering, no upward offset or bottom dead space */
+.header,
+.header.header-scrolled,
+[data-theme="light"] .header,
+[data-theme="light"] .header.header-scrolled {
+  height: 68px !important;
+  min-height: 68px !important;
+  max-height: 68px !important;
+  top: 0 !important;
+  padding: 0 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.header .container-fluid {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+}
+
+.header .row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.header [class*="col-"],
+.header .logo_section,
+.header .text-right {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+}
+
+.header .logo_section {
+  justify-content: flex-start !important;
+}
+
+.header .text-right {
+  justify-content: flex-end !important;
+}
+
+.header .brand-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+.header .brand-logo-img {
+  height: 42px !important;
+  max-height: 42px !important;
+  width: auto !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 3px 8px !important;
+  box-sizing: border-box !important;
+  vertical-align: middle !important;
+  transform: none !important;
+}
+
+.header .openbtn-custom {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+  box-sizing: border-box !important;
+  border-radius: 6px !important;
+}
+
+.inner-hero-banner {
+  padding: 110px 0 45px 0;
+}
+
+.inner-hero-title {
+  font-size: 30px;
+}
+
+.section-main-heading {
+  font-size: 28px;
+}
+
+.col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+  margin-bottom: 24px;
+}
+
+/* Guarantee header columns are excluded from section column bottom margins */
+.header .col-lg-3,
+.header .col-lg-9,
+.header [class*="col-"] {
+  margin-bottom: 0 !important;
+}
+
+.op-capability-card {
+  padding: 20px;
+}
+
 }
 
 /* Screen widths: <= 768px (Portrait Tablets & Phablets) */
+
 @media (max-width: 768px) {
-  .section-py {
-    padding: 50px 0;
-  }
-  .hero-title-main {
-    font-size: 32px;
-    line-height: 1.25;
-  }
-  .hero-lead-text {
-    font-size: 15px;
-  }
-  .stat-number {
-    font-size: 30px;
-  }
-  .rate-table th, .rate-table td {
-    padding: 10px 12px;
-    font-size: 13px;
-  }
-  .footer-main-dark {
-    padding: 50px 0 20px 0;
-  }
-  .footer-bottom-strip {
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
-  }
+.section-py {
+  padding: 50px 0;
+}
+
+.hero-title-main {
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.hero-lead-text {
+  font-size: 15px;
+}
+
+.stat-number {
+  font-size: 30px;
+}
+
+.rate-table th, .rate-table td {
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.footer-main-dark {
+  padding: 50px 0 20px 0;
+}
+
+.footer-bottom-strip {
+  flex-direction: column;
+  text-align: center;
+  gap: 12px;
+}
+
 }
 
 /* Screen widths: <= 576px (Standard Mobile Phones, e.g. 390px - 576px) */
+
 @media (max-width: 576px) {
-  .hero-title-main {
-    font-size: 26px;
-  }
-  .inner-hero-title {
-    font-size: 25px;
-  }
-  .section-main-heading {
-    font-size: 24px;
-  }
-  .btn-industrial-primary,
-  .btn-industrial-secondary {
-    width: 100%;
-    justify-content: center;
-    font-size: 14px;
-    padding: 12px 20px;
-  }
-  .btn-group-industrial {
-    flex-direction: column;
-    width: 100%;
-  }
-  .form-control-custom,
-  .form-select-custom {
-    font-size: 16px !important; /* Prevents iOS auto-zoom on input focus */
-    min-height: 48px;
-  }
-  .filter-chips-wrap {
-    justify-content: flex-start;
-    overflow-x: auto;
-    padding-bottom: 8px;
-    -webkit-overflow-scrolling: touch;
-  }
-  .filter-btn-chip {
-    white-space: nowrap;
-    padding: 7px 14px;
-    font-size: 12.5px;
-  }
-  .op-capability-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-  .op-capability-header h3 {
-    font-size: 18px;
-  }
-  .brand-title {
-    font-size: 22px;
-  }
-  .brand-tagline {
-    font-size: 9px;
-  }
+.hero-title-main {
+  font-size: 26px;
+}
+
+.inner-hero-title {
+  font-size: 25px;
+}
+
+.section-main-heading {
+  font-size: 24px;
+}
+
+.btn-industrial-primary,
+
+.btn-industrial-secondary {
+  width: 100%;
+  justify-content: center;
+  font-size: 14px;
+  padding: 12px 20px;
+}
+
+.btn-group-industrial {
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-control-custom,
+
+.form-select-custom {
+  font-size: 16px !important; /* Prevents iOS auto-zoom on input focus */
+  min-height: 48px;
+}
+
+.filter-chips-wrap {
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filter-btn-chip {
+  white-space: nowrap;
+  padding: 7px 14px;
+  font-size: 12.5px;
+}
+
+.op-capability-header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.op-capability-header h3 {
+  font-size: 18px;
+}
+
+.brand-title {
+  font-size: 22px;
+}
+
+.brand-tagline {
+  font-size: 9px;
+}
+
 }
 
 /* Screen widths: <= 390px & 360px (Compact Mobile Screens) */
+
 @media (max-width: 390px) {
-  .container, .container-fluid {
-    padding-inline: 12px;
+  .header,
+  .header.header-scrolled,
+  [data-theme="light"] .header,
+  [data-theme="light"] .header.header-scrolled {
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+    padding: 0 12px !important;
   }
-  .sidepanel-custom {
-    width: 90vw;
-    max-width: 320px;
+
+  .header .brand-logo-img {
+    height: 38px !important;
+    max-height: 38px !important;
   }
-  .hero-title-main {
-    font-size: 23px;
-    letter-spacing: 0.5px;
+
+  .header .openbtn-custom {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+    max-width: 38px !important;
+    max-height: 38px !important;
   }
-  .hero-lead-text {
-    font-size: 14px;
-  }
-  .section-main-heading {
-    font-size: 22px;
-  }
-  .section-badge-tag {
-    font-size: 11px;
-    padding: 4px 10px;
-  }
-  .brand-icon {
-    width: 34px;
-    height: 34px;
-    font-size: 16px;
-  }
-  .footer-social-link {
-    width: 36px;
-    height: 36px;
-    font-size: 14px;
-  }
+
+.container, .container-fluid {
+  padding-inline: 12px;
+}
+
+.sidepanel-custom {
+  width: 90vw;
+  max-width: 320px;
+}
+
+.hero-title-main {
+  font-size: 23px;
+  letter-spacing: 0.5px;
+}
+
+.hero-lead-text {
+  font-size: 14px;
+}
+
+.section-main-heading {
+  font-size: 22px;
+}
+
+.section-badge-tag {
+  font-size: 11px;
+  padding: 4px 10px;
+}
+
+.brand-icon {
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+}
+
+.footer-social-link {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+}
+
 }

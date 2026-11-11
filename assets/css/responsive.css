@@ -58,10 +58,10 @@
 
 @media (max-width: 575px) {
     .header {
-        padding: 20px 0px;
+        padding: 0 16px;
     }
     .text_align_right {
-        margin-top: -35px;
+        margin-top: 0;
     }
     .logo {
         text-align: center !important;
