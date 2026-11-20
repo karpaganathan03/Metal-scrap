@@ -46,6 +46,10 @@
          <div class="sidepanel-header">
             <a href="index.html" class="brand-link" aria-label="Ferromax Industrial Scrap">
                <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Scrap" class="brand-logo-img sidepanel-logo-img">
+               <div class="brand-text-wrap ml-2">
+                  <span class="brand-title">FERRO<span>MAX</span></span>
+                  <span class="brand-tagline">Industrial Scrap</span>
+               </div>
             </a>
             <button class="sidepanel-close" aria-label="Close Navigation"><i class="fa fa-times"></i></button>
          </div>
@@ -66,7 +70,6 @@
             </li>
             <li class="sidepanel-item-toggle">
                <button class="dir-toggle-btn sidepanel-dir-toggle w-100 justify-content-center" aria-label="Toggle Text Direction" title="Toggle Text Direction">
-                  <i class="fa fa-language mr-2"></i>
                   <span class="dir-toggle-label">Layout Direction: <span class="dir-indicator-badge">RTL</span></span>
                </button>
             </li>
@@ -90,8 +93,12 @@
          <div class="container-fluid px-lg-5">
             <div class="row d_flex align-items-center">
                <div class="col-lg-3 col-md-4 col-7 logo_section">
-                  <a href="index.html" class="brand-link" aria-label="Ferromax Industrial Metal Scrap &amp; Recycling">
+                                    <a href="index.html" class="brand-link" aria-label="Ferromax Industrial Metal Scrap &amp; Recycling">
                      <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Metal Scrap &amp; Recycling" class="brand-logo-img">
+                     <div class="brand-text-wrap ml-2">
+                        <span class="brand-title">FERRO<span>MAX</span></span>
+                        <span class="brand-tagline">Metal Scrap &amp; Recycling</span>
+                     </div>
                   </a>
                </div>
                <div class="col-lg-9 col-md-8 col-5 text-right d-flex align-items-center justify-content-end">
@@ -102,7 +109,6 @@
                            Home <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="nav-dropdown-menu">
-                           <li><a href="index.html" class="active"><i class="fa fa-home"></i> Home – Industrial Overview</a></li>
                            <li><a href="home-1.html"><i class="fa fa-cubes"></i> Home 1 – Material Recovery Hub</a></li>
                            <li><a href="home-2.html"><i class="fa fa-cogs"></i> Home 2 – Recycling Operations</a></li>
                         </ul>
@@ -118,10 +124,7 @@
                         </button>
                      </li>
                      <li>
-                        <button class="dir-toggle-btn ml-2" aria-label="Toggle Text Direction (LTR / RTL)" title="Toggle Text Direction">
-                           <i class="fa fa-language"></i>
-                           <span class="dir-indicator-badge">RTL</span>
-                        </button>
+                        <button class="dir-toggle-btn ml-2" aria-label="Toggle Text Direction (LTR / RTL)" title="Toggle Text Direction"><span class="dir-indicator-badge">RTL</span></button>
                      </li>
                      <li>
                         <a href="contact.html#pickupSection" class="nav-cta-btn">
@@ -186,7 +189,7 @@
 
                <!-- Slide 2 -->
                <div class="carousel-item">
-                  <div class="hero-slide-bg" style="background-image: url('assets/images/banner1.jpg');"></div>
+                  <div class="hero-slide-bg" style="background-image: url('assets/images/home-2-hero.jpg');"></div>
                   <div class="hero-overlay-gradient"></div>
                   <div class="hero-industrial-grid"></div>
                   <div class="container">
@@ -223,7 +226,7 @@
 
                <!-- Slide 3 -->
                <div class="carousel-item">
-                  <div class="hero-slide-bg" style="background-image: url('assets/images/banner1.jpg');"></div>
+                  <div class="hero-slide-bg" style="background-image: url('assets/images/materials-accepted-hero.jpg');"></div>
                   <div class="hero-overlay-gradient"></div>
                   <div class="hero-industrial-grid"></div>
                   <div class="container">
@@ -269,7 +272,7 @@
          </div>
       </section>
 
-      <!-- Indicative Scrap Rate Benchmark Bar -->
+            <!-- Indicative Scrap Rate Benchmark Bar -->
       <section class="rate-ticker-section">
          <div class="container-fluid px-lg-5">
             <div class="ticker-inner">
@@ -277,37 +280,70 @@
                   <i class="fa fa-bullhorn"></i> Indicative Benchmarks
                </div>
                <div class="ticker-items-scroller">
-                  <div class="ticker-rate-card">
-                     <span class="ticker-material-name">HMS 1&amp;2 Steel:</span>
-                     <span class="ticker-material-price">₹27,200 - ₹29,325 / MT</span>
-                  </div>
-                  <div class="ticker-rate-card">
-                     <span class="ticker-material-name">Bare Bright Copper (99.9%):</span>
-                     <span class="ticker-material-price">₹646 - ₹688 / kg</span>
-                  </div>
-                  <div class="ticker-rate-card">
-                     <span class="ticker-material-name">Alu Extrusions 6063:</span>
-                     <span class="ticker-material-price">₹165 - ₹187 / kg</span>
-                  </div>
-                  <div class="ticker-rate-card">
-                     <span class="ticker-material-name">Stainless Steel 304:</span>
-                     <span class="ticker-material-price">₹110 - ₹126 / kg</span>
-                  </div>
-                  <div class="ticker-rate-card">
-                     <span class="ticker-material-name">Yellow Brass Clean:</span>
-                     <span class="ticker-material-price">₹374 - ₹408 / kg</span>
-                  </div>
-                  <div class="ticker-rate-card">
-                     <span class="ticker-material-name">Shredded Steel (ISRI 211):</span>
-                     <span class="ticker-material-price">₹28,900 - ₹31,025 / MT</span>
-                  </div>
-                  <div class="ticker-rate-card">
-                     <span class="ticker-material-name">Inconel 625/718:</span>
-                     <span class="ticker-material-price">₹1,190 - ₹1,402 / kg</span>
+                  <div class="ticker-scroll-track">
+                     <!-- Set 1 -->
+                     <div class="ticker-rate-card">
+                        <span class="ticker-material-name">HMS 1&amp;2 Steel:</span>
+                        <span class="ticker-material-price">₹27,200 - ₹29,325 / MT</span>
+                     </div>
+                     <div class="ticker-rate-card">
+                        <span class="ticker-material-name">Bare Bright Copper (99.9%):</span>
+                        <span class="ticker-material-price">₹646 - ₹688 / kg</span>
+                     </div>
+                     <div class="ticker-rate-card">
+                        <span class="ticker-material-name">Alu Extrusions 6063:</span>
+                        <span class="ticker-material-price">₹165 - ₹187 / kg</span>
+                     </div>
+                     <div class="ticker-rate-card">
+                        <span class="ticker-material-name">Stainless Steel 304:</span>
+                        <span class="ticker-material-price">₹110 - ₹126 / kg</span>
+                     </div>
+                     <div class="ticker-rate-card">
+                        <span class="ticker-material-name">Yellow Brass Clean:</span>
+                        <span class="ticker-material-price">₹374 - ₹408 / kg</span>
+                     </div>
+                     <div class="ticker-rate-card">
+                        <span class="ticker-material-name">Shredded Steel (ISRI 211):</span>
+                        <span class="ticker-material-price">₹28,900 - ₹31,025 / MT</span>
+                     </div>
+                     <div class="ticker-rate-card">
+                        <span class="ticker-material-name">Inconel 625/718:</span>
+                        <span class="ticker-material-price">₹1,190 - ₹1,402 / kg</span>
+                     </div>
+
+                     <!-- Set 2 (Duplicate for Seamless Infinite Left-to-Right Loop) -->
+                     <div class="ticker-rate-card" aria-hidden="true">
+                        <span class="ticker-material-name">HMS 1&amp;2 Steel:</span>
+                        <span class="ticker-material-price">₹27,200 - ₹29,325 / MT</span>
+                     </div>
+                     <div class="ticker-rate-card" aria-hidden="true">
+                        <span class="ticker-material-name">Bare Bright Copper (99.9%):</span>
+                        <span class="ticker-material-price">₹646 - ₹688 / kg</span>
+                     </div>
+                     <div class="ticker-rate-card" aria-hidden="true">
+                        <span class="ticker-material-name">Alu Extrusions 6063:</span>
+                        <span class="ticker-material-price">₹165 - ₹187 / kg</span>
+                     </div>
+                     <div class="ticker-rate-card" aria-hidden="true">
+                        <span class="ticker-material-name">Stainless Steel 304:</span>
+                        <span class="ticker-material-price">₹110 - ₹126 / kg</span>
+                     </div>
+                     <div class="ticker-rate-card" aria-hidden="true">
+                        <span class="ticker-material-name">Yellow Brass Clean:</span>
+                        <span class="ticker-material-price">₹374 - ₹408 / kg</span>
+                     </div>
+                     <div class="ticker-rate-card" aria-hidden="true">
+                        <span class="ticker-material-name">Shredded Steel (ISRI 211):</span>
+                        <span class="ticker-material-price">₹28,900 - ₹31,025 / MT</span>
+                     </div>
+                     <div class="ticker-rate-card" aria-hidden="true">
+                        <span class="ticker-material-name">Inconel 625/718:</span>
+                        <span class="ticker-material-price">₹1,190 - ₹1,402 / kg</span>
+                     </div>
                   </div>
                </div>
-               <a href="rate-card.html" class="ticker-disclaimer-btn">
-                  <i class="fa fa-info-circle"></i> Weekly Benchmark Index | View Full Rate Card &rarr;
+               <a href="rate-card.html" class="ticker-disclaimer-btn" title="View Full Rate Card">
+                  <i class="fa fa-info-circle"></i> Weekly Benchmark Index | View Full Rate Card <i class="fa fa-arrow-right ml-1"></i>
                </a>
             </div>
          </div>
@@ -356,9 +392,9 @@
                <div class="col-lg-5 col-md-12 mb-lg-0 mb-5">
                   <div class="about_img text-center position-relative">
                      <figure>
-                        <img src="assets/images/about.jpg" alt="Ferromax Industrial Scrap Metal Processing Yard" class="img-fluid img-fluid-industrial" style="border-radius: 8px; object-fit: cover; aspect-ratio: 16/10; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.4);"/>
+                        <img src="assets/images/about.jpg" alt="Ferromax Industrial Scrap Metal Processing Yard" class="img-fluid img-fluid-industrial" style="border: none !important; border-radius: 10px; object-fit: cover; width: 100%; height: 100%; display: block;"/>
                      </figure>
-                     <div class="stat-badge-floating d-none d-sm-block" style="position: absolute; bottom: 20px; right: 20px; background: #f3cf2d; color: #090c12; padding: 18px 22px; border-radius: 8px; font-weight: 800; font-family: 'Rajdhani', sans-serif; box-shadow: 0 10px 25px rgba(0,0,0,0.5); text-align: left;">
+                     <div class="stat-badge-floating d-none d-sm-block" style="position: absolute; bottom: 20px; right: 20px; background: #F2CB22; color: #0e0e0c; padding: 18px 22px; border-radius: 8px; font-weight: 800; font-family: 'Rajdhani', sans-serif; box-shadow: none; border: 1px solid rgba(255,255,255,0.08); text-align: left;">
                         <span style="font-size: 32px; display: block; line-height: 1;">35+ YEARS</span>
                         <span style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">CIRCULAR METALLURGY EXCELLENCE</span>
                      </div>
@@ -382,7 +418,7 @@
                      <div class="row mb-4">
                         <div class="col-sm-6 mb-3">
                            <div class="d-flex align-items-start">
-                              <div style="width: 38px; height: 38px; background: rgba(243, 207, 45, 0.15); color: #f3cf2d; display: flex; align-items: center; justify-content: center; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px;">
+                              <div style="width: 38px; height: 38px; background: rgba(242, 203, 34, 0.12); color: #F2CB22; display: flex; align-items: center; justify-content: center; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px;">
                                  <i class="fa fa-truck"></i>
                               </div>
                               <div>
@@ -393,7 +429,7 @@
                         </div>
                         <div class="col-sm-6 mb-3">
                            <div class="d-flex align-items-start">
-                              <div style="width: 38px; height: 38px; background: rgba(243, 207, 45, 0.15); color: #f3cf2d; display: flex; align-items: center; justify-content: center; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px;">
+                              <div style="width: 38px; height: 38px; background: rgba(242, 203, 34, 0.12); color: #F2CB22; display: flex; align-items: center; justify-content: center; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px;">
                                  <i class="fa fa-cogs"></i>
                               </div>
                               <div>
@@ -404,7 +440,7 @@
                         </div>
                         <div class="col-sm-6 mb-3">
                            <div class="d-flex align-items-start">
-                              <div style="width: 38px; height: 38px; background: rgba(243, 207, 45, 0.15); color: #f3cf2d; display: flex; align-items: center; justify-content: center; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px;">
+                              <div style="width: 38px; height: 38px; background: rgba(242, 203, 34, 0.12); color: #F2CB22; display: flex; align-items: center; justify-content: center; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px;">
                                  <i class="fa fa-refresh"></i>
                               </div>
                               <div>
@@ -415,7 +451,7 @@
                         </div>
                         <div class="col-sm-6 mb-3">
                            <div class="d-flex align-items-start">
-                              <div style="width: 38px; height: 38px; background: rgba(243, 207, 45, 0.15); color: #f3cf2d; display: flex; align-items: center; justify-content: center; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px;">
+                              <div style="width: 38px; height: 38px; background: rgba(242, 203, 34, 0.12); color: #F2CB22; display: flex; align-items: center; justify-content: center; border-radius: 4px; margin-right: 12px; flex-shrink: 0; margin-top: 3px;">
                                  <i class="fa fa-shield"></i>
                               </div>
                               <div>
@@ -426,11 +462,11 @@
                         </div>
                      </div>
 
-                     <div class="d-flex flex-wrap gap-3">
-                        <a href="material-recovery.html" class="btn-industrial-primary mr-3 mb-2">
+                     <div class="hero-cta-actions d-flex flex-wrap align-items-center">
+                        <a href="material-recovery.html" class="btn-industrial-primary">
                            <i class="fa fa-th-large"></i> View All Accepted Materials
                         </a>
-                        <a href="#recycling-operations" class="btn-industrial-secondary mb-2">
+                        <a href="#recycling-operations" class="btn-industrial-secondary">
                            <i class="fa fa-gears"></i> Inspect Our Yard Operations
                         </a>
                      </div>
@@ -555,9 +591,9 @@
             </div>
 
             <!-- Capability Feature Strip & CTAs -->
-            <div class="row mt-4 align-items-center">
-               <div class="col-lg-8 mb-lg-0 mb-4">
-                  <div class="d-flex flex-wrap gap-4">
+            <div class="row mt-4 align-items-center commercial-benefits-layout">
+               <div class="col-lg-7 col-xl-7 mb-lg-0 mb-3">
+                  <div class="commercial-benefit-list d-flex flex-wrap">
                      <div class="d-flex align-items-center mr-4 mb-2">
                         <i class="fa fa-check-circle text-warning mr-2" style="font-size: 18px;"></i>
                         <span class="font-weight-bold" style="font-size: 14px;">Legal-for-Trade Dual 80-Ft Weighbridges</span>
@@ -572,12 +608,12 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-4 text-lg-right text-left">
-                  <div class="d-inline-flex flex-wrap gap-2">
-                     <a href="material-recovery.html" class="btn-industrial-primary mr-2 mb-2">
-                        <i class="fa fa-th-large"></i> View All Materials
+               <div class="col-lg-5 col-xl-5 text-lg-right text-left">
+                  <div class="commercial-benefit-actions d-flex flex-wrap align-items-center justify-content-lg-end">
+                     <a href="material-recovery.html" class="btn-industrial-primary">
+                        <i class="fa fa-th-large"></i> View Materials
                      </a>
-                     <a href="contact.html#pickupSection" class="btn-industrial-secondary mb-2">
+                     <a href="contact.html#pickupSection" class="btn-industrial-secondary">
                         <i class="fa fa-truck"></i> Request Pickup
                      </a>
                   </div>
@@ -1001,7 +1037,7 @@
                         <p>
                            Placement of heavy-duty 15-yard to 50-yard roll-off containers and sealed swarf hoppers directly at your manufacturing plant with scheduled or on-call GPS swaps.
                         </p>
-                        <div class="op-spec-item mt-3 pt-3 border-top border-secondary">
+                        <div class="op-spec-item">
                            <span class="op-spec-label">Container Sizes:</span>
                            <span class="op-spec-val">15, 20, 30, 40, &amp; 50 Cu. Yards</span>
                         </div>
@@ -1019,7 +1055,7 @@
                         <p>
                            Mobile torch cutting, on-site shearing, and magnet-equipped excavator teams deployed directly to decommissioned refineries, power stations, and factory tear-downs.
                         </p>
-                        <div class="op-spec-item mt-3 pt-3 border-top border-secondary">
+                        <div class="op-spec-item">
                            <span class="op-spec-label">Capabilities:</span>
                            <span class="op-spec-val">Rigging, Torch Cutting, Heavy Haulage</span>
                         </div>
@@ -1037,7 +1073,7 @@
                         <p>
                            Our metallurgy team brings Thermo Scientific Niton XRF analyzers to your facility, verifying titanium, Inconel, Monel, and stainless chemistries down to 0.01% in seconds.
                         </p>
-                        <div class="op-spec-item mt-3 pt-3 border-top border-secondary">
+                        <div class="op-spec-item">
                            <span class="op-spec-label">Assay Turnaround:</span>
                            <span class="op-spec-val">Instant Elemental Chemistry in 5 Seconds</span>
                         </div>
@@ -1055,7 +1091,7 @@
                         <p>
                            1,200-ton static hydraulic shear sizing structural steel to 3-ft furnace charge lengths, alongside triple-compression baling for stamping clips into high-density cubes.
                         </p>
-                        <div class="op-spec-item mt-3 pt-3 border-top border-secondary">
+                        <div class="op-spec-item">
                            <span class="op-spec-label">Shearing Force:</span>
                            <span class="op-spec-val">1,200 Metric Tons Hydraulic Thrust</span>
                         </div>
@@ -1073,7 +1109,7 @@
                         <p>
                            Deepwater maritime berth and dedicated rail siding allow direct bulk charging supply to domestic electric arc furnaces (EAF) and international secondary smelters.
                         </p>
-                        <div class="op-spec-item mt-3 pt-3 border-top border-secondary">
+                        <div class="op-spec-item">
                            <span class="op-spec-label">Logistics:</span>
                            <span class="op-spec-val">Panamax Vessel Berth &amp; Rail Siding</span>
                         </div>
@@ -1091,7 +1127,7 @@
                         <p>
                            Witnessed destruction of proprietary prototypes, military surplus, and defective parts with serialized Certificates of Destruction and Scope 3 carbon reduction metrics.
                         </p>
-                        <div class="op-spec-item mt-3 pt-3 border-top border-secondary">
+                        <div class="op-spec-item">
                            <span class="op-spec-label">Documentation:</span>
                            <span class="op-spec-val">ISO 14001 &amp; Chain-of-Custody Manifests</span>
                         </div>
@@ -1159,7 +1195,7 @@
                      <div class="industry-scrap-tags">
                         <span class="industry-tag-pill">Titanium 6Al-4V</span>
                         <span class="industry-tag-pill">Inconel 625/718</span>
-                        <span class="industry-tag-pill">Certified Destruction</span>
+                        <span class="industry-tag-pill">Monel 400</span>
                      </div>
                   </div>
                </div>
@@ -1537,7 +1573,7 @@
             <!-- Business Operations & Customer Benefits Strip -->
             <div class="card p-4 mt-4 commercial-benefits-strip">
                <div class="row align-items-center">
-                  <div class="col-lg-8 mb-lg-0 mb-3">
+                  <div class="col-lg-7 mb-lg-0 mb-3">
                      <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">
                         Commercial Advantages &amp; Industrial Partnerships
                      </h4>
@@ -1545,13 +1581,15 @@
                         By cutting out intermediary scrap aggregators, Ferromax guarantees factory scrap managers direct mill pricing linked to published LME indices, guaranteed container turnaround schedules, and full environmental compliance documentation.
                      </p>
                   </div>
-                  <div class="col-lg-4 text-lg-right text-left">
-                     <a href="process.html" class="btn-industrial-primary mr-2 mb-2">
-                        <i class="fa fa-refresh"></i> Detailed Process Workflow
-                     </a>
-                     <a href="rate-card.html" class="btn-industrial-secondary mb-2">
-                        <i class="fa fa-line-chart"></i> View Rate Card
-                     </a>
+                  <div class="col-lg-5 text-lg-right text-left">
+                     <div class="commercial-benefit-actions d-inline-flex flex-wrap align-items-center justify-content-lg-end gap-3">
+                        <a href="process.html" class="btn-industrial-primary">
+                           <i class="fa fa-refresh"></i> Detailed Process Workflow
+                        </a>
+                        <a href="rate-card.html" class="btn-industrial-secondary">
+                           <i class="fa fa-line-chart"></i> View Rate Card
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
@@ -1661,63 +1699,63 @@
             <div class="row">
                <!-- Testimonial 1 -->
                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="operation-card p-4 h-100">
+                  <div class="operation-card testimonial-card p-4 h-100">
                      <div class="d-flex align-items-center mb-3">
-                        <div style="width: 44px; height: 44px; background: #f3cf2d; color: #090c12; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; margin-right: 14px;">
+                        <div style="width: 44px; height: 44px; background: #F2CB22; color: #0e0e0c; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; margin-right: 14px;">
                            <i class="fa fa-car"></i>
                         </div>
                         <div>
                            <h5 style="margin: 0; font-size: 16px; font-weight: 700;">Automotive Stamping Tier-1</h5>
-                           <small style="color: #94a3b8;">1,800 MT / Month Busheling Clips</small>
+                           <small style="color: #a9a89f;">1,800 MT / Month Busheling Clips</small>
                         </div>
                      </div>
                      <p style="font-size: 14px; line-height: 1.7;">
                         "Ferromax placed 12 dedicated sealed scrap hoppers directly beneath our press lines. Their scheduled switchouts and automated weight tickets boosted our secondary recovery revenue by 14% while eliminating manufacturing downtime."
                      </p>
                      <div class="mt-3 pt-3 border-top border-secondary text-right">
-                        <strong style="color: #f3cf2d; font-size: 13px;">— V.P. Plant Operations, Midwest Stamping</strong>
+                        <strong style="color: #F2CB22; font-size: 13px;">— V.P. Plant Operations, Midwest Stamping</strong>
                      </div>
                   </div>
                </div>
 
                <!-- Testimonial 2 -->
                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="operation-card p-4 h-100">
+                  <div class="operation-card testimonial-card p-4 h-100">
                      <div class="d-flex align-items-center mb-3">
-                        <div style="width: 44px; height: 44px; background: #f3cf2d; color: #090c12; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; margin-right: 14px;">
+                        <div style="width: 44px; height: 44px; background: #F2CB22; color: #0e0e0c; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; margin-right: 14px;">
                            <i class="fa fa-ship"></i>
                         </div>
                         <div>
                            <h5 style="margin: 0; font-size: 16px; font-weight: 700;">Harbor Ship Decommissioning</h5>
-                           <div style="color: #94a3b8; font-size: 12px;">8,500 MT Heavy Hull Steel Sheared</div>
+                           <div style="color: #a9a89f; font-size: 12px;">8,500 MT Heavy Hull Steel Sheared</div>
                         </div>
                      </div>
                      <p style="font-size: 14px; line-height: 1.7;">
                         "When clearing three obsolete commercial cargo barges, Ferromax deployed mobile 1,200-ton shear units on-site. Every plate was sized, screened for contaminants, and dispatched without a single environmental violation."
                      </p>
                      <div class="mt-3 pt-3 border-top border-secondary text-right">
-                        <strong style="color: #f3cf2d; font-size: 13px;">— Senior Project Director, Marine Dismantling Corp</strong>
+                        <strong style="color: #F2CB22; font-size: 13px;">— Senior Project Director, Marine Dismantling Corp</strong>
                      </div>
                   </div>
                </div>
 
                <!-- Testimonial 3 -->
                <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="operation-card p-4 h-100">
+                  <div class="operation-card testimonial-card p-4 h-100">
                      <div class="d-flex align-items-center mb-3">
-                        <div style="width: 44px; height: 44px; background: #f3cf2d; color: #090c12; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; margin-right: 14px;">
+                        <div style="width: 44px; height: 44px; background: #F2CB22; color: #0e0e0c; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; margin-right: 14px;">
                            <i class="fa fa-bolt"></i>
                         </div>
                         <div>
                            <h5 style="margin: 0; font-size: 16px; font-weight: 700;">Substation Grid Modernization</h5>
-                           <div style="color: #94a3b8; font-size: 12px;">320 MT Heavy Transformer Copper</div>
+                           <div style="color: #a9a89f; font-size: 12px;">320 MT Heavy Transformer Copper</div>
                         </div>
                      </div>
                      <p style="font-size: 14px; line-height: 1.7;">
                         "The high oil-content transformers required stringent hazardous substance handling and PCB testing. Ferromax drained, de-oiled, and granulated the copper windings with full EPA certificates of recycling provided."
                      </p>
                      <div class="mt-3 pt-3 border-top border-secondary text-right">
-                        <strong style="color: #f3cf2d; font-size: 13px;">— Environmental Manager, Regional Power Grid</strong>
+                        <strong style="color: #F2CB22; font-size: 13px;">— Environmental Manager, Regional Power Grid</strong>
                      </div>
                   </div>
                </div>
@@ -1749,130 +1787,97 @@
             </div>
          </div>
       </section>
-
       <!-- Comprehensive Footer -->
       <!-- =====================================================================
            GLOBAL COMPREHENSIVE FOOTER & SOCIAL MEDIA INTEGRATION
            ===================================================================== -->
       <footer class="footer-main-dark">
          <div class="container">
-            <div class="row">
-               <!-- Col 1: Brand Introduction & Social Media -->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <a href="index.html" class="brand-link mb-3 d-inline-flex" aria-label="Ferromax Industrial Scrap &amp; Recycling">
-                     <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Scrap &amp; Recycling" class="brand-logo-img footer-logo-img">
+            <div class="row align-items-start">
+               <!-- Col 1: Brand & Digest Subscription (Acme Model Left) -->
+               <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+                  <a href="index.html" class="brand-link footer-brand-link mb-3 d-inline-flex align-items-center" aria-label="Ferromax Industrial Metal Scrap &amp; Recycling">
+                     <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Metal Scrap &amp; Recycling" class="brand-logo-img footer-logo-img">
+                     <div class="brand-text-wrap ml-2">
+                        <span class="brand-title">FERRO<span>MAX</span></span>
+                        <span class="brand-tagline">Metal Scrap &amp; Recycling</span>
+                     </div>
                   </a>
-                  <p style="font-size: 13.5px; color: #94a3b8; line-height: 1.7; margin-bottom: 16px;">
-                     Ferromax is an international processor and trader of industrial ferrous and non-ferrous secondary metals. Operating deepwater maritime berths, 1,200-ton hydraulic shears, 4,000 HP mega-shredders, and computerized weighbridges.
+                  <h3 class="footer-digest-title">Get the weekly digest</h3>
+                  <p class="footer-digest-desc">
+                     Weekly indicative scrap benchmark rates, elemental assay guides, and recycling tenders. No spam, ever.
                   </p>
-                  <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-                     <span class="badge badge-warning text-dark p-2 mr-2 mb-1"><i class="fa fa-shield"></i> ISRI Active Member</span>
-                     <span class="badge badge-secondary p-2 mr-1 mb-1"><i class="fa fa-certificate"></i> ISO 9001:2015</span>
-                     <span class="badge badge-secondary p-2 mb-1"><i class="fa fa-leaf"></i> ISO 14001:2015</span>
-                  </div>
-                  <!-- Recognizable Social Media Icons (Facebook, Instagram, LinkedIn, YouTube, WhatsApp) -->
-                  <div class="footer-social-bar">
-                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-fb" aria-label="Follow Ferromax on Facebook" title="Facebook">
-                        <i class="fa fa-facebook"></i>
-                     </a>
-                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-tw" aria-label="Follow Ferromax on X" title="X (Twitter)">
-                        <svg class="x-twitter-svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                     </a>
-                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-ig" aria-label="Follow Ferromax on Instagram" title="Instagram">
-                        <i class="fa fa-instagram"></i>
-                     </a>
-                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-li" aria-label="Connect with Ferromax on LinkedIn" title="LinkedIn">
-                        <i class="fa fa-linkedin"></i>
-                     </a>
-                     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-yt" aria-label="Subscribe to Ferromax on YouTube" title="YouTube">
-                        <i class="fa fa-youtube-play"></i>
-                     </a>
-                     <a href="https://wa.me/18004827272" target="_blank" rel="noopener noreferrer" class="footer-social-link social-wa" aria-label="Chat with Ferromax Dispatch on WhatsApp" title="WhatsApp Dispatch">
-                        <i class="fa fa-whatsapp"></i>
-                     </a>
-                  </div>
-               </div>
-
-               <!-- Col 2: Quick Navigation Links -->
-               <div class="col-lg-2 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Navigation</h4>
-                  <ul class="footer-links-list">
-                     <li><a href="index.html"><i class="fa fa-angle-right"></i> Home Overview</a></li>
-                     <li><a href="material-recovery.html"><i class="fa fa-angle-right"></i> Materials Accepted</a></li>
-                     <li><a href="rate-card.html"><i class="fa fa-angle-right"></i> Scrap Material Rates</a></li>
-                     <li><a href="process.html"><i class="fa fa-angle-right"></i> Recycling Process</a></li>
-                     <li><a href="contact.html"><i class="fa fa-angle-right"></i> Contact &amp; Pickup</a></li>
-                     <li><a href="index.html#recycling-operations"><i class="fa fa-angle-right"></i> Yard Operations</a></li>
-                  </ul>
-               </div>
-
-               <!-- Col 3: Material Categories -->
-               <div class="col-lg-2 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Material Categories</h4>
-                  <ul class="footer-links-list">
-                     <li><a href="material-recovery.html#ferrous-section"><i class="fa fa-cube"></i> Ferrous Metals &amp; Steel</a></li>
-                     <li><a href="material-recovery.html#nonferrous-section"><i class="fa fa-cube"></i> Bare Bright Copper</a></li>
-                     <li><a href="material-recovery.html#nonferrous-section"><i class="fa fa-cube"></i> Aluminium Extrusions</a></li>
-                     <li><a href="material-recovery.html#nonferrous-section"><i class="fa fa-cube"></i> Brass &amp; Bronze Bushings</a></li>
-                     <li><a href="material-recovery.html#stainless-section"><i class="fa fa-cube"></i> Stainless Steel 304/316</a></li>
-                     <li><a href="material-recovery.html#electrical-section"><i class="fa fa-cube"></i> Power &amp; Armoured Cables</a></li>
-                     <li><a href="material-recovery.html#industrial-section"><i class="fa fa-cube"></i> Machinery &amp; Turnings</a></li>
-                  </ul>
-               </div>
-
-               <!-- Col 4: Recycling Services -->
-               <div class="col-lg-2 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Recycling Services</h4>
-                  <ul class="footer-links-list">
-                     <li><a href="process.html#sec-collection"><i class="fa fa-truck"></i> Scrap Collection Logistics</a></li>
-                     <li><a href="process.html#sec-segregation"><i class="fa fa-cubes"></i> Automated Segregation</a></li>
-                     <li><a href="process.html#sec-sorting"><i class="fa fa-flask"></i> XRF Spectrometry Assay</a></li>
-                     <li><a href="process.html#sec-weighing"><i class="fa fa-balance-scale"></i> Certified Weighbridges</a></li>
-                     <li><a href="process.html#sec-processing"><i class="fa fa-gavel"></i> 1,200T Hydraulic Shearing</a></li>
-                     <li><a href="process.html#sec-recovery"><i class="fa fa-fire"></i> Secondary Ingot Smelting</a></li>
-                     <li><a href="process.html#sec-disposal"><i class="fa fa-leaf"></i> Zero-Landfill Governance</a></li>
-                  </ul>
-               </div>
-
-               <!-- Col 5: Operating Facilities & Contact Desk -->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Operating Facilities</h4>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 8px;">
-                     <i class="fa fa-map-marker text-warning mr-2"></i> <strong>Central Deepwater Yard:</strong><br>
-                     104 Industrial Wharf Road, Terminal 4,<br>
-                     Harbor Industrial Zone
-                  </p>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 8px;">
-                     <i class="fa fa-clock-o text-warning mr-2"></i> <strong>Weighbridge Operating Hours:</strong><br>
-                     Mon - Sat: 06:30 - 18:30 | Sun: Closed
-                  </p>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 8px;">
-                     <i class="fa fa-phone text-warning mr-2"></i> <strong>Commercial Trading Desk:</strong><br>
-                     <a href="tel:18004827272" style="color: #f3cf2d; text-decoration: none; font-weight: 700;">+1 (800) 482-SCRAP (72727)</a>
-                  </p>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 12px;">
-                     <i class="fa fa-whatsapp text-success mr-2"></i> <strong>WhatsApp Fast Response:</strong><br>
-                     <a href="https://wa.me/18004827272" target="_blank" rel="noopener noreferrer" style="color: #25d366; text-decoration: none; font-weight: 600;">+1 (800) 482-7272 (Instant Chat)</a>
-                  </p>
-                  <form class="d-flex" onsubmit="event.preventDefault(); alert('Subscribed to Ferromax Weekly Scrap Benchmark Index!'); this.reset();">
-                     <input type="email" placeholder="Your corporate email" required style="background: #111722; border: 1px solid rgba(255,255,255,0.15); color: #fff; padding: 8px 12px; font-size: 13px; border-radius: 4px 0 0 4px; outline: none; width: 100%;">
-                     <button type="submit" style="background: #f3cf2d; color: #090c12; border: none; font-weight: 700; padding: 8px 14px; border-radius: 0 4px 4px 0; font-size: 13px; text-transform: uppercase;">Join</button>
+                  <form class="footer-digest-form" onsubmit="event.preventDefault(); alert('Subscribed to Ferromax Weekly Scrap Benchmark Index!'); this.reset();">
+                     <input type="email" class="footer-digest-input" placeholder="Your corporate email address" required aria-label="Your email address">
+                     <button type="submit" class="btn-industrial-primary footer-digest-btn">SUBSCRIBE</button>
                   </form>
+               </div>
+
+               <!-- Col 2: Navigation Columns (Acme Model Right 3 Columns) -->
+               <div class="col-lg-7 col-md-12">
+                  <div class="row">
+                     <!-- Link Column 1: Materials -->
+                     <div class="col-md-4 col-sm-4 col-12 mb-4 mb-sm-0">
+                        <h4 class="footer-col-heading">MATERIALS</h4>
+                        <ul class="footer-links-clean">
+                           <li><a href="material-recovery.html#ferrous-section">Ferrous Scrap</a></li>
+                           <li><a href="material-recovery.html#nonferrous-section">Non-Ferrous Metals</a></li>
+                           <li><a href="material-recovery.html#stainless-section">Stainless Steel</a></li>
+                           <li><a href="material-recovery.html#electrical-section">Cables &amp; Wire</a></li>
+                        </ul>
+                     </div>
+
+                     <!-- Link Column 2: Operations -->
+                     <div class="col-md-4 col-sm-4 col-12 mb-4 mb-sm-0">
+                        <h4 class="footer-col-heading">OPERATIONS</h4>
+                        <ul class="footer-links-clean">
+                           <li><a href="process.html#sec-processing">1,200T Shearing</a></li>
+                           <li><a href="process.html#sec-sorting">XRF Assay Lab</a></li>
+                           <li><a href="home-2.html#sec-facility-zones">Terminal Berth</a></li>
+                           <li><a href="process.html#sec-weighing">Certified Scales</a></li>
+                        </ul>
+                     </div>
+
+                     <!-- Link Column 3: Resources -->
+                     <div class="col-md-4 col-sm-4 col-12">
+                        <h4 class="footer-col-heading">RESOURCES</h4>
+                        <ul class="footer-links-clean">
+                           <li><a href="rate-card.html">Scrap Rate Card</a></li>
+                           <li><a href="material-recovery.html">Materials Accepted</a></li>
+                           <li><a href="process.html">Recycling Process</a></li>
+                           <li><a href="contact.html">Contact &amp; Pickup</a></li>
+                        </ul>
+                     </div>
+                  </div>
                </div>
             </div>
 
-            <!-- Bottom Copyright Strip with Visible Copyright Symbol -->
+            <!-- Horizontal Divider Line -->
+            <div class="footer-divider-line"></div>
+
+            <!-- Bottom Tier: Social Media (Single Line Alignment) + Copyright & Legal -->
             <div class="footer-bottom-strip">
-               <div class="footer-copyright-text">
-                  <span class="footer-copyright-symbol">&copy;</span> 2026 <strong>Ferromax Industrial Metal Scrap &amp; Recycling</strong>. All Rights Reserved.
-               </div>
-               <div class="d-flex align-items-center flex-wrap gap-3">
-                  <span class="mr-3 text-muted">ISRI Specifications Compliant</span>
-                  <span class="mr-3 text-muted">EPA Registered Scrap Handler</span>
-                  <a href="rate-card.html" class="text-warning mr-3">Benchmark Index <i class="fa fa-arrow-right ml-1"></i></a>
-                  <a href="#top" class="footer-scroll-top-btn" aria-label="Back to top" title="Back to top">
-                     <i class="fa fa-arrow-up"></i>
+               <!-- Social Icons in a Single Line Alignment (Left) -->
+               <div class="footer-social-bar">
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Follow Ferromax on X" title="X (Twitter)">
+                     <svg class="x-twitter-svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                   </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Connect with Ferromax on LinkedIn" title="LinkedIn">
+                     <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Follow Ferromax on Facebook" title="Facebook">
+                     <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Subscribe to Ferromax on YouTube" title="YouTube">
+                     <i class="fa fa-youtube-play"></i>
+                  </a>
+               </div>
+
+               <!-- Copyright & Legal Links in a Single Line Alignment (Right) -->
+               <div class="footer-bottom-legal">
+                  <span class="footer-legal-copy">&copy; 2026 Ferromax Inc.</span>
+                  <a href="contact.html" class="footer-legal-nav">Privacy</a>
+                  <a href="contact.html" class="footer-legal-nav">Terms</a>
                </div>
             </div>
          </div>

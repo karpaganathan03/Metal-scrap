@@ -47,6 +47,10 @@
          <div class="sidepanel-header">
             <a href="index.html" class="brand-link" aria-label="Ferromax Industrial Scrap">
                <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Scrap" class="brand-logo-img sidepanel-logo-img">
+               <div class="brand-text-wrap ml-2">
+                  <span class="brand-title">FERRO<span>MAX</span></span>
+                  <span class="brand-tagline">Industrial Scrap</span>
+               </div>
             </a>
             <button class="sidepanel-close" aria-label="Close Navigation"><i class="fa fa-times"></i></button>
          </div>
@@ -67,7 +71,6 @@
             </li>
             <li class="sidepanel-item-toggle">
                <button class="dir-toggle-btn sidepanel-dir-toggle w-100 justify-content-center" aria-label="Toggle Text Direction" title="Toggle Text Direction">
-                  <i class="fa fa-language mr-2"></i>
                   <span class="dir-toggle-label">Layout Direction: <span class="dir-indicator-badge">RTL</span></span>
                </button>
             </li>
@@ -90,8 +93,12 @@
          <div class="container-fluid px-lg-5">
             <div class="row d_flex align-items-center">
                <div class="col-lg-3 col-md-4 col-7 logo_section">
-                  <a href="index.html" class="brand-link" aria-label="Ferromax Industrial Metal Scrap &amp; Recycling">
+                                    <a href="index.html" class="brand-link" aria-label="Ferromax Industrial Metal Scrap &amp; Recycling">
                      <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Metal Scrap &amp; Recycling" class="brand-logo-img">
+                     <div class="brand-text-wrap ml-2">
+                        <span class="brand-title">FERRO<span>MAX</span></span>
+                        <span class="brand-tagline">Metal Scrap &amp; Recycling</span>
+                     </div>
                   </a>
                </div>
                <div class="col-lg-9 col-md-8 col-5 text-right d-flex align-items-center justify-content-end">
@@ -102,7 +109,6 @@
                            Home <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="nav-dropdown-menu">
-                           <li><a href="index.html"><i class="fa fa-home"></i> Home – Industrial Overview</a></li>
                            <li><a href="home-1.html"><i class="fa fa-cubes"></i> Home 1 – Material Recovery Hub</a></li>
                            <li><a href="home-2.html"><i class="fa fa-cogs"></i> Home 2 – Recycling Operations</a></li>
                         </ul>
@@ -118,10 +124,7 @@
                         </button>
                      </li>
                      <li>
-                        <button class="dir-toggle-btn ml-2" aria-label="Toggle Text Direction (LTR / RTL)" title="Toggle Text Direction">
-                           <i class="fa fa-language"></i>
-                           <span class="dir-indicator-badge">RTL</span>
-                        </button>
+                        <button class="dir-toggle-btn ml-2" aria-label="Toggle Text Direction (LTR / RTL)" title="Toggle Text Direction"><span class="dir-indicator-badge">RTL</span></button>
                      </li>
                      <li>
                         <a href="contact.html#pickupSection" class="nav-cta-btn">
@@ -138,31 +141,39 @@
          </div>
       </header>
 
-      <!-- Inner Page Hero Banner -->
-      <section class="inner-hero-banner">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-9">
-                  <div class="breadcrumb-industrial">
-                     <a href="index.html"><i class="fa fa-home"></i> Home</a>
-                     <span>/</span>
-                     <span class="text-white">Process – Our Recycling Process</span>
-                  </div>
-                  <h1 class="inner-hero-title">
-                     OUR 8-STEP <span class="highlight-gold" style="color: #f3cf2d;">RECYCLING PROCESS</span>
-                  </h1>
-                  <p class="inner-hero-lead">
-                     Discover the complete circular scrap metal workflow. From customer enquiry and certified on-site alloy assessment to dispatch scheduling, calibrated weighbridge verification, high-capacity processing, and responsible secondary smelter recovery.
-                  </p>
-               </div>
+      <!-- Shared Page Hero: 8-Step Process -->
+      <section class="page-hero">
+         <div class="page-hero-container">
+            <div class="page-hero-content">
+               <span class="hero-badge-pill">
+                  <i class="fa fa-recycle"></i> End-to-End Circular Lifecycle
+               </span>
+               <h1 class="page-hero-title">
+                  OUR 8-STEP <span class="highlight-gold">RECYCLING PROCESS</span>
+               </h1>
+               <p class="page-hero-lead">
+                  Discover the complete circular scrap metal workflow. From customer enquiry and certified on-site alloy assessment to dispatch scheduling, calibrated weighbridge verification, high-capacity processing, and responsible secondary smelter recovery.
+               </p>
+            </div>
+            <div class="page-hero-media">
+               <figure class="page-hero-figure" style="--focal: center center;">
+                  <img src="assets/images/hero/hero-process-1200.jpg"
+                       srcset="assets/images/hero/hero-process-800.jpg 800w, assets/images/hero/hero-process-1200.jpg 1200w, assets/images/hero/hero-process-1600.jpg 1600w"
+                       sizes="(max-width: 899px) 100vw, (max-width: 1280px) 45vw, 544px"
+                       width="1600" height="1200"
+                       alt="Heavy-duty calibrated industrial truck scale and digital weighbridge platform at a materials recovery facility"
+                       fetchpriority="high"
+                       decoding="async">
+               </figure>
             </div>
          </div>
       </section>
 
-      <!-- Quick Process Navigation Strip / Workflow Summary -->
-      <section class="section-py section-darker pb-0">
+      <!-- Unified Circular Metallurgy Process Section -->
+      <section class="section-py section-darker process-workflow-section" id="processWorkflowSection">
          <div class="container">
-            <div class="row text-center mb-5">
+            <!-- Section Header -->
+            <div class="row text-center mb-4">
                <div class="col-12">
                   <span class="section-badge-tag"><i class="fa fa-recycle"></i> End-to-End Circular Lifecycle</span>
                   <h2 class="section-main-heading">CIRCULAR METALLURGY <span>WORKFLOW AT A GLANCE</span></h2>
@@ -172,45 +183,164 @@
                </div>
             </div>
 
-            <!-- 8 Quick Step Pills -->
-            <div class="row text-center mb-5">
-               <div class="col-12">
-                  <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
-                     <a href="#step-01" class="btn btn-sm btn-outline-warning m-1"><i class="fa fa-file-text-o mr-1"></i> 1. Scrap Enquiry</a>
-                     <a href="#step-02" class="btn btn-sm btn-outline-warning m-1"><i class="fa fa-flask mr-1"></i> 2. Material Assessment</a>
-                     <a href="#step-03" class="btn btn-sm btn-outline-warning m-1"><i class="fa fa-calculator mr-1"></i> 3. Rate Estimation</a>
-                     <a href="#step-04" class="btn btn-sm btn-outline-warning m-1"><i class="fa fa-calendar-check-o mr-1"></i> 4. Pickup Scheduling</a>
-                     <a href="#step-05" class="btn btn-sm btn-outline-warning m-1"><i class="fa fa-balance-scale mr-1"></i> 5. Weighing &amp; Verification</a>
-                     <a href="#step-06" class="btn btn-sm btn-outline-warning m-1"><i class="fa fa-filter mr-1"></i> 6. Sorting &amp; Segregation</a>
-                     <a href="#step-07" class="btn btn-sm btn-outline-warning m-1"><i class="fa fa-cogs mr-1"></i> 7. Processing &amp; Recycling</a>
-                     <a href="#step-08" class="btn btn-sm btn-outline-warning m-1"><i class="fa fa-leaf mr-1"></i> 8. Responsible Recovery</a>
+            <!-- 8 Step Directory Grid (Structured 4x2 Grid Form) -->
+            <div class="process-quick-nav-panel mb-5">
+               <div class="process-grid-header d-flex flex-wrap align-items-center justify-content-between mb-3">
+                  <div class="d-flex align-items-center">
+                     <span class="section-badge-tag mb-0"><i class="fa fa-th-large"></i> Process Navigation</span>
+                     <span class="process-steps-badge ml-2">8 Sequential Steps</span>
                   </div>
+                  <span class="process-grid-hint text-muted"><i class="fa fa-hand-pointer-o mr-1"></i> Click any phase to inspect operational standards</span>
+               </div>
+               <div class="process-step-grid">
+                  <!-- Step 01 -->
+                  <a href="#step-01" class="step-grid-tile" title="Jump to Step 1: Scrap Enquiry">
+                     <div class="step-tile-left">
+                        <span class="step-tile-icon"><i class="fa fa-file-text-o"></i></span>
+                        <div class="step-tile-info">
+                           <div class="step-tile-title-row">
+                              <span class="step-tile-num">01</span>
+                              <strong class="step-tile-name">Scrap Enquiry</strong>
+                           </div>
+                           <span class="step-tile-desc">Intake &amp; 24/7 Logistics Booking</span>
+                        </div>
+                     </div>
+                     <span class="step-tile-badge">Stage I</span>
+                  </a>
+
+                  <!-- Step 02 -->
+                  <a href="#step-02" class="step-grid-tile" title="Jump to Step 2: Material Assessment">
+                     <div class="step-tile-left">
+                        <span class="step-tile-icon"><i class="fa fa-flask"></i></span>
+                        <div class="step-tile-info">
+                           <div class="step-tile-title-row">
+                              <span class="step-tile-num">02</span>
+                              <strong class="step-tile-name">Material Assessment</strong>
+                           </div>
+                           <span class="step-tile-desc">XRF Purity &amp; Elemental Assay</span>
+                        </div>
+                     </div>
+                     <span class="step-tile-badge">Stage I</span>
+                  </a>
+
+                  <!-- Step 03 -->
+                  <a href="#step-03" class="step-grid-tile" title="Jump to Step 3: Rate Estimation">
+                     <div class="step-tile-left">
+                        <span class="step-tile-icon"><i class="fa fa-calculator"></i></span>
+                        <div class="step-tile-info">
+                           <div class="step-tile-title-row">
+                              <span class="step-tile-num">03</span>
+                              <strong class="step-tile-name">Rate Estimation</strong>
+                           </div>
+                           <span class="step-tile-desc">LME / COMEX Index Matching</span>
+                        </div>
+                     </div>
+                     <span class="step-tile-badge">Stage I</span>
+                  </a>
+
+                  <!-- Step 04 -->
+                  <a href="#step-04" class="step-grid-tile" title="Jump to Step 4: Pickup Scheduling">
+                     <div class="step-tile-left">
+                        <span class="step-tile-icon"><i class="fa fa-calendar-check-o"></i></span>
+                        <div class="step-tile-info">
+                           <div class="step-tile-title-row">
+                              <span class="step-tile-num">04</span>
+                              <strong class="step-tile-name">Pickup Scheduling</strong>
+                           </div>
+                           <span class="step-tile-desc">GPS Fleet &amp; Roll-Off Bin Dispatch</span>
+                        </div>
+                     </div>
+                     <span class="step-tile-badge">Stage II</span>
+                  </a>
+
+                  <!-- Step 05 -->
+                  <a href="#step-05" class="step-grid-tile" title="Jump to Step 5: Weighing & Verification">
+                     <div class="step-tile-left">
+                        <span class="step-tile-icon"><i class="fa fa-balance-scale"></i></span>
+                        <div class="step-tile-info">
+                           <div class="step-tile-title-row">
+                              <span class="step-tile-num">05</span>
+                              <strong class="step-tile-name">Weighing &amp; Verification</strong>
+                           </div>
+                           <span class="step-tile-desc">Dual 80ft Scales &amp; Portal Monitors</span>
+                        </div>
+                     </div>
+                     <span class="step-tile-badge">Stage II</span>
+                  </a>
+
+                  <!-- Step 06 -->
+                  <a href="#step-06" class="step-grid-tile" title="Jump to Step 6: Sorting & Segregation">
+                     <div class="step-tile-left">
+                        <span class="step-tile-icon"><i class="fa fa-filter"></i></span>
+                        <div class="step-tile-info">
+                           <div class="step-tile-title-row">
+                              <span class="step-tile-num">06</span>
+                              <strong class="step-tile-name">Sorting &amp; Segregation</strong>
+                           </div>
+                           <span class="step-tile-desc">Eddy-Current &amp; Magnetic Separation</span>
+                        </div>
+                     </div>
+                     <span class="step-tile-badge">Stage III</span>
+                  </a>
+
+                  <!-- Step 07 -->
+                  <a href="#step-07" class="step-grid-tile" title="Jump to Step 7: Processing & Recycling">
+                     <div class="step-tile-left">
+                        <span class="step-tile-icon"><i class="fa fa-cogs"></i></span>
+                        <div class="step-tile-info">
+                           <div class="step-tile-title-row">
+                              <span class="step-tile-num">07</span>
+                              <strong class="step-tile-name">Processing &amp; Recycling</strong>
+                           </div>
+                           <span class="step-tile-desc">1,200T Shear &amp; High-Torque Shred</span>
+                        </div>
+                     </div>
+                     <span class="step-tile-badge">Stage III</span>
+                  </a>
+
+                  <!-- Step 08 -->
+                  <a href="#step-08" class="step-grid-tile" title="Jump to Step 8: Responsible Recovery">
+                     <div class="step-tile-left">
+                        <span class="step-tile-icon"><i class="fa fa-leaf"></i></span>
+                        <div class="step-tile-info">
+                           <div class="step-tile-title-row">
+                              <span class="step-tile-num">08</span>
+                              <strong class="step-tile-name">Responsible Recovery</strong>
+                           </div>
+                           <span class="step-tile-desc">Secondary Smelting &amp; EAF Direct</span>
+                        </div>
+                     </div>
+                     <span class="step-tile-badge">Stage IV</span>
+                  </a>
                </div>
             </div>
-         </div>
-      </section>
 
-      <!-- Detailed 8-Step Timeline Section -->
-      <section class="section-py section-darker pt-0">
-         <div class="container">
+            <!-- Detailed 8-Step Timeline -->
             <div class="process-timeline-wrap">
-
                <!-- Step 01: Scrap Enquiry -->
                <div class="timeline-step-row" id="step-01">
                   <div class="timeline-step-badge">01</div>
                   <div class="timeline-step-content">
-                     <div class="timeline-step-title">
-                        <span><i class="fa fa-file-text-o mr-2"></i> Step 1: Scrap Enquiry</span>
+                     <div class="timeline-step-header">
+                        <div class="timeline-step-title">
+                           <span><i class="fa fa-file-text-o mr-2"></i> Step 1: Scrap Enquiry</span>
+                        </div>
                         <span class="badge badge-warning text-dark font-weight-bold">Initiation &amp; Logistics Intake</span>
                      </div>
-                     <p class="timeline-step-desc">
-                        The process begins when an industrial client, manufacturing facility, demolition contractor, or fabrication shop submits their scrap collection requirement. Clients can submit inquiries through our online portal, call our 24/7 industrial dispatch desk, or schedule a free on-site facility scrap audit. During this intake stage, we capture critical parameters including scrap origin, material category (ferrous, non-ferrous, superalloys, or cables), estimated tonnage, frequency (one-off warehouse clearance or continuous recurring generation), and container placement access.
-                     </p>
-                     <div class="timeline-spec-chips">
-                        <span class="timeline-chip"><i class="fa fa-check-circle"></i> Online Booking Portal</span>
+                     <div class="timeline-step-body">
+                        <div class="timeline-step-text">
+                           <p class="timeline-step-desc">
+                              The process begins when an industrial client, manufacturing facility, demolition contractor, or fabrication shop submits their scrap collection requirement. Clients can submit inquiries through our online portal, call our 24/7 industrial dispatch desk, or schedule a free on-site facility scrap audit. During this intake stage, we capture critical parameters including scrap origin, material category (ferrous, non-ferrous, superalloys, or cables), estimated tonnage, frequency (one-off warehouse clearance or continuous recurring generation), and container placement access.
+                           </p>
+                        </div>
+                        <div class="timeline-step-specs">
+                           <div class="timeline-spec-chips">
+                              <span class="timeline-chip"><i class="fa fa-check-circle"></i> Online Booking Portal</span>
                         <span class="timeline-chip"><i class="fa fa-phone"></i> 24/7 Dispatch Hotline</span>
                         <span class="timeline-chip"><i class="fa fa-building-o"></i> Industrial Facility Audit</span>
                         <span class="timeline-chip"><i class="fa fa-truck"></i> Roll-off Bin Drop Planning</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -219,18 +349,26 @@
                <div class="timeline-step-row" id="step-02">
                   <div class="timeline-step-badge">02</div>
                   <div class="timeline-step-content">
-                     <div class="timeline-step-title">
-                        <span><i class="fa fa-flask mr-2"></i> Step 2: Material Assessment</span>
+                     <div class="timeline-step-header">
+                        <div class="timeline-step-title">
+                           <span><i class="fa fa-flask mr-2"></i> Step 2: Material Assessment</span>
+                        </div>
                         <span class="badge badge-warning text-dark font-weight-bold">Metallurgical &amp; Lot Evaluation</span>
                      </div>
-                     <p class="timeline-step-desc">
-                        Our certified metallurgists and commercial estimators evaluate the material category, alloy condition, contamination levels, and lot size. For high-value non-ferrous metals and specialty aerospace superalloys, we dispatch mobile technicians armed with handheld Thermo Scientific Niton XL5 Plus XRF spectrometers and optical emission spectroscopy (OES) devices. This on-site, non-destructive assay identifies elemental alloy composition within seconds (e.g., verifying 8% Nickel in 304 stainless steel or confirming 60% Nickel in Inconel 625), ensuring sellers receive the true intrinsic value of their material.
-                     </p>
-                     <div class="timeline-spec-chips">
-                        <span class="timeline-chip"><i class="fa fa-microchip"></i> Handheld XRF Elemental Assay</span>
+                     <div class="timeline-step-body">
+                        <div class="timeline-step-text">
+                           <p class="timeline-step-desc">
+                              Our certified metallurgists and commercial estimators evaluate the material category, alloy condition, contamination levels, and lot size. For high-value non-ferrous metals and specialty aerospace superalloys, we dispatch mobile technicians armed with handheld Thermo Scientific Niton XL5 Plus XRF spectrometers and optical emission spectroscopy (OES) devices. This on-site, non-destructive assay identifies elemental alloy composition within seconds (e.g., verifying 8% Nickel in 304 stainless steel or confirming 60% Nickel in Inconel 625), ensuring sellers receive the true intrinsic value of their material.
+                           </p>
+                        </div>
+                        <div class="timeline-step-specs">
+                           <div class="timeline-spec-chips">
+                              <span class="timeline-chip"><i class="fa fa-microchip"></i> Handheld XRF Elemental Assay</span>
                         <span class="timeline-chip"><i class="fa fa-eye"></i> Physical Lot &amp; Thickness Inspection</span>
                         <span class="timeline-chip"><i class="fa fa-tint"></i> Moisture &amp; Oil Deduction Grading</span>
                         <span class="timeline-chip"><i class="fa fa-shield"></i> Hazardous &amp; Sealed Cylinder Screening</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -239,18 +377,26 @@
                <div class="timeline-step-row" id="step-03">
                   <div class="timeline-step-badge">03</div>
                   <div class="timeline-step-content">
-                     <div class="timeline-step-title">
-                        <span><i class="fa fa-calculator mr-2"></i> Step 3: Rate Estimation</span>
+                     <div class="timeline-step-header">
+                        <div class="timeline-step-title">
+                           <span><i class="fa fa-calculator mr-2"></i> Step 3: Rate Estimation</span>
+                        </div>
                         <span class="badge badge-warning text-dark font-weight-bold">Benchmark Pricing &amp; Formal Quotation</span>
                      </div>
-                     <p class="timeline-step-desc">
-                        Following material grading, we generate a transparent indicative quotation based on exact material specifications, physical assay purity, and prevailing London Metal Exchange (LME) and COMEX benchmark commodity indices. Our commercial pricing formulas clearly state base market rates, applicable high-tonnage volume bonuses (+3% to +8%), container logistics allowances, and any necessary processing deductions for un-sheared heavy structures. Clients receive a written quotation with a price-lock guarantee for up to 5 business days.
-                     </p>
-                     <div class="timeline-spec-chips">
-                        <span class="timeline-chip"><i class="fa fa-line-chart"></i> LME &amp; COMEX Benchmark Linking</span>
+                     <div class="timeline-step-body">
+                        <div class="timeline-step-text">
+                           <p class="timeline-step-desc">
+                              Following material grading, we generate a transparent indicative quotation based on exact material specifications, physical assay purity, and prevailing London Metal Exchange (LME) and COMEX benchmark commodity indices. Our commercial pricing formulas clearly state base market rates, applicable high-tonnage volume bonuses (+3% to +8%), container logistics allowances, and any necessary processing deductions for un-sheared heavy structures. Clients receive a written quotation with a price-lock guarantee for up to 5 business days.
+                           </p>
+                        </div>
+                        <div class="timeline-step-specs">
+                           <div class="timeline-spec-chips">
+                              <span class="timeline-chip"><i class="fa fa-line-chart"></i> LME &amp; COMEX Benchmark Linking</span>
                         <span class="timeline-chip"><i class="fa fa-percent"></i> Bulk Volume Tier Premiums</span>
                         <span class="timeline-chip"><i class="fa fa-file-pdf-o"></i> Written Transparent Quote</span>
                         <span class="timeline-chip"><i class="fa fa-lock"></i> 5-Day Price Lock Guarantee</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -259,18 +405,26 @@
                <div class="timeline-step-row" id="step-04">
                   <div class="timeline-step-badge">04</div>
                   <div class="timeline-step-content">
-                     <div class="timeline-step-title">
-                        <span><i class="fa fa-calendar-check-o mr-2"></i> Step 4: Pickup Scheduling</span>
+                     <div class="timeline-step-header">
+                        <div class="timeline-step-title">
+                           <span><i class="fa fa-calendar-check-o mr-2"></i> Step 4: Pickup Scheduling</span>
+                        </div>
                         <span class="badge badge-warning text-dark font-weight-bold">Logistics Coordination &amp; Fleet Dispatch</span>
                      </div>
-                     <p class="timeline-step-desc">
-                        Our logistics dispatch team coordinates timely scrap collection and equipment deployment tailored to your facility's operational schedule. Depending on scrap volume and density, we position 15-yard to 50-yard heavy-duty roll-off containers, leak-proof CNC swarf bins, flatbed semi-trailers, or deploy mobile knuckle-boom crane trucks with orange-peel grapples for immediate live-loading. For heavy structural demolitions, our OSHA-trained mobile torch-cutting crews perform on-site dismantling before transport.
-                     </p>
-                     <div class="timeline-spec-chips">
-                        <span class="timeline-chip"><i class="fa fa-truck"></i> 15-50 Yd Roll-Off Containers</span>
+                     <div class="timeline-step-body">
+                        <div class="timeline-step-text">
+                           <p class="timeline-step-desc">
+                              Our logistics dispatch team coordinates timely scrap collection and equipment deployment tailored to your facility's operational schedule. Depending on scrap volume and density, we position 15-yard to 50-yard heavy-duty roll-off containers, leak-proof CNC swarf bins, flatbed semi-trailers, or deploy mobile knuckle-boom crane trucks with orange-peel grapples for immediate live-loading. For heavy structural demolitions, our OSHA-trained mobile torch-cutting crews perform on-site dismantling before transport.
+                           </p>
+                        </div>
+                        <div class="timeline-step-specs">
+                           <div class="timeline-spec-chips">
+                              <span class="timeline-chip"><i class="fa fa-truck"></i> 15-50 Yd Roll-Off Containers</span>
                         <span class="timeline-chip"><i class="fa fa-cubes"></i> Watertight CNC Swarf Bins</span>
                         <span class="timeline-chip"><i class="fa fa-map-marker"></i> GPS Live-Tracked Fleet Dispatch</span>
                         <span class="timeline-chip"><i class="fa fa-wrench"></i> On-Site Mobile Cutting Crews</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -279,18 +433,26 @@
                <div class="timeline-step-row" id="step-05">
                   <div class="timeline-step-badge">05</div>
                   <div class="timeline-step-content">
-                     <div class="timeline-step-title">
-                        <span><i class="fa fa-balance-scale mr-2"></i> Step 5: Weighing and Verification</span>
+                     <div class="timeline-step-header">
+                        <div class="timeline-step-title">
+                           <span><i class="fa fa-balance-scale mr-2"></i> Step 5: Weighing and Verification</span>
+                        </div>
                         <span class="badge badge-warning text-dark font-weight-bold">Certified Scales &amp; Radiation Safety</span>
                      </div>
-                     <p class="timeline-step-desc">
-                        Upon arrival at our recycling yard, every transport passes through automated Ludlum 375P portal radiation detection gates that screen 100% of incoming payloads for gamma and radioactive anomalies before gate entry. The vehicle proceeds onto our dual 80-foot computerized pitless truck weighbridges, calibrated by state weights and measures authorities. Automated license plate recognition (ALPR) and multi-angle high-resolution cameras record the load. An instant Gross Weight ticket is generated, followed by Tare Weight recording immediately after unloading.
-                     </p>
-                     <div class="timeline-spec-chips">
-                        <span class="timeline-chip"><i class="fa fa-shield"></i> Ludlum 375P Radiation Screeners</span>
+                     <div class="timeline-step-body">
+                        <div class="timeline-step-text">
+                           <p class="timeline-step-desc">
+                              Upon arrival at our recycling yard, every transport passes through automated Ludlum 375P portal radiation detection gates that screen 100% of incoming payloads for gamma and radioactive anomalies before gate entry. The vehicle proceeds onto our dual 80-foot computerized pitless truck weighbridges, calibrated by state weights and measures authorities. Automated license plate recognition (ALPR) and multi-angle high-resolution cameras record the load. An instant Gross Weight ticket is generated, followed by Tare Weight recording immediately after unloading.
+                           </p>
+                        </div>
+                        <div class="timeline-step-specs">
+                           <div class="timeline-spec-chips">
+                              <span class="timeline-chip"><i class="fa fa-shield"></i> Ludlum 375P Radiation Screeners</span>
                         <span class="timeline-chip"><i class="fa fa-balance-scale"></i> Dual 80-Ft Computerized Scales</span>
                         <span class="timeline-chip"><i class="fa fa-camera"></i> High-Res Inbound Photo Records</span>
                         <span class="timeline-chip"><i class="fa fa-print"></i> Time-Stamped Gross/Tare Tickets</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -299,18 +461,26 @@
                <div class="timeline-step-row" id="step-06">
                   <div class="timeline-step-badge">06</div>
                   <div class="timeline-step-content">
-                     <div class="timeline-step-title">
-                        <span><i class="fa fa-filter mr-2"></i> Step 6: Sorting and Segregation</span>
+                     <div class="timeline-step-header">
+                        <div class="timeline-step-title">
+                           <span><i class="fa fa-filter mr-2"></i> Step 6: Sorting and Segregation</span>
+                        </div>
                         <span class="badge badge-warning text-dark font-weight-bold">Classification by Metal Family &amp; Grade</span>
                      </div>
-                     <p class="timeline-step-desc">
-                        Once tipped onto our reinforced 45-acre concrete receiving pads, heavy materials are segregated by category and metallurgical specification. Liebherr LH 60 material handlers equipped with electro-magnets, orange-peel grapples, and hydraulic shears separate heavy ferrous plate from lighter sheet stampings. Non-ferrous lots are directed to clean covered vaults, where trained sorters segregate red brass from yellow brass, clean copper wire from insulated cables, and aerospace titanium from chrome-moly alloys.
-                     </p>
-                     <div class="timeline-spec-chips">
-                        <span class="timeline-chip"><i class="fa fa-magnet"></i> Electro-Magnetic Separation</span>
+                     <div class="timeline-step-body">
+                        <div class="timeline-step-text">
+                           <p class="timeline-step-desc">
+                              Once tipped onto our reinforced 45-acre concrete receiving pads, heavy materials are segregated by category and metallurgical specification. Liebherr LH 60 material handlers equipped with electro-magnets, orange-peel grapples, and hydraulic shears separate heavy ferrous plate from lighter sheet stampings. Non-ferrous lots are directed to clean covered vaults, where trained sorters segregate red brass from yellow brass, clean copper wire from insulated cables, and aerospace titanium from chrome-moly alloys.
+                           </p>
+                        </div>
+                        <div class="timeline-step-specs">
+                           <div class="timeline-spec-chips">
+                              <span class="timeline-chip"><i class="fa fa-magnet"></i> Electro-Magnetic Separation</span>
                         <span class="timeline-chip"><i class="fa fa-cogs"></i> Liebherr Material Handlers</span>
                         <span class="timeline-chip"><i class="fa fa-cube"></i> Dedicated Covered Vault Storage</span>
                         <span class="timeline-chip"><i class="fa fa-tags"></i> ISRI Specification Classification</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -319,26 +489,93 @@
                <div class="timeline-step-row" id="step-07">
                   <div class="timeline-step-badge">07</div>
                   <div class="timeline-step-content">
-                     <div class="timeline-step-title">
-                        <span><i class="fa fa-cogs mr-2"></i> Step 7: Processing and Recycling</span>
+                     <div class="timeline-step-header">
+                        <div class="timeline-step-title">
+                           <span><i class="fa fa-cogs mr-2"></i> Step 7: Processing and Recycling</span>
+                        </div>
                         <span class="badge badge-warning text-dark font-weight-bold">Industrial Sizing, Shredding &amp; Densification</span>
                      </div>
-                     <p class="timeline-step-desc">
-                        Materials undergo specialized mechanical processing to convert raw scrap into furnace-ready charging feedstock:
+                     <p class="timeline-step-desc mb-3">
+                        Materials undergo specialized mechanical processing across dedicated processing lines to convert raw scrap into furnace-ready charging feedstock:
                      </p>
-                     <ul class="mt-2 mb-3 pl-3 timeline-step-list" style="font-size: 14px; line-height: 1.8;">
-                        <li><strong>1,200-Ton Guillotine Shear:</strong> Cold-cuts oversized structural steel columns, ship girders, and pipeline segments to under 5 feet (ISRI 200/201 Heavy Melting Steel).</li>
-                        <li><strong>4,000 HP Mega-Shredder:</strong> Crushes light mixed scrap and auto bodies at 600 RPM, passing through air cyclones to eliminate upholstery and foam fluff.</li>
-                        <li><strong>3,000 RPM Eddy-Current Separator:</strong> Deflects aluminum and copper fragments away from inert plastics and residue.</li>
-                        <li><strong>Triple-Action Hydraulic Balers:</strong> Compact clean sheet stampings (busheling) into ultra-dense 1,200 kg/m³ charge cubes for electric arc furnaces.</li>
-                        <li><strong>Cable Granulation Line:</strong> Chops insulated wire into millimeter-sized granules, using air-density tables to yield 99.9% bare copper chops.</li>
-                     </ul>
-                     <div class="timeline-spec-chips">
-                        <span class="timeline-chip"><i class="fa fa-scissors"></i> 1,200-Ton Guillotine Shear</span>
-                        <span class="timeline-chip"><i class="fa fa-bolt"></i> 4,000 HP Shredder Line</span>
-                        <span class="timeline-chip"><i class="fa fa-magnet"></i> 3,000 RPM Eddy Current</span>
-                        <span class="timeline-chip"><i class="fa fa-compress"></i> Triple-Action Balers</span>
-                        <span class="timeline-chip"><i class="fa fa-circle"></i> Granulation &amp; Air Tables</span>
+                     <div class="step-equipment-grid">
+                        <div class="equipment-card">
+                           <div class="equipment-card-header">
+                              <div class="equipment-card-title-group">
+                                 <div class="equipment-card-icon"><i class="fa fa-scissors"></i></div>
+                                 <h4 class="equipment-card-title">1,200-Ton Guillotine Shear</h4>
+                              </div>
+                              <span class="equipment-card-badge">ISRI 200/201 HMS</span>
+                           </div>
+                           <p class="equipment-card-desc">
+                              Cold-cuts oversized structural steel columns, ship girders, and pipeline segments to under 5 feet (ISRI 200/201 Heavy Melting Steel).
+                           </p>
+                        </div>
+
+                        <div class="equipment-card">
+                           <div class="equipment-card-header">
+                              <div class="equipment-card-title-group">
+                                 <div class="equipment-card-icon"><i class="fa fa-bolt"></i></div>
+                                 <h4 class="equipment-card-title">4,000 HP Mega-Shredder</h4>
+                              </div>
+                              <span class="equipment-card-badge">600 RPM Rotor</span>
+                           </div>
+                           <p class="equipment-card-desc">
+                              Crushes light mixed scrap and auto bodies at 600 RPM, passing through air cyclones to eliminate upholstery and foam fluff.
+                           </p>
+                        </div>
+
+                        <div class="equipment-card">
+                           <div class="equipment-card-header">
+                              <div class="equipment-card-title-group">
+                                 <div class="equipment-card-icon"><i class="fa fa-magnet"></i></div>
+                                 <h4 class="equipment-card-title">3,000 RPM Eddy-Current Separator</h4>
+                              </div>
+                              <span class="equipment-card-badge">Non-Ferrous Recovery</span>
+                           </div>
+                           <p class="equipment-card-desc">
+                              Deflects aluminum and copper fragments away from inert plastics and residue using high-frequency magnetic repulsion.
+                           </p>
+                        </div>
+
+                        <div class="equipment-card">
+                           <div class="equipment-card-header">
+                              <div class="equipment-card-title-group">
+                                 <div class="equipment-card-icon"><i class="fa fa-compress"></i></div>
+                                 <h4 class="equipment-card-title">Triple-Action Hydraulic Balers</h4>
+                              </div>
+                              <span class="equipment-card-badge">1,200 kg/m³ Cubes</span>
+                           </div>
+                           <p class="equipment-card-desc">
+                              Compact clean sheet stampings (busheling) into ultra-dense 1,200 kg/m³ charge cubes for electric arc furnaces.
+                           </p>
+                        </div>
+
+                        <div class="equipment-card">
+                           <div class="equipment-card-header">
+                              <div class="equipment-card-title-group">
+                                 <div class="equipment-card-icon"><i class="fa fa-circle-o"></i></div>
+                                 <h4 class="equipment-card-title">Cable Granulation Line</h4>
+                              </div>
+                              <span class="equipment-card-badge">99.9% Bare Copper</span>
+                           </div>
+                           <p class="equipment-card-desc">
+                              Chops insulated wire into millimeter-sized granules, using air-density tables to yield 99.9% bare copper chops.
+                           </p>
+                        </div>
+
+                        <div class="equipment-card">
+                           <div class="equipment-card-header">
+                              <div class="equipment-card-title-group">
+                                 <div class="equipment-card-icon"><i class="fa fa-sliders"></i></div>
+                                 <h4 class="equipment-card-title">Automated Sensor Sorting Line</h4>
+                              </div>
+                              <span class="equipment-card-badge">99.5% Alloy Purity</span>
+                           </div>
+                           <p class="equipment-card-desc">
+                              High-speed optical, induction, and X-ray transmission (XRT) sorters isolate stainless steel, brass, and specialty superalloys.
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -347,18 +584,26 @@
                <div class="timeline-step-row" id="step-08">
                   <div class="timeline-step-badge">08</div>
                   <div class="timeline-step-content">
-                     <div class="timeline-step-title">
-                        <span><i class="fa fa-leaf mr-2"></i> Step 8: Responsible Material Recovery</span>
+                     <div class="timeline-step-header">
+                        <div class="timeline-step-title">
+                           <span><i class="fa fa-leaf mr-2"></i> Step 8: Responsible Material Recovery</span>
+                        </div>
                         <span class="badge badge-warning text-dark font-weight-bold">Secondary Smelting &amp; Sustainable Off-take</span>
                      </div>
-                     <p class="timeline-step-desc">
-                        The final stage completes the circular economy cycle. Processed, high-density, lab-verified secondary metals are loaded for delivery to domestic electric arc furnace (EAF) steel mills, secondary aluminum smelters, and copper foundries. Using our deepwater Panamax vessel berths and direct rail spurs, consignments are shipped with full Certificates of Recycling, ESG Scope-3 emissions reduction calculations, and zero-waste-to-landfill manifests. By replacing virgin mined iron ore, bauxite, and copper concentrates, our recycling process conserves up to 95% of energy and prevents thousands of metric tons of greenhouse gas emissions.
-                     </p>
-                     <div class="timeline-spec-chips">
-                        <span class="timeline-chip"><i class="fa fa-ship"></i> Deepwater Terminal 4 Panamax Berth</span>
+                     <div class="timeline-step-body">
+                        <div class="timeline-step-text">
+                           <p class="timeline-step-desc">
+                              The final stage completes the circular economy cycle. Processed, high-density, lab-verified secondary metals are loaded for delivery to domestic electric arc furnace (EAF) steel mills, secondary aluminum smelters, and copper foundries. Using our deepwater Panamax vessel berths and direct rail spurs, consignments are shipped with full Certificates of Recycling, ESG Scope-3 emissions reduction calculations, and zero-waste-to-landfill manifests. By replacing virgin mined iron ore, bauxite, and copper concentrates, our recycling process conserves up to 95% of energy and prevents thousands of metric tons of greenhouse gas emissions.
+                           </p>
+                        </div>
+                        <div class="timeline-step-specs">
+                           <div class="timeline-spec-chips">
+                              <span class="timeline-chip"><i class="fa fa-ship"></i> Deepwater Terminal 4 Panamax Berth</span>
                         <span class="timeline-chip"><i class="fa fa-train"></i> Class 1 Direct Rail Gondolas</span>
                         <span class="timeline-chip"><i class="fa fa-certificate"></i> ESG Scope-3 Audit Certificates</span>
                         <span class="timeline-chip"><i class="fa fa-recycle"></i> 100% Circular Smelter Re-melt</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -427,13 +672,13 @@
                <div class="col-lg-7">
                   <span class="section-badge-tag"><i class="fa fa-leaf"></i> Sustainable Secondary Metallurgy</span>
                   <h2 class="section-main-heading">CIRCULAR IMPACT &amp; <span>ENERGY CONSERVATION</span></h2>
-                  <p style="font-size: 15px; color: #cbd5e1; line-height: 1.8;">
+                  <p style="font-size: 15px; color: #a9a89f; line-height: 1.8;">
                      Recycling scrap metal uses a fraction of the thermal energy required to mine, beneficiate, and smelt virgin ores. By converting industrial end-of-life metals into electric arc furnace feedstock, Ferromax actively decarbonizes the global steel and non-ferrous manufacturing supply chain.
                   </p>
                </div>
                <div class="col-lg-5 text-lg-right text-left mt-lg-0 mt-3">
                   <div class="stat-box-card d-inline-block p-4 border-warning" >
-                     <div class="stat-number mb-1"><span id="co2SavedCounter" style="color: #f3cf2d;">142,850 MT</span></div>
+                     <div class="stat-number mb-1"><span id="co2SavedCounter" style="color: #F2CB22;">142,850 MT</span></div>
                      <div class="stat-label">Estimated CO₂ Emissions Prevented This Year</div>
                   </div>
                </div>
@@ -512,130 +757,97 @@
             </div>
          </div>
       </section>
-
       <!-- Comprehensive Footer -->
       <!-- =====================================================================
            GLOBAL COMPREHENSIVE FOOTER & SOCIAL MEDIA INTEGRATION
            ===================================================================== -->
       <footer class="footer-main-dark">
          <div class="container">
-            <div class="row">
-               <!-- Col 1: Brand Introduction & Social Media -->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <a href="index.html" class="brand-link mb-3 d-inline-flex" aria-label="Ferromax Industrial Scrap &amp; Recycling">
-                     <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Scrap &amp; Recycling" class="brand-logo-img footer-logo-img">
+            <div class="row align-items-start">
+               <!-- Col 1: Brand & Digest Subscription (Acme Model Left) -->
+               <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+                  <a href="index.html" class="brand-link footer-brand-link mb-3 d-inline-flex align-items-center" aria-label="Ferromax Industrial Metal Scrap &amp; Recycling">
+                     <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Metal Scrap &amp; Recycling" class="brand-logo-img footer-logo-img">
+                     <div class="brand-text-wrap ml-2">
+                        <span class="brand-title">FERRO<span>MAX</span></span>
+                        <span class="brand-tagline">Metal Scrap &amp; Recycling</span>
+                     </div>
                   </a>
-                  <p style="font-size: 13.5px; color: #94a3b8; line-height: 1.7; margin-bottom: 16px;">
-                     Ferromax is an international processor and trader of industrial ferrous and non-ferrous secondary metals. Operating deepwater maritime berths, 1,200-ton hydraulic shears, 4,000 HP mega-shredders, and computerized weighbridges.
+                  <h3 class="footer-digest-title">Get the weekly digest</h3>
+                  <p class="footer-digest-desc">
+                     Weekly indicative scrap benchmark rates, elemental assay guides, and recycling tenders. No spam, ever.
                   </p>
-                  <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-                     <span class="badge badge-warning text-dark p-2 mr-2 mb-1"><i class="fa fa-shield"></i> ISRI Active Member</span>
-                     <span class="badge badge-secondary p-2 mr-1 mb-1"><i class="fa fa-certificate"></i> ISO 9001:2015</span>
-                     <span class="badge badge-secondary p-2 mb-1"><i class="fa fa-leaf"></i> ISO 14001:2015</span>
-                  </div>
-                  <!-- Recognizable Social Media Icons (Facebook, Instagram, LinkedIn, YouTube, WhatsApp) -->
-                  <div class="footer-social-bar">
-                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-fb" aria-label="Follow Ferromax on Facebook" title="Facebook">
-                        <i class="fa fa-facebook"></i>
-                     </a>
-                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-tw" aria-label="Follow Ferromax on X" title="X (Twitter)">
-                        <svg class="x-twitter-svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                     </a>
-                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-ig" aria-label="Follow Ferromax on Instagram" title="Instagram">
-                        <i class="fa fa-instagram"></i>
-                     </a>
-                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-li" aria-label="Connect with Ferromax on LinkedIn" title="LinkedIn">
-                        <i class="fa fa-linkedin"></i>
-                     </a>
-                     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-yt" aria-label="Subscribe to Ferromax on YouTube" title="YouTube">
-                        <i class="fa fa-youtube-play"></i>
-                     </a>
-                     <a href="https://wa.me/18004827272" target="_blank" rel="noopener noreferrer" class="footer-social-link social-wa" aria-label="Chat with Ferromax Dispatch on WhatsApp" title="WhatsApp Dispatch">
-                        <i class="fa fa-whatsapp"></i>
-                     </a>
-                  </div>
-               </div>
-
-               <!-- Col 2: Quick Navigation Links -->
-               <div class="col-lg-2 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Navigation</h4>
-                  <ul class="footer-links-list">
-                     <li><a href="index.html"><i class="fa fa-angle-right"></i> Home Overview</a></li>
-                     <li><a href="material-recovery.html"><i class="fa fa-angle-right"></i> Materials Accepted</a></li>
-                     <li><a href="rate-card.html"><i class="fa fa-angle-right"></i> Scrap Material Rates</a></li>
-                     <li><a href="process.html"><i class="fa fa-angle-right"></i> Recycling Process</a></li>
-                     <li><a href="contact.html"><i class="fa fa-angle-right"></i> Contact &amp; Pickup</a></li>
-                     <li><a href="index.html#recycling-operations"><i class="fa fa-angle-right"></i> Yard Operations</a></li>
-                  </ul>
-               </div>
-
-               <!-- Col 3: Material Categories -->
-               <div class="col-lg-2 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Material Categories</h4>
-                  <ul class="footer-links-list">
-                     <li><a href="material-recovery.html#ferrous-section"><i class="fa fa-cube"></i> Ferrous Metals &amp; Steel</a></li>
-                     <li><a href="material-recovery.html#nonferrous-section"><i class="fa fa-cube"></i> Bare Bright Copper</a></li>
-                     <li><a href="material-recovery.html#nonferrous-section"><i class="fa fa-cube"></i> Aluminium Extrusions</a></li>
-                     <li><a href="material-recovery.html#nonferrous-section"><i class="fa fa-cube"></i> Brass &amp; Bronze Bushings</a></li>
-                     <li><a href="material-recovery.html#stainless-section"><i class="fa fa-cube"></i> Stainless Steel 304/316</a></li>
-                     <li><a href="material-recovery.html#electrical-section"><i class="fa fa-cube"></i> Power &amp; Armoured Cables</a></li>
-                     <li><a href="material-recovery.html#industrial-section"><i class="fa fa-cube"></i> Machinery &amp; Turnings</a></li>
-                  </ul>
-               </div>
-
-               <!-- Col 4: Recycling Services -->
-               <div class="col-lg-2 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Recycling Services</h4>
-                  <ul class="footer-links-list">
-                     <li><a href="process.html#sec-collection"><i class="fa fa-truck"></i> Scrap Collection Logistics</a></li>
-                     <li><a href="process.html#sec-segregation"><i class="fa fa-cubes"></i> Automated Segregation</a></li>
-                     <li><a href="process.html#sec-sorting"><i class="fa fa-flask"></i> XRF Spectrometry Assay</a></li>
-                     <li><a href="process.html#sec-weighing"><i class="fa fa-balance-scale"></i> Certified Weighbridges</a></li>
-                     <li><a href="process.html#sec-processing"><i class="fa fa-gavel"></i> 1,200T Hydraulic Shearing</a></li>
-                     <li><a href="process.html#sec-recovery"><i class="fa fa-fire"></i> Secondary Ingot Smelting</a></li>
-                     <li><a href="process.html#sec-disposal"><i class="fa fa-leaf"></i> Zero-Landfill Governance</a></li>
-                  </ul>
-               </div>
-
-               <!-- Col 5: Operating Facilities & Contact Desk -->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Operating Facilities</h4>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 8px;">
-                     <i class="fa fa-map-marker text-warning mr-2"></i> <strong>Central Deepwater Yard:</strong><br>
-                     104 Industrial Wharf Road, Terminal 4,<br>
-                     Harbor Industrial Zone
-                  </p>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 8px;">
-                     <i class="fa fa-clock-o text-warning mr-2"></i> <strong>Weighbridge Operating Hours:</strong><br>
-                     Mon - Sat: 06:30 - 18:30 | Sun: Closed
-                  </p>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 8px;">
-                     <i class="fa fa-phone text-warning mr-2"></i> <strong>Commercial Trading Desk:</strong><br>
-                     <a href="tel:18004827272" style="color: #f3cf2d; text-decoration: none; font-weight: 700;">+1 (800) 482-SCRAP (72727)</a>
-                  </p>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 12px;">
-                     <i class="fa fa-whatsapp text-success mr-2"></i> <strong>WhatsApp Fast Response:</strong><br>
-                     <a href="https://wa.me/18004827272" target="_blank" rel="noopener noreferrer" style="color: #25d366; text-decoration: none; font-weight: 600;">+1 (800) 482-7272 (Instant Chat)</a>
-                  </p>
-                  <form class="d-flex" onsubmit="event.preventDefault(); alert('Subscribed to Ferromax Weekly Scrap Benchmark Index!'); this.reset();">
-                     <input type="email" placeholder="Your corporate email" required style="background: #111722; border: 1px solid rgba(255,255,255,0.15); color: #fff; padding: 8px 12px; font-size: 13px; border-radius: 4px 0 0 4px; outline: none; width: 100%;">
-                     <button type="submit" style="background: #f3cf2d; color: #090c12; border: none; font-weight: 700; padding: 8px 14px; border-radius: 0 4px 4px 0; font-size: 13px; text-transform: uppercase;">Join</button>
+                  <form class="footer-digest-form" onsubmit="event.preventDefault(); alert('Subscribed to Ferromax Weekly Scrap Benchmark Index!'); this.reset();">
+                     <input type="email" class="footer-digest-input" placeholder="Your corporate email address" required aria-label="Your email address">
+                     <button type="submit" class="btn-industrial-primary footer-digest-btn">SUBSCRIBE</button>
                   </form>
+               </div>
+
+               <!-- Col 2: Navigation Columns (Acme Model Right 3 Columns) -->
+               <div class="col-lg-7 col-md-12">
+                  <div class="row">
+                     <!-- Link Column 1: Materials -->
+                     <div class="col-md-4 col-sm-4 col-12 mb-4 mb-sm-0">
+                        <h4 class="footer-col-heading">MATERIALS</h4>
+                        <ul class="footer-links-clean">
+                           <li><a href="material-recovery.html#ferrous-section">Ferrous Scrap</a></li>
+                           <li><a href="material-recovery.html#nonferrous-section">Non-Ferrous Metals</a></li>
+                           <li><a href="material-recovery.html#stainless-section">Stainless Steel</a></li>
+                           <li><a href="material-recovery.html#electrical-section">Cables &amp; Wire</a></li>
+                        </ul>
+                     </div>
+
+                     <!-- Link Column 2: Operations -->
+                     <div class="col-md-4 col-sm-4 col-12 mb-4 mb-sm-0">
+                        <h4 class="footer-col-heading">OPERATIONS</h4>
+                        <ul class="footer-links-clean">
+                           <li><a href="process.html#sec-processing">1,200T Shearing</a></li>
+                           <li><a href="process.html#sec-sorting">XRF Assay Lab</a></li>
+                           <li><a href="home-2.html#sec-facility-zones">Terminal Berth</a></li>
+                           <li><a href="process.html#sec-weighing">Certified Scales</a></li>
+                        </ul>
+                     </div>
+
+                     <!-- Link Column 3: Resources -->
+                     <div class="col-md-4 col-sm-4 col-12">
+                        <h4 class="footer-col-heading">RESOURCES</h4>
+                        <ul class="footer-links-clean">
+                           <li><a href="rate-card.html">Scrap Rate Card</a></li>
+                           <li><a href="material-recovery.html">Materials Accepted</a></li>
+                           <li><a href="process.html">Recycling Process</a></li>
+                           <li><a href="contact.html">Contact &amp; Pickup</a></li>
+                        </ul>
+                     </div>
+                  </div>
                </div>
             </div>
 
-            <!-- Bottom Copyright Strip with Visible Copyright Symbol -->
+            <!-- Horizontal Divider Line -->
+            <div class="footer-divider-line"></div>
+
+            <!-- Bottom Tier: Social Media (Single Line Alignment) + Copyright & Legal -->
             <div class="footer-bottom-strip">
-               <div class="footer-copyright-text">
-                  <span class="footer-copyright-symbol">&copy;</span> 2026 <strong>Ferromax Industrial Metal Scrap &amp; Recycling</strong>. All Rights Reserved.
-               </div>
-               <div class="d-flex align-items-center flex-wrap gap-3">
-                  <span class="mr-3 text-muted">ISRI Specifications Compliant</span>
-                  <span class="mr-3 text-muted">EPA Registered Scrap Handler</span>
-                  <a href="rate-card.html" class="text-warning mr-3">Benchmark Index <i class="fa fa-arrow-right ml-1"></i></a>
-                  <a href="#top" class="footer-scroll-top-btn" aria-label="Back to top" title="Back to top">
-                     <i class="fa fa-arrow-up"></i>
+               <!-- Social Icons in a Single Line Alignment (Left) -->
+               <div class="footer-social-bar">
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Follow Ferromax on X" title="X (Twitter)">
+                     <svg class="x-twitter-svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                   </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Connect with Ferromax on LinkedIn" title="LinkedIn">
+                     <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Follow Ferromax on Facebook" title="Facebook">
+                     <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Subscribe to Ferromax on YouTube" title="YouTube">
+                     <i class="fa fa-youtube-play"></i>
+                  </a>
+               </div>
+
+               <!-- Copyright & Legal Links in a Single Line Alignment (Right) -->
+               <div class="footer-bottom-legal">
+                  <span class="footer-legal-copy">&copy; 2026 Ferromax Inc.</span>
+                  <a href="contact.html" class="footer-legal-nav">Privacy</a>
+                  <a href="contact.html" class="footer-legal-nav">Terms</a>
                </div>
             </div>
          </div>

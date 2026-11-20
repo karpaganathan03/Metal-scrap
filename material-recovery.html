@@ -46,6 +46,10 @@
          <div class="sidepanel-header">
             <a href="index.html" class="brand-link" aria-label="Ferromax Industrial Scrap">
                <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Scrap" class="brand-logo-img sidepanel-logo-img">
+               <div class="brand-text-wrap ml-2">
+                  <span class="brand-title">FERRO<span>MAX</span></span>
+                  <span class="brand-tagline">Industrial Scrap</span>
+               </div>
             </a>
             <button class="sidepanel-close" aria-label="Close Navigation"><i class="fa fa-times"></i></button>
          </div>
@@ -66,7 +70,6 @@
             </li>
             <li class="sidepanel-item-toggle">
                <button class="dir-toggle-btn sidepanel-dir-toggle w-100 justify-content-center" aria-label="Toggle Text Direction" title="Toggle Text Direction">
-                  <i class="fa fa-language mr-2"></i>
                   <span class="dir-toggle-label">Layout Direction: <span class="dir-indicator-badge">RTL</span></span>
                </button>
             </li>
@@ -89,8 +92,12 @@
          <div class="container-fluid px-lg-5">
             <div class="row d_flex align-items-center">
                <div class="col-lg-3 col-md-4 col-7 logo_section">
-                  <a href="index.html" class="brand-link" aria-label="Ferromax Industrial Metal Scrap &amp; Recycling">
+                                    <a href="index.html" class="brand-link" aria-label="Ferromax Industrial Metal Scrap &amp; Recycling">
                      <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Metal Scrap &amp; Recycling" class="brand-logo-img">
+                     <div class="brand-text-wrap ml-2">
+                        <span class="brand-title">FERRO<span>MAX</span></span>
+                        <span class="brand-tagline">Metal Scrap &amp; Recycling</span>
+                     </div>
                   </a>
                </div>
                <div class="col-lg-9 col-md-8 col-5 text-right d-flex align-items-center justify-content-end">
@@ -101,7 +108,6 @@
                            Home <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="nav-dropdown-menu">
-                           <li><a href="index.html"><i class="fa fa-home"></i> Home – Industrial Overview</a></li>
                            <li><a href="home-1.html"><i class="fa fa-cubes"></i> Home 1 – Material Recovery Hub</a></li>
                            <li><a href="home-2.html"><i class="fa fa-cogs"></i> Home 2 – Recycling Operations</a></li>
                         </ul>
@@ -117,10 +123,7 @@
                         </button>
                      </li>
                      <li>
-                        <button class="dir-toggle-btn ml-2" aria-label="Toggle Text Direction (LTR / RTL)" title="Toggle Text Direction">
-                           <i class="fa fa-language"></i>
-                           <span class="dir-indicator-badge">RTL</span>
-                        </button>
+                        <button class="dir-toggle-btn ml-2" aria-label="Toggle Text Direction (LTR / RTL)" title="Toggle Text Direction"><span class="dir-indicator-badge">RTL</span></button>
                      </li>
                      <li>
                         <a href="contact.html#pickupSection" class="nav-cta-btn">
@@ -137,26 +140,30 @@
          </div>
       </header>
 
-      <!-- Inner Page Hero Banner -->
-      <section class="inner-hero-banner">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-9">
-                  <div class="breadcrumb-industrial">
-                     <a href="index.html"><i class="fa fa-home"></i> Home</a>
-                     <span>/</span>
-                     <span class="text-white">Materials Accepted Directory</span>
-                  </div>
-                  <span class="hero-badge-pill mb-3 d-inline-block">
-                     <i class="fa fa-clipboard"></i> B2B Industrial Ingestion &amp; Quality Standards
-                  </span>
-                  <h1 class="inner-hero-title">
-                     MATERIALS ACCEPTED: <span>PROCUREMENT SPECIFICATIONS &amp; ACCEPTANCE DIRECTORY</span>
-                  </h1>
-                  <p class="inner-hero-lead">
-                     Ferromax provides industrial manufacturing plants, demolition contractors, shipbuilders, and scrap aggregators with transparent acceptance specifications, certified ISRI quality thresholds, tare deduction rules, and prompt yard scale delivery protocols.
-                  </p>
-               </div>
+      <!-- Shared Page Hero: Catalogue / Materials Accepted -->
+      <section class="page-hero">
+         <div class="page-hero-container">
+            <div class="page-hero-content">
+               <span class="hero-badge-pill">
+                  <i class="fa fa-clipboard"></i> B2B Industrial Ingestion &amp; Quality Standards
+               </span>
+               <h1 class="page-hero-title">
+                  MATERIALS <span class="highlight-gold">ACCEPTED</span>
+               </h1>
+               <p class="page-hero-lead">
+                  Comprehensive ISRI-grade secondary raw materials catalogue. We inspect, assay, process, and trade ferrous, non-ferrous, and specialty high-temperature alloys with full traceable compliance.
+               </p>
+            </div>
+            <div class="page-hero-media">
+               <figure class="page-hero-figure" style="--focal: center center;">
+                  <img src="assets/images/hero/hero-catalogue-1200.jpg"
+                       srcset="assets/images/hero/hero-catalogue-800.jpg 800w, assets/images/hero/hero-catalogue-1200.jpg 1200w, assets/images/hero/hero-catalogue-1600.jpg 1600w"
+                       sizes="(max-width: 899px) 100vw, (max-width: 1280px) 45vw, 544px"
+                       width="1600" height="1200"
+                       alt="Sorted and high-density baled steel scrap metal cubes stacked in an industrial recycling yard"
+                       fetchpriority="high"
+                       decoding="async">
+               </figure>
             </div>
          </div>
       </section>
@@ -504,7 +511,7 @@
                      <h3 class="compliance-header-title">
                         <i class="fa fa-check-circle"></i> Materials Approved for Scale Ingestion
                      </h3>
-                     <p style="font-size: 14px; color: #10b981; margin-bottom: 15px;">
+                     <p style="font-size: 14px; color: #F2CB22; margin-bottom: 15px;">
                         The following items are purchased directly upon digital weighbridge certification:
                      </p>
                      <ul class="compliance-items-list">
@@ -546,7 +553,7 @@
                      <h3 class="compliance-header-title">
                         <i class="fa fa-times-circle"></i> Strictly Prohibited &amp; Restricted Items
                      </h3>
-                     <p style="font-size: 14px; color: #ef4444; margin-bottom: 15px;">
+                     <p style="font-size: 14px; color: #a9a89f; margin-bottom: 15px;">
                         The following hazardous, explosive, or radioactive items are rejected at our facility gates:
                      </p>
                      <ul class="compliance-items-list">
@@ -604,8 +611,10 @@
                <!-- Step 1 -->
                <div class="col-lg-3 col-sm-6 mb-4">
                   <div class="stat-box-card text-left p-4 h-100">
-                     <div class="stat-icon mb-2"><i class="fa fa-tags"></i></div>
-                     <span class="op-step-num mb-2">01</span>
+                     <div class="d-flex align-items-center justify-content-between mb-3 w-100">
+                        <div class="stat-icon m-0" style="font-size: 24px;"><i class="fa fa-tags"></i></div>
+                        <span class="op-step-num m-0">01</span>
+                     </div>
                      <h4 class="font-weight-bold mb-2">Grade Segregation</h4>
                      <p style="font-size: 13.5px; line-height: 1.6;">
                         Keep high-value non-ferrous metals (copper, brass, aluminium) segregated from general ferrous steel to maximize commercial payout without mixed deductions.
@@ -616,8 +625,10 @@
                <!-- Step 2 -->
                <div class="col-lg-3 col-sm-6 mb-4">
                   <div class="stat-box-card text-left p-4 h-100">
-                     <div class="stat-icon mb-2"><i class="fa fa-tint"></i></div>
-                     <span class="op-step-num mb-2">02</span>
+                     <div class="d-flex align-items-center justify-content-between mb-3 w-100">
+                        <div class="stat-icon m-0" style="font-size: 24px;"><i class="fa fa-tint"></i></div>
+                        <span class="op-step-num m-0">02</span>
+                     </div>
                      <h4 class="font-weight-bold mb-2">Drain Oils &amp; Fluids</h4>
                      <p style="font-size: 13.5px; line-height: 1.6;">
                         Drain all engine oils, coolants, and fuels from vehicle assemblies, hydraulic cylinders, and gearboxes. Cut open and vent any commercial vessels.
@@ -628,8 +639,10 @@
                <!-- Step 3 -->
                <div class="col-lg-3 col-sm-6 mb-4">
                   <div class="stat-box-card text-left p-4 h-100">
-                     <div class="stat-icon mb-2"><i class="fa fa-balance-scale"></i></div>
-                     <span class="op-step-num mb-2">03</span>
+                     <div class="d-flex align-items-center justify-content-between mb-3 w-100">
+                        <div class="stat-icon m-0" style="font-size: 24px;"><i class="fa fa-balance-scale"></i></div>
+                        <span class="op-step-num m-0">03</span>
+                     </div>
                      <h4 class="font-weight-bold mb-2">Dual Scale Ingestion</h4>
                      <p style="font-size: 13.5px; line-height: 1.6;">
                         Enter Gate 4 for automated optical license-plate capture, radiation portal scan, and certified gross weighing on our dual 80-ft digital weighbridges.
@@ -640,8 +653,10 @@
                <!-- Step 4 -->
                <div class="col-lg-3 col-sm-6 mb-4">
                   <div class="stat-box-card text-left p-4 h-100">
-                     <div class="stat-icon mb-2"><i class="fa fa-money"></i></div>
-                     <span class="op-step-num mb-2">04</span>
+                     <div class="d-flex align-items-center justify-content-between mb-3 w-100">
+                        <div class="stat-icon m-0" style="font-size: 24px;"><i class="fa fa-money"></i></div>
+                        <span class="op-step-num m-0">04</span>
+                     </div>
                      <h4 class="font-weight-bold mb-2">Immediate Settlement</h4>
                      <p style="font-size: 13.5px; line-height: 1.6;">
                         Tare out after grapple/crane unloading to receive automated electronic weight tickets. Payouts are transferred same-day via wire, RTGS, or ACH.
@@ -671,130 +686,97 @@
             </div>
          </div>
       </section>
-
       <!-- Comprehensive Footer -->
       <!-- =====================================================================
            GLOBAL COMPREHENSIVE FOOTER & SOCIAL MEDIA INTEGRATION
            ===================================================================== -->
       <footer class="footer-main-dark">
          <div class="container">
-            <div class="row">
-               <!-- Col 1: Brand Introduction & Social Media -->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <a href="index.html" class="brand-link mb-3 d-inline-flex" aria-label="Ferromax Industrial Scrap &amp; Recycling">
-                     <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Scrap &amp; Recycling" class="brand-logo-img footer-logo-img">
+            <div class="row align-items-start">
+               <!-- Col 1: Brand & Digest Subscription (Acme Model Left) -->
+               <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+                  <a href="index.html" class="brand-link footer-brand-link mb-3 d-inline-flex align-items-center" aria-label="Ferromax Industrial Metal Scrap &amp; Recycling">
+                     <img src="assets/images/Metal Logo.png" alt="Ferromax Industrial Metal Scrap &amp; Recycling" class="brand-logo-img footer-logo-img">
+                     <div class="brand-text-wrap ml-2">
+                        <span class="brand-title">FERRO<span>MAX</span></span>
+                        <span class="brand-tagline">Metal Scrap &amp; Recycling</span>
+                     </div>
                   </a>
-                  <p style="font-size: 13.5px; color: #94a3b8; line-height: 1.7; margin-bottom: 16px;">
-                     Ferromax is an international processor and trader of industrial ferrous and non-ferrous secondary metals. Operating deepwater maritime berths, 1,200-ton hydraulic shears, 4,000 HP mega-shredders, and computerized weighbridges.
+                  <h3 class="footer-digest-title">Get the weekly digest</h3>
+                  <p class="footer-digest-desc">
+                     Weekly indicative scrap benchmark rates, elemental assay guides, and recycling tenders. No spam, ever.
                   </p>
-                  <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-                     <span class="badge badge-warning text-dark p-2 mr-2 mb-1"><i class="fa fa-shield"></i> ISRI Active Member</span>
-                     <span class="badge badge-secondary p-2 mr-1 mb-1"><i class="fa fa-certificate"></i> ISO 9001:2015</span>
-                     <span class="badge badge-secondary p-2 mb-1"><i class="fa fa-leaf"></i> ISO 14001:2015</span>
-                  </div>
-                  <!-- Recognizable Social Media Icons (Facebook, Instagram, LinkedIn, YouTube, WhatsApp) -->
-                  <div class="footer-social-bar">
-                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-fb" aria-label="Follow Ferromax on Facebook" title="Facebook">
-                        <i class="fa fa-facebook"></i>
-                     </a>
-                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-tw" aria-label="Follow Ferromax on X" title="X (Twitter)">
-                        <svg class="x-twitter-svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                     </a>
-                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-ig" aria-label="Follow Ferromax on Instagram" title="Instagram">
-                        <i class="fa fa-instagram"></i>
-                     </a>
-                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-li" aria-label="Connect with Ferromax on LinkedIn" title="LinkedIn">
-                        <i class="fa fa-linkedin"></i>
-                     </a>
-                     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link social-yt" aria-label="Subscribe to Ferromax on YouTube" title="YouTube">
-                        <i class="fa fa-youtube-play"></i>
-                     </a>
-                     <a href="https://wa.me/18004827272" target="_blank" rel="noopener noreferrer" class="footer-social-link social-wa" aria-label="Chat with Ferromax Dispatch on WhatsApp" title="WhatsApp Dispatch">
-                        <i class="fa fa-whatsapp"></i>
-                     </a>
-                  </div>
-               </div>
-
-               <!-- Col 2: Quick Navigation Links -->
-               <div class="col-lg-2 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Navigation</h4>
-                  <ul class="footer-links-list">
-                     <li><a href="index.html"><i class="fa fa-angle-right"></i> Home Overview</a></li>
-                     <li><a href="material-recovery.html"><i class="fa fa-angle-right"></i> Materials Accepted</a></li>
-                     <li><a href="rate-card.html"><i class="fa fa-angle-right"></i> Scrap Material Rates</a></li>
-                     <li><a href="process.html"><i class="fa fa-angle-right"></i> Recycling Process</a></li>
-                     <li><a href="contact.html"><i class="fa fa-angle-right"></i> Contact &amp; Pickup</a></li>
-                     <li><a href="index.html#recycling-operations"><i class="fa fa-angle-right"></i> Yard Operations</a></li>
-                  </ul>
-               </div>
-
-               <!-- Col 3: Material Categories -->
-               <div class="col-lg-2 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Material Categories</h4>
-                  <ul class="footer-links-list">
-                     <li><a href="material-recovery.html#ferrous-section"><i class="fa fa-cube"></i> Ferrous Metals &amp; Steel</a></li>
-                     <li><a href="material-recovery.html#nonferrous-section"><i class="fa fa-cube"></i> Bare Bright Copper</a></li>
-                     <li><a href="material-recovery.html#nonferrous-section"><i class="fa fa-cube"></i> Aluminium Extrusions</a></li>
-                     <li><a href="material-recovery.html#nonferrous-section"><i class="fa fa-cube"></i> Brass &amp; Bronze Bushings</a></li>
-                     <li><a href="material-recovery.html#stainless-section"><i class="fa fa-cube"></i> Stainless Steel 304/316</a></li>
-                     <li><a href="material-recovery.html#electrical-section"><i class="fa fa-cube"></i> Power &amp; Armoured Cables</a></li>
-                     <li><a href="material-recovery.html#industrial-section"><i class="fa fa-cube"></i> Machinery &amp; Turnings</a></li>
-                  </ul>
-               </div>
-
-               <!-- Col 4: Recycling Services -->
-               <div class="col-lg-2 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Recycling Services</h4>
-                  <ul class="footer-links-list">
-                     <li><a href="process.html#sec-collection"><i class="fa fa-truck"></i> Scrap Collection Logistics</a></li>
-                     <li><a href="process.html#sec-segregation"><i class="fa fa-cubes"></i> Automated Segregation</a></li>
-                     <li><a href="process.html#sec-sorting"><i class="fa fa-flask"></i> XRF Spectrometry Assay</a></li>
-                     <li><a href="process.html#sec-weighing"><i class="fa fa-balance-scale"></i> Certified Weighbridges</a></li>
-                     <li><a href="process.html#sec-processing"><i class="fa fa-gavel"></i> 1,200T Hydraulic Shearing</a></li>
-                     <li><a href="process.html#sec-recovery"><i class="fa fa-fire"></i> Secondary Ingot Smelting</a></li>
-                     <li><a href="process.html#sec-disposal"><i class="fa fa-leaf"></i> Zero-Landfill Governance</a></li>
-                  </ul>
-               </div>
-
-               <!-- Col 5: Operating Facilities & Contact Desk -->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <h4 class="footer-col-title">Operating Facilities</h4>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 8px;">
-                     <i class="fa fa-map-marker text-warning mr-2"></i> <strong>Central Deepwater Yard:</strong><br>
-                     104 Industrial Wharf Road, Terminal 4,<br>
-                     Harbor Industrial Zone
-                  </p>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 8px;">
-                     <i class="fa fa-clock-o text-warning mr-2"></i> <strong>Weighbridge Operating Hours:</strong><br>
-                     Mon - Sat: 06:30 - 18:30 | Sun: Closed
-                  </p>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 8px;">
-                     <i class="fa fa-phone text-warning mr-2"></i> <strong>Commercial Trading Desk:</strong><br>
-                     <a href="tel:18004827272" style="color: #f3cf2d; text-decoration: none; font-weight: 700;">+1 (800) 482-SCRAP (72727)</a>
-                  </p>
-                  <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 12px;">
-                     <i class="fa fa-whatsapp text-success mr-2"></i> <strong>WhatsApp Fast Response:</strong><br>
-                     <a href="https://wa.me/18004827272" target="_blank" rel="noopener noreferrer" style="color: #25d366; text-decoration: none; font-weight: 600;">+1 (800) 482-7272 (Instant Chat)</a>
-                  </p>
-                  <form class="d-flex" onsubmit="event.preventDefault(); alert('Subscribed to Ferromax Weekly Scrap Benchmark Index!'); this.reset();">
-                     <input type="email" placeholder="Your corporate email" required style="background: #111722; border: 1px solid rgba(255,255,255,0.15); color: #fff; padding: 8px 12px; font-size: 13px; border-radius: 4px 0 0 4px; outline: none; width: 100%;">
-                     <button type="submit" style="background: #f3cf2d; color: #090c12; border: none; font-weight: 700; padding: 8px 14px; border-radius: 0 4px 4px 0; font-size: 13px; text-transform: uppercase;">Join</button>
+                  <form class="footer-digest-form" onsubmit="event.preventDefault(); alert('Subscribed to Ferromax Weekly Scrap Benchmark Index!'); this.reset();">
+                     <input type="email" class="footer-digest-input" placeholder="Your corporate email address" required aria-label="Your email address">
+                     <button type="submit" class="btn-industrial-primary footer-digest-btn">SUBSCRIBE</button>
                   </form>
+               </div>
+
+               <!-- Col 2: Navigation Columns (Acme Model Right 3 Columns) -->
+               <div class="col-lg-7 col-md-12">
+                  <div class="row">
+                     <!-- Link Column 1: Materials -->
+                     <div class="col-md-4 col-sm-4 col-12 mb-4 mb-sm-0">
+                        <h4 class="footer-col-heading">MATERIALS</h4>
+                        <ul class="footer-links-clean">
+                           <li><a href="material-recovery.html#ferrous-section">Ferrous Scrap</a></li>
+                           <li><a href="material-recovery.html#nonferrous-section">Non-Ferrous Metals</a></li>
+                           <li><a href="material-recovery.html#stainless-section">Stainless Steel</a></li>
+                           <li><a href="material-recovery.html#electrical-section">Cables &amp; Wire</a></li>
+                        </ul>
+                     </div>
+
+                     <!-- Link Column 2: Operations -->
+                     <div class="col-md-4 col-sm-4 col-12 mb-4 mb-sm-0">
+                        <h4 class="footer-col-heading">OPERATIONS</h4>
+                        <ul class="footer-links-clean">
+                           <li><a href="process.html#sec-processing">1,200T Shearing</a></li>
+                           <li><a href="process.html#sec-sorting">XRF Assay Lab</a></li>
+                           <li><a href="home-2.html#sec-facility-zones">Terminal Berth</a></li>
+                           <li><a href="process.html#sec-weighing">Certified Scales</a></li>
+                        </ul>
+                     </div>
+
+                     <!-- Link Column 3: Resources -->
+                     <div class="col-md-4 col-sm-4 col-12">
+                        <h4 class="footer-col-heading">RESOURCES</h4>
+                        <ul class="footer-links-clean">
+                           <li><a href="rate-card.html">Scrap Rate Card</a></li>
+                           <li><a href="material-recovery.html">Materials Accepted</a></li>
+                           <li><a href="process.html">Recycling Process</a></li>
+                           <li><a href="contact.html">Contact &amp; Pickup</a></li>
+                        </ul>
+                     </div>
+                  </div>
                </div>
             </div>
 
-            <!-- Bottom Copyright Strip with Visible Copyright Symbol -->
+            <!-- Horizontal Divider Line -->
+            <div class="footer-divider-line"></div>
+
+            <!-- Bottom Tier: Social Media (Single Line Alignment) + Copyright & Legal -->
             <div class="footer-bottom-strip">
-               <div class="footer-copyright-text">
-                  <span class="footer-copyright-symbol">&copy;</span> 2026 <strong>Ferromax Industrial Metal Scrap &amp; Recycling</strong>. All Rights Reserved.
-               </div>
-               <div class="d-flex align-items-center flex-wrap gap-3">
-                  <span class="mr-3 text-muted">ISRI Specifications Compliant</span>
-                  <span class="mr-3 text-muted">EPA Registered Scrap Handler</span>
-                  <a href="rate-card.html" class="text-warning mr-3">Benchmark Index <i class="fa fa-arrow-right ml-1"></i></a>
-                  <a href="#top" class="footer-scroll-top-btn" aria-label="Back to top" title="Back to top">
-                     <i class="fa fa-arrow-up"></i>
+               <!-- Social Icons in a Single Line Alignment (Left) -->
+               <div class="footer-social-bar">
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Follow Ferromax on X" title="X (Twitter)">
+                     <svg class="x-twitter-svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                   </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Connect with Ferromax on LinkedIn" title="LinkedIn">
+                     <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Follow Ferromax on Facebook" title="Facebook">
+                     <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Subscribe to Ferromax on YouTube" title="YouTube">
+                     <i class="fa fa-youtube-play"></i>
+                  </a>
+               </div>
+
+               <!-- Copyright & Legal Links in a Single Line Alignment (Right) -->
+               <div class="footer-bottom-legal">
+                  <span class="footer-legal-copy">&copy; 2026 Ferromax Inc.</span>
+                  <a href="contact.html" class="footer-legal-nav">Privacy</a>
+                  <a href="contact.html" class="footer-legal-nav">Terms</a>
                </div>
             </div>
          </div>

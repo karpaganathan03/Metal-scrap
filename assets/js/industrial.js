@@ -146,42 +146,125 @@ document.addEventListener('DOMContentLoaded', function () {
   window.openNav = openNavigation;
   window.closeNav = closeNavigation;
 
-  // 4. Material Hub Filtering & Search
-  const filterButtons = document.querySelectorAll('.filter-btn-chip');
+  // 4. Material Hub Filtering & Search (home-1.html)
+  const materialCategoryNav = document.getElementById('materialCategoryNav');
+  const materialFilterButtons = materialCategoryNav
+    ? materialCategoryNav.querySelectorAll('.filter-btn-chip')
+    : document.querySelectorAll('.catalogue-nav-links .filter-btn-chip');
   const materialCards = document.querySelectorAll('.material-card-item');
   const materialSearch = document.getElementById('materialSearchInput');
+  const searchClearBtn = document.getElementById('searchClearBtn');
+  const filterCountText = document.getElementById('materialFilterCountText');
   const noMaterialFound = document.getElementById('noMaterialFound');
+  const noMaterialMessage = document.getElementById('noMaterialMessage');
+  const resetMaterialFilters = document.getElementById('resetMaterialFilters');
+  const categorySections = document.querySelectorAll('[data-category-section]');
+
+  function escapeSearchHtml(str) {
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
 
   function filterMaterials() {
-    const activeBtn = document.querySelector('.filter-btn-chip.active');
+    const activeBtn = materialCategoryNav
+      ? materialCategoryNav.querySelector('.filter-btn-chip.active')
+      : document.querySelector('.catalogue-nav-links .filter-btn-chip.active');
     const selectedCategory = activeBtn ? activeBtn.getAttribute('data-category') : 'all';
     const searchQuery = materialSearch ? materialSearch.value.toLowerCase().trim() : '';
-    let visibleCount = 0;
+
+    // Show or hide search clear button
+    if (searchClearBtn) {
+      searchClearBtn.style.display = searchQuery.length > 0 ? 'block' : 'none';
+    }
+
+    let totalVisible = 0;
+    const activeSectionsWithMatches = new Set();
 
     materialCards.forEach(function (card) {
-      const cardCategory = card.getAttribute('data-category');
+      const cardCategory = (card.getAttribute('data-category') || '').toLowerCase();
       const cardText = card.textContent.toLowerCase();
 
-      const matchesCategory = selectedCategory === 'all' || cardCategory === selectedCategory;
-      const matchesSearch = !searchQuery || cardText.includes(searchQuery);
+      // Check category match
+      let matchesCategory = false;
+      if (selectedCategory === 'all' || !selectedCategory) {
+        matchesCategory = true;
+      } else {
+        const catTokens = cardCategory.split(/\s+/);
+        matchesCategory = catTokens.includes(selectedCategory) || cardCategory.includes(selectedCategory);
+      }
+
+      // Check search match (all space-separated keywords must match)
+      let matchesSearch = true;
+      if (searchQuery) {
+        const terms = searchQuery.split(/\s+/).filter(Boolean);
+        matchesSearch = terms.every(function (term) {
+          return cardText.includes(term);
+        });
+      }
 
       if (matchesCategory && matchesSearch) {
-        card.style.display = 'block';
-        visibleCount++;
+        card.style.display = '';
+        totalVisible++;
+        const parentSec = card.closest('[data-category-section]');
+        if (parentSec) {
+          activeSectionsWithMatches.add(parentSec);
+        }
       } else {
         card.style.display = 'none';
       }
     });
 
+    // Dynamically show or hide category section blocks
+    categorySections.forEach(function (sec) {
+      const secCat = sec.getAttribute('data-category-section');
+      const cardsInSec = sec.querySelectorAll('.material-card-item');
+      let visibleInSec = 0;
+      cardsInSec.forEach(function (c) {
+        if (c.style.display !== 'none') visibleInSec++;
+      });
+
+      const matchesCat = (selectedCategory === 'all' || secCat === selectedCategory);
+      if (matchesCat && visibleInSec > 0) {
+        sec.style.display = '';
+      } else {
+        sec.style.display = 'none';
+      }
+    });
+
+    // Update live results count text
+    if (filterCountText) {
+      if (!searchQuery && selectedCategory === 'all') {
+        filterCountText.innerHTML = `Showing all <strong>${materialCards.length}</strong> industrial scrap grades across <strong>${categorySections.length}</strong> categories. Filter dynamically above or click any category section.`;
+      } else if (totalVisible > 0) {
+        const catLabel = activeBtn ? activeBtn.textContent.trim() : selectedCategory;
+        const catFilterDesc = selectedCategory !== 'all' ? ` in <em>${catLabel}</em>` : ` across <strong>${activeSectionsWithMatches.size}</strong> categor${activeSectionsWithMatches.size === 1 ? 'y' : 'ies'}`;
+        const searchDesc = searchQuery ? ` matching "<strong>${escapeSearchHtml(searchQuery)}</strong>"` : '';
+        filterCountText.innerHTML = `Showing <strong class="text-warning">${totalVisible}</strong> matching scrap grade${totalVisible === 1 ? '' : 's'}${searchDesc}${catFilterDesc}.`;
+      } else {
+        filterCountText.innerHTML = `<span class="text-danger font-weight-bold">0 matching scrap grades</span> found for "${escapeSearchHtml(searchQuery)}".`;
+      }
+    }
+
+    // Toggle Empty State Box
     if (noMaterialFound) {
-      noMaterialFound.style.display = visibleCount === 0 ? 'block' : 'none';
+      if (totalVisible === 0) {
+        noMaterialFound.style.display = 'block';
+        if (noMaterialMessage) {
+          if (searchQuery) {
+            noMaterialMessage.textContent = `No industrial scrap grades match "${searchQuery}". Try searching for terms like Ferrous, HMS, Copper, Aluminium, Brass, 304, Wire, or ISRI codes.`;
+          } else {
+            noMaterialMessage.textContent = `No materials currently listed under this category filter.`;
+          }
+        }
+      } else {
+        noMaterialFound.style.display = 'none';
+      }
     }
   }
 
-  if (filterButtons.length > 0) {
-    filterButtons.forEach(function (btn) {
+  if (materialFilterButtons.length > 0) {
+    materialFilterButtons.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        filterButtons.forEach(function (b) { b.classList.remove('active'); });
+        materialFilterButtons.forEach(function (b) { b.classList.remove('active'); });
         this.classList.add('active');
         filterMaterials();
       });
@@ -190,6 +273,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (materialSearch) {
     materialSearch.addEventListener('input', filterMaterials);
+    materialSearch.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && this.value) {
+        this.value = '';
+        filterMaterials();
+      }
+    });
+  }
+
+  if (searchClearBtn) {
+    searchClearBtn.addEventListener('click', function () {
+      if (materialSearch) {
+        materialSearch.value = '';
+        materialSearch.focus();
+        filterMaterials();
+      }
+    });
+  }
+
+  if (resetMaterialFilters) {
+    resetMaterialFilters.addEventListener('click', function () {
+      if (materialSearch) materialSearch.value = '';
+      if (materialFilterButtons.length > 0) {
+        materialFilterButtons.forEach(function (b) {
+          if (b.getAttribute('data-category') === 'all') {
+            b.classList.add('active');
+          } else {
+            b.classList.remove('active');
+          }
+        });
+      }
+      filterMaterials();
+      if (materialSearch) materialSearch.focus();
+    });
   }
 
   // 5. Rate Card Search & Category Filtering
@@ -217,16 +333,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Check rate category section containers
     const categorySections = document.querySelectorAll('.rate-category-section');
+    let totalVisibleRows = 0;
     categorySections.forEach(function (sec) {
       const secCat = sec.getAttribute('data-section-cat');
       const secRows = sec.querySelectorAll('.rate-table-row');
       let visibleRowCount = 0;
       secRows.forEach(function (r) {
-        if (r.style.display !== 'none') visibleRowCount++;
+        if (r.style.display !== 'none') {
+          visibleRowCount++;
+          totalVisibleRows++;
+        }
       });
       const matchesCategorySelection = selectedCat === 'all' || secCat === selectedCat;
       sec.style.display = (matchesCategorySelection && visibleRowCount > 0) ? '' : 'none';
     });
+
+    // Update active results counter badge
+    const countEl = document.getElementById('activeRatesCount');
+    if (countEl) {
+      countEl.textContent = totalVisibleRows;
+    }
+
+    // Toggle clear search button visibility
+    const clearBtn = document.getElementById('rateSearchClear');
+    if (clearBtn) {
+      clearBtn.style.display = query.length > 0 ? 'block' : 'none';
+    }
   }
 
   if (rateSearchInput) {
@@ -236,6 +368,28 @@ document.addEventListener('DOMContentLoaded', function () {
   if (rateCategorySelect) {
     rateCategorySelect.addEventListener('change', filterRates);
   }
+
+  // Clear search input button handler
+  const rateSearchClearBtn = document.getElementById('rateSearchClear');
+  if (rateSearchClearBtn && rateSearchInput) {
+    rateSearchClearBtn.addEventListener('click', function () {
+      rateSearchInput.value = '';
+      filterRates();
+      rateSearchInput.focus();
+    });
+  }
+
+  // Quick Category Grid Tile Click Integration
+  document.querySelectorAll('.category-grid-tile').forEach(function (tile) {
+    tile.addEventListener('click', function () {
+      const tileCat = this.getAttribute('data-cat');
+      // If a category filter is active and different from clicked tile, reset filter to 'all' so target section is visible
+      if (rateCategorySelect && rateCategorySelect.value !== 'all' && rateCategorySelect.value !== tileCat) {
+        rateCategorySelect.value = 'all';
+        filterRates();
+      }
+    });
+  });
 
   // 6. Rate Card Unit Toggle (Metric Ton vs Kilogram vs Pound)
   const unitButtons = document.querySelectorAll('.btn-unit-toggle');
@@ -773,3 +927,45 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
+
+
+/* =====================================================================
+   PREMIUM INDUSTRIAL DESIGN SYSTEM - SUBTLE SCROLL REVEAL MOTION
+   Fade and 12px rise on scroll, 250ms ease-out, prefers-reduced-motion respected.
+   ===================================================================== */
+(function() {
+  if (typeof window === 'undefined' || !('IntersectionObserver' in window)) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  function initScrollReveal() {
+    var targets = document.querySelectorAll(
+      '.card, .catalogue-card, .material-card, .service-card-clean, ' +
+      '.stat-box-card, .home2-equipment-card, .section-main-heading, ' +
+      '.acceptance-stream-card, .facility-action-card, .op-capability-card, ' +
+      '.rate-card-box, .testimonial-card, .approach-step-card'
+    );
+
+    var observer = new IntersectionObserver(function(entries, obs) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.08,
+      rootMargin: '0px 0px -30px 0px'
+    });
+
+    targets.forEach(function(el) {
+      el.classList.add('reveal-on-scroll');
+      observer.observe(el);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollReveal);
+  } else {
+    initScrollReveal();
+  }
+})();
