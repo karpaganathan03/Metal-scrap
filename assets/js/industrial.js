@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const hashPart = href.substring(hashIndex);
 
       // If current page or empty pathPart
-      const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+      const currentPath = window.location.pathname.split('/').pop() || 'home-1.html';
       if (!pathPart || pathPart === currentPath) {
         const targetElement = document.querySelector(hashPart);
         if (targetElement) {
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Show or hide search clear button
     if (searchClearBtn) {
-      searchClearBtn.style.display = searchQuery.length > 0 ? 'block' : 'none';
+      searchClearBtn.style.display = searchQuery.length > 0 ? 'flex' : 'none';
     }
 
     let totalVisible = 0;
@@ -267,15 +267,32 @@ document.addEventListener('DOMContentLoaded', function () {
         materialFilterButtons.forEach(function (b) { b.classList.remove('active'); });
         this.classList.add('active');
         filterMaterials();
+
+        // Ensure functioning process (results & cards) is immediately visible without disjointed scrolling
+        const hub = document.getElementById('catalogueControlPanel') || document.getElementById('materials-catalogue-hub');
+        if (hub) {
+          const rect = hub.getBoundingClientRect();
+          if (rect.top < 60 || rect.top > 260) {
+            const yOffset = -75;
+            const targetY = rect.top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          }
+        }
       });
     });
   }
 
   if (materialSearch) {
-    materialSearch.addEventListener('input', filterMaterials);
+    materialSearch.addEventListener('input', function () {
+      if (searchClearBtn) {
+        searchClearBtn.style.display = this.value.trim().length > 0 ? 'flex' : 'none';
+      }
+      filterMaterials();
+    });
     materialSearch.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && this.value) {
         this.value = '';
+        if (searchClearBtn) searchClearBtn.style.display = 'none';
         filterMaterials();
       }
     });
@@ -285,6 +302,7 @@ document.addEventListener('DOMContentLoaded', function () {
     searchClearBtn.addEventListener('click', function () {
       if (materialSearch) {
         materialSearch.value = '';
+        this.style.display = 'none';
         materialSearch.focus();
         filterMaterials();
       }
@@ -293,7 +311,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (resetMaterialFilters) {
     resetMaterialFilters.addEventListener('click', function () {
-      if (materialSearch) materialSearch.value = '';
+      if (materialSearch) {
+        materialSearch.value = '';
+        if (searchClearBtn) searchClearBtn.style.display = 'none';
+      }
       if (materialFilterButtons.length > 0) {
         materialFilterButtons.forEach(function (b) {
           if (b.getAttribute('data-category') === 'all') {
